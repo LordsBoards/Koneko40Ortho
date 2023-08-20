@@ -132,6 +132,110 @@
         )
       )
     )
+    (symbol "Device:R_Small_US" (pin_numbers hide) (pin_names (offset 0.254) hide) (in_bom yes) (on_board yes)
+      (property "Reference" "R" (at 0.762 0.508 0)
+        (effects (font (size 1.27 1.27)) (justify left))
+      )
+      (property "Value" "R_Small_US" (at 0.762 -1.016 0)
+        (effects (font (size 1.27 1.27)) (justify left))
+      )
+      (property "Footprint" "" (at 0 0 0)
+        (effects (font (size 1.27 1.27)) hide)
+      )
+      (property "Datasheet" "~" (at 0 0 0)
+        (effects (font (size 1.27 1.27)) hide)
+      )
+      (property "ki_keywords" "r resistor" (at 0 0 0)
+        (effects (font (size 1.27 1.27)) hide)
+      )
+      (property "ki_description" "Resistor, small US symbol" (at 0 0 0)
+        (effects (font (size 1.27 1.27)) hide)
+      )
+      (property "ki_fp_filters" "R_*" (at 0 0 0)
+        (effects (font (size 1.27 1.27)) hide)
+      )
+      (symbol "R_Small_US_1_1"
+        (polyline
+          (pts
+            (xy 0 0)
+            (xy 1.016 -0.381)
+            (xy 0 -0.762)
+            (xy -1.016 -1.143)
+            (xy 0 -1.524)
+          )
+          (stroke (width 0) (type default))
+          (fill (type none))
+        )
+        (polyline
+          (pts
+            (xy 0 1.524)
+            (xy 1.016 1.143)
+            (xy 0 0.762)
+            (xy -1.016 0.381)
+            (xy 0 0)
+          )
+          (stroke (width 0) (type default))
+          (fill (type none))
+        )
+        (pin passive line (at 0 2.54 270) (length 1.016)
+          (name "~" (effects (font (size 1.27 1.27))))
+          (number "1" (effects (font (size 1.27 1.27))))
+        )
+        (pin passive line (at 0 -2.54 90) (length 1.016)
+          (name "~" (effects (font (size 1.27 1.27))))
+          (number "2" (effects (font (size 1.27 1.27))))
+        )
+      )
+    )
+    (symbol "Jumper:Jumper_2_Open" (pin_names (offset 0) hide) (in_bom yes) (on_board yes)
+      (property "Reference" "JP" (at 0 2.794 0)
+        (effects (font (size 1.27 1.27)))
+      )
+      (property "Value" "Jumper_2_Open" (at 0 -2.286 0)
+        (effects (font (size 1.27 1.27)))
+      )
+      (property "Footprint" "" (at 0 0 0)
+        (effects (font (size 1.27 1.27)) hide)
+      )
+      (property "Datasheet" "~" (at 0 0 0)
+        (effects (font (size 1.27 1.27)) hide)
+      )
+      (property "ki_keywords" "Jumper SPST" (at 0 0 0)
+        (effects (font (size 1.27 1.27)) hide)
+      )
+      (property "ki_description" "Jumper, 2-pole, open" (at 0 0 0)
+        (effects (font (size 1.27 1.27)) hide)
+      )
+      (property "ki_fp_filters" "Jumper* TestPoint*2Pads* TestPoint*Bridge*" (at 0 0 0)
+        (effects (font (size 1.27 1.27)) hide)
+      )
+      (symbol "Jumper_2_Open_0_0"
+        (circle (center -2.032 0) (radius 0.508)
+          (stroke (width 0) (type default))
+          (fill (type none))
+        )
+        (circle (center 2.032 0) (radius 0.508)
+          (stroke (width 0) (type default))
+          (fill (type none))
+        )
+      )
+      (symbol "Jumper_2_Open_0_1"
+        (arc (start 1.524 1.27) (mid 0 1.778) (end -1.524 1.27)
+          (stroke (width 0) (type default))
+          (fill (type none))
+        )
+      )
+      (symbol "Jumper_2_Open_1_1"
+        (pin passive line (at -5.08 0 0) (length 2.54)
+          (name "A" (effects (font (size 1.27 1.27))))
+          (number "1" (effects (font (size 1.27 1.27))))
+        )
+        (pin passive line (at 5.08 0 180) (length 2.54)
+          (name "B" (effects (font (size 1.27 1.27))))
+          (number "2" (effects (font (size 1.27 1.27))))
+        )
+      )
+    )
     (symbol "MCU_ST_STM32L4:STM32L443CCUx" (in_bom yes) (on_board yes)
       (property "Reference" "U" (at -12.7 36.83 0)
         (effects (font (size 1.27 1.27)) (justify left))
@@ -1032,6 +1136,9 @@
   (junction (at 200.66 72.39) (diameter 0) (color 0 0 0 0)
     (uuid 190175ca-6626-4e4c-a1f2-2ae0c595a376)
   )
+  (junction (at 13.97 71.12) (diameter 0) (color 0 0 0 0)
+    (uuid 4cf7184e-6b32-4117-8618-43b797b5cff8)
+  )
   (junction (at 48.26 55.88) (diameter 0) (color 0 0 0 0)
     (uuid 56eb48c6-3931-4387-9759-5dbe08541538)
   )
@@ -1091,6 +1198,10 @@
   (wire (pts (xy 264.16 66.04) (xy 271.78 66.04))
     (stroke (width 0) (type default))
     (uuid 692bb924-1840-47d0-988d-ea4c35c2bfdd)
+  )
+  (wire (pts (xy 13.97 71.12) (xy 35.56 71.12))
+    (stroke (width 0) (type default))
+    (uuid 7196ecf8-cb35-4fa1-8cb4-7221f006f512)
   )
   (wire (pts (xy 48.26 55.88) (xy 50.8 55.88))
     (stroke (width 0) (type default))
@@ -1509,9 +1620,35 @@
     (pin "8" (uuid 9bca7fd8-ec27-40b1-b9a4-3da97c6fc0a6))
     (pin "9" (uuid e034202a-b72f-4666-972a-bdfaa85df577))
     (instances
-      (project "PCB"
+      (project "Koneko40Ortho"
         (path "/dea5f69c-d02e-47df-8e1a-a63949fabb21"
           (reference "U2") (unit 1)
+        )
+      )
+    )
+  )
+
+  (symbol (lib_id "Jumper:Jumper_2_Open") (at 13.97 66.04 90) (unit 1)
+    (in_bom no) (on_board yes) (dnp no)
+    (uuid 0a2348ab-6de6-463b-8fc7-6636b8e02348)
+    (property "Reference" "JP1" (at 11.43 64.77 90)
+      (effects (font (size 1.27 1.27)) (justify left))
+    )
+    (property "Value" "Jumper_2_Open" (at 11.43 67.31 90)
+      (effects (font (size 1.27 1.27)) (justify left))
+    )
+    (property "Footprint" "Connector_PinHeader_1.27mm:PinHeader_1x02_P1.27mm_Vertical" (at 13.97 66.04 0)
+      (effects (font (size 1.27 1.27)) hide)
+    )
+    (property "Datasheet" "~" (at 13.97 66.04 0)
+      (effects (font (size 1.27 1.27)) hide)
+    )
+    (pin "1" (uuid 004cc63e-0f2b-4780-bcaf-c74a941aee38))
+    (pin "2" (uuid c2ac2f8f-7aad-47da-ad23-9863c18ba7ab))
+    (instances
+      (project "Koneko40Ortho"
+        (path "/dea5f69c-d02e-47df-8e1a-a63949fabb21"
+          (reference "JP1") (unit 1)
         )
       )
     )
@@ -1538,7 +1675,7 @@
     (pin "1" (uuid 712219c3-fb04-4ec8-bffd-7fadcdde393f))
     (pin "2" (uuid 9d7a5f1c-69f1-42a4-a014-c1bddadea654))
     (instances
-      (project "PCB"
+      (project "Koneko40Ortho"
         (path "/dea5f69c-d02e-47df-8e1a-a63949fabb21"
           (reference "C4") (unit 1)
         )
@@ -1567,7 +1704,7 @@
     (pin "1" (uuid 49e26341-826d-43c5-9554-fbe845ee061a))
     (pin "2" (uuid 33dbb554-84f3-4627-99ac-0bd54a5c543d))
     (instances
-      (project "PCB"
+      (project "Koneko40Ortho"
         (path "/dea5f69c-d02e-47df-8e1a-a63949fabb21"
           (reference "C1") (unit 1)
         )
@@ -1595,7 +1732,7 @@
     (pin "3" (uuid 519dfa0b-6c28-49a5-922d-c8e0b11e39e9))
     (pin "4" (uuid 210c6841-18f1-475d-989a-4880814b3029))
     (instances
-      (project "PCB"
+      (project "Koneko40Ortho"
         (path "/dea5f69c-d02e-47df-8e1a-a63949fabb21"
           (reference "LED10") (unit 1)
         )
@@ -1623,7 +1760,7 @@
     (pin "3" (uuid 38413e66-ccfd-47df-8a78-98cbff4363fb))
     (pin "4" (uuid 2eed0cfa-7168-4cc6-9959-457b429b3055))
     (instances
-      (project "PCB"
+      (project "Koneko40Ortho"
         (path "/dea5f69c-d02e-47df-8e1a-a63949fabb21"
           (reference "LED4") (unit 1)
         )
@@ -1648,7 +1785,7 @@
     )
     (pin "1" (uuid e20e5820-3353-4157-abb9-f9ee2b848286))
     (instances
-      (project "PCB"
+      (project "Koneko40Ortho"
         (path "/dea5f69c-d02e-47df-8e1a-a63949fabb21"
           (reference "#PWR020") (unit 1)
         )
@@ -1676,7 +1813,7 @@
     (pin "3" (uuid 363d7185-6b0d-4d0b-a97a-9d2ec5eb4359))
     (pin "4" (uuid 3111e7b2-8ca1-4b78-b734-45f5c88b0b15))
     (instances
-      (project "PCB"
+      (project "Koneko40Ortho"
         (path "/dea5f69c-d02e-47df-8e1a-a63949fabb21"
           (reference "LED7") (unit 1)
         )
@@ -1701,7 +1838,7 @@
     )
     (pin "1" (uuid 3f37c4e3-57d3-4e67-bee4-1b4d73e998b1))
     (instances
-      (project "PCB"
+      (project "Koneko40Ortho"
         (path "/dea5f69c-d02e-47df-8e1a-a63949fabb21"
           (reference "#PWR023") (unit 1)
         )
@@ -1729,7 +1866,7 @@
     (pin "3" (uuid bfe6470f-2368-4cc1-ab8c-5896d7c48d0c))
     (pin "4" (uuid d9c43931-9aa3-43d2-98cb-d3e10b1d7a87))
     (instances
-      (project "PCB"
+      (project "Koneko40Ortho"
         (path "/dea5f69c-d02e-47df-8e1a-a63949fabb21"
           (reference "LED2") (unit 1)
         )
@@ -1754,7 +1891,7 @@
     )
     (pin "1" (uuid afcb48fe-b36b-4fed-84b3-913d51ec49fa))
     (instances
-      (project "PCB"
+      (project "Koneko40Ortho"
         (path "/dea5f69c-d02e-47df-8e1a-a63949fabb21"
           (reference "#PWR01") (unit 1)
         )
@@ -1783,7 +1920,7 @@
     (pin "1" (uuid 519a896b-f482-4cc4-864c-576c281971c8))
     (pin "2" (uuid 2d1e97b5-cf48-424c-abcc-0c5b18a31ef7))
     (instances
-      (project "PCB"
+      (project "Koneko40Ortho"
         (path "/dea5f69c-d02e-47df-8e1a-a63949fabb21"
           (reference "SW73") (unit 1)
         )
@@ -1808,7 +1945,7 @@
     )
     (pin "1" (uuid e3c56b06-db56-43d9-9fc5-95b3e01192f3))
     (instances
-      (project "PCB"
+      (project "Koneko40Ortho"
         (path "/dea5f69c-d02e-47df-8e1a-a63949fabb21"
           (reference "#PWR09") (unit 1)
         )
@@ -1840,7 +1977,7 @@
     (pin "4" (uuid 8ef66bd7-bdff-462a-8078-0f61f2021cab))
     (pin "MP" (uuid c7c3238a-6ba4-43b7-883e-dc3b15183240))
     (instances
-      (project "PCB"
+      (project "Koneko40Ortho"
         (path "/dea5f69c-d02e-47df-8e1a-a63949fabb21"
           (reference "J1") (unit 1)
         )
@@ -1869,9 +2006,34 @@
     (pin "1" (uuid f3742728-d167-487f-8ebf-d2ddf3274cd1))
     (pin "2" (uuid 0aa48221-de25-43d4-a54e-0c811d2ff9c1))
     (instances
-      (project "PCB"
+      (project "Koneko40Ortho"
         (path "/dea5f69c-d02e-47df-8e1a-a63949fabb21"
           (reference "C5") (unit 1)
+        )
+      )
+    )
+  )
+
+  (symbol (lib_id "power:+3.3V") (at 13.97 60.96 0) (unit 1)
+    (in_bom yes) (on_board yes) (dnp no) (fields_autoplaced)
+    (uuid 4fccf712-8ff7-4b1c-87e4-aabcd379b3ee)
+    (property "Reference" "#PWR06" (at 13.97 64.77 0)
+      (effects (font (size 1.27 1.27)) hide)
+    )
+    (property "Value" "+3.3V" (at 13.97 57.15 0)
+      (effects (font (size 1.27 1.27)))
+    )
+    (property "Footprint" "" (at 13.97 60.96 0)
+      (effects (font (size 1.27 1.27)) hide)
+    )
+    (property "Datasheet" "" (at 13.97 60.96 0)
+      (effects (font (size 1.27 1.27)) hide)
+    )
+    (pin "1" (uuid 5f417858-7b7e-483f-82dd-3348e9f44e99))
+    (instances
+      (project "Koneko40Ortho"
+        (path "/dea5f69c-d02e-47df-8e1a-a63949fabb21"
+          (reference "#PWR06") (unit 1)
         )
       )
     )
@@ -1897,7 +2059,7 @@
     (pin "3" (uuid 14415976-a699-4e5e-997a-911ac57afe0d))
     (pin "4" (uuid 1bbd9276-0525-4d9a-8682-bc779fd68489))
     (instances
-      (project "PCB"
+      (project "Koneko40Ortho"
         (path "/dea5f69c-d02e-47df-8e1a-a63949fabb21"
           (reference "LED8") (unit 1)
         )
@@ -1925,7 +2087,7 @@
     (pin "3" (uuid 20308db4-2941-4a52-afc2-7cce7d1e9b50))
     (pin "4" (uuid c2c4b2c6-5b88-44cc-a544-ba032a36d82e))
     (instances
-      (project "PCB"
+      (project "Koneko40Ortho"
         (path "/dea5f69c-d02e-47df-8e1a-a63949fabb21"
           (reference "LED3") (unit 1)
         )
@@ -1950,7 +2112,7 @@
     )
     (pin "1" (uuid d98bfcbc-314c-4f12-b648-2cec3a548db1))
     (instances
-      (project "PCB"
+      (project "Koneko40Ortho"
         (path "/dea5f69c-d02e-47df-8e1a-a63949fabb21"
           (reference "#PWR014") (unit 1)
         )
@@ -1979,7 +2141,7 @@
     (pin "1" (uuid 9a2bdd94-b870-4a93-afa7-f3177e827e8b))
     (pin "2" (uuid 4b83a58d-7463-4d3e-bf21-1241d72d298a))
     (instances
-      (project "PCB"
+      (project "Koneko40Ortho"
         (path "/dea5f69c-d02e-47df-8e1a-a63949fabb21"
           (reference "C13") (unit 1)
         )
@@ -2004,7 +2166,7 @@
     )
     (pin "1" (uuid 8291ae14-7e01-4f79-a098-2caf025fe167))
     (instances
-      (project "PCB"
+      (project "Koneko40Ortho"
         (path "/dea5f69c-d02e-47df-8e1a-a63949fabb21"
           (reference "#PWR05") (unit 1)
         )
@@ -2032,7 +2194,7 @@
     (pin "3" (uuid 878b5d32-52fa-4e38-8ebd-c3af984d2cbd))
     (pin "4" (uuid 9a9b56e7-00e4-404d-b7f2-4d6487523599))
     (instances
-      (project "PCB"
+      (project "Koneko40Ortho"
         (path "/dea5f69c-d02e-47df-8e1a-a63949fabb21"
           (reference "LED6") (unit 1)
         )
@@ -2057,7 +2219,7 @@
     )
     (pin "1" (uuid 819703ab-ad19-4edc-b236-4df5426a2e3b))
     (instances
-      (project "PCB"
+      (project "Koneko40Ortho"
         (path "/dea5f69c-d02e-47df-8e1a-a63949fabb21"
           (reference "#PWR04") (unit 1)
         )
@@ -2086,7 +2248,7 @@
     (pin "1" (uuid 5a23f4a8-6c15-4381-bfa3-1854cab4a967))
     (pin "2" (uuid 3590a8d9-427b-4ee7-9cce-ec3da342de5d))
     (instances
-      (project "PCB"
+      (project "Koneko40Ortho"
         (path "/dea5f69c-d02e-47df-8e1a-a63949fabb21"
           (reference "C2") (unit 1)
         )
@@ -2111,7 +2273,7 @@
     )
     (pin "1" (uuid 247717cb-92a7-4746-815b-42a9e42d999f))
     (instances
-      (project "PCB"
+      (project "Koneko40Ortho"
         (path "/dea5f69c-d02e-47df-8e1a-a63949fabb21"
           (reference "#PWR026") (unit 1)
         )
@@ -2139,7 +2301,7 @@
     (pin "3" (uuid b8d32df4-65bd-4932-83bd-e618bf871ead))
     (pin "4" (uuid 1dc00ec4-9fbb-402a-815b-b0cc37634a5b))
     (instances
-      (project "PCB"
+      (project "Koneko40Ortho"
         (path "/dea5f69c-d02e-47df-8e1a-a63949fabb21"
           (reference "LED5") (unit 1)
         )
@@ -2168,7 +2330,7 @@
     (pin "1" (uuid b7109986-e903-474a-9397-468a04fe39c1))
     (pin "2" (uuid e93b587e-2a8e-4378-8dc8-a1fa220b69c5))
     (instances
-      (project "PCB"
+      (project "Koneko40Ortho"
         (path "/dea5f69c-d02e-47df-8e1a-a63949fabb21"
           (reference "C15") (unit 1)
         )
@@ -2198,7 +2360,7 @@
     (pin "2" (uuid d20e5476-e666-4e6e-8f29-aa38f1d1597d))
     (pin "3" (uuid 89abc010-8eb0-47ec-b4b6-b59a64bb0588))
     (instances
-      (project "PCB"
+      (project "Koneko40Ortho"
         (path "/dea5f69c-d02e-47df-8e1a-a63949fabb21"
           (reference "U4") (unit 1)
         )
@@ -2223,9 +2385,38 @@
     )
     (pin "1" (uuid 81e377cb-8783-4b4b-921c-7037835c7c84))
     (instances
-      (project "PCB"
+      (project "Koneko40Ortho"
         (path "/dea5f69c-d02e-47df-8e1a-a63949fabb21"
           (reference "#PWR017") (unit 1)
+        )
+      )
+    )
+  )
+
+  (symbol (lib_id "Device:R_Small_US") (at 13.97 73.66 0) (unit 1)
+    (in_bom yes) (on_board yes) (dnp no)
+    (uuid a6f8114e-9cd8-4bf5-8fac-38c418b147e6)
+    (property "Reference" "R1" (at 11.43 72.39 0)
+      (effects (font (size 1.27 1.27)) (justify right))
+    )
+    (property "Value" "10k 0402" (at 11.43 74.93 0)
+      (effects (font (size 1.27 1.27)) (justify right))
+    )
+    (property "Footprint" "Resistor_SMD:R_0402_1005Metric" (at 13.97 73.66 0)
+      (effects (font (size 1.27 1.27)) hide)
+    )
+    (property "Datasheet" "~" (at 13.97 73.66 0)
+      (effects (font (size 1.27 1.27)) hide)
+    )
+    (property "LCSC" "C60490" (at 13.97 73.66 0)
+      (effects (font (size 1.27 1.27)) hide)
+    )
+    (pin "1" (uuid 5c737379-678e-4166-9165-cea95754770f))
+    (pin "2" (uuid c56067e7-7bb8-44a4-ba91-2b2fbb4e820c))
+    (instances
+      (project "Koneko40Ortho"
+        (path "/dea5f69c-d02e-47df-8e1a-a63949fabb21"
+          (reference "R1") (unit 1)
         )
       )
     )
@@ -2251,7 +2442,7 @@
     (pin "3" (uuid 42271401-358f-4e2e-b5e2-8c0f993c2049))
     (pin "4" (uuid 6ee78c65-df85-400b-857f-09f241f1100e))
     (instances
-      (project "PCB"
+      (project "Koneko40Ortho"
         (path "/dea5f69c-d02e-47df-8e1a-a63949fabb21"
           (reference "LED1") (unit 1)
         )
@@ -2276,7 +2467,7 @@
     )
     (pin "1" (uuid a2d3ba5f-0ac5-4db2-a94f-2ab417432b39))
     (instances
-      (project "PCB"
+      (project "Koneko40Ortho"
         (path "/dea5f69c-d02e-47df-8e1a-a63949fabb21"
           (reference "#PWR024") (unit 1)
         )
@@ -2301,9 +2492,34 @@
     )
     (pin "1" (uuid 3e2acd76-a9a0-4e51-874c-dee77d10eb53))
     (instances
-      (project "PCB"
+      (project "Koneko40Ortho"
         (path "/dea5f69c-d02e-47df-8e1a-a63949fabb21"
           (reference "#PWR011") (unit 1)
+        )
+      )
+    )
+  )
+
+  (symbol (lib_id "power:GND") (at 13.97 76.2 0) (unit 1)
+    (in_bom yes) (on_board yes) (dnp no)
+    (uuid b5b5356e-e560-47ae-aafd-29533b83ca80)
+    (property "Reference" "#PWR012" (at 13.97 82.55 0)
+      (effects (font (size 1.27 1.27)) hide)
+    )
+    (property "Value" "GND" (at 18.1297 77.8443 0)
+      (effects (font (size 1.27 1.27)))
+    )
+    (property "Footprint" "" (at 13.97 76.2 0)
+      (effects (font (size 1.27 1.27)) hide)
+    )
+    (property "Datasheet" "" (at 13.97 76.2 0)
+      (effects (font (size 1.27 1.27)) hide)
+    )
+    (pin "1" (uuid 7e870cd6-263e-476d-8496-07059e6d70aa))
+    (instances
+      (project "Koneko40Ortho"
+        (path "/dea5f69c-d02e-47df-8e1a-a63949fabb21"
+          (reference "#PWR012") (unit 1)
         )
       )
     )
@@ -2326,7 +2542,7 @@
     )
     (pin "1" (uuid 17078192-cc07-453b-9136-009376bbaa29))
     (instances
-      (project "PCB"
+      (project "Koneko40Ortho"
         (path "/dea5f69c-d02e-47df-8e1a-a63949fabb21"
           (reference "#PWR03") (unit 1)
         )
@@ -2351,7 +2567,7 @@
     )
     (pin "1" (uuid 472e102f-bead-429c-9dcf-24b2220f735c))
     (instances
-      (project "PCB"
+      (project "Koneko40Ortho"
         (path "/dea5f69c-d02e-47df-8e1a-a63949fabb21"
           (reference "#PWR019") (unit 1)
         )
@@ -2376,7 +2592,7 @@
     )
     (pin "1" (uuid 81e68547-894e-4466-8d1f-d3678325846d))
     (instances
-      (project "PCB"
+      (project "Koneko40Ortho"
         (path "/dea5f69c-d02e-47df-8e1a-a63949fabb21"
           (reference "#PWR016") (unit 1)
         )
@@ -2401,7 +2617,7 @@
     )
     (pin "1" (uuid 16db786c-0b07-4037-af2a-6fb1126afd86))
     (instances
-      (project "PCB"
+      (project "Koneko40Ortho"
         (path "/dea5f69c-d02e-47df-8e1a-a63949fabb21"
           (reference "#PWR015") (unit 1)
         )
@@ -2429,7 +2645,7 @@
     (pin "3" (uuid ecb793cb-ed26-49b5-8cbf-1ef33f807ba3))
     (pin "4" (uuid 728f5474-ecab-407d-a246-b28831e831f5))
     (instances
-      (project "PCB"
+      (project "Koneko40Ortho"
         (path "/dea5f69c-d02e-47df-8e1a-a63949fabb21"
           (reference "LED9") (unit 1)
         )
@@ -2458,7 +2674,7 @@
     (pin "1" (uuid 39f1e010-0efd-4378-9f7d-8f6ebf10e050))
     (pin "2" (uuid 58936cbd-6e4e-41b3-877b-b84c8f9deb67))
     (instances
-      (project "PCB"
+      (project "Koneko40Ortho"
         (path "/dea5f69c-d02e-47df-8e1a-a63949fabb21"
           (reference "C3") (unit 1)
         )
@@ -2483,7 +2699,7 @@
     )
     (pin "1" (uuid ce0653b9-8d27-49bb-b804-9001773b0398))
     (instances
-      (project "PCB"
+      (project "Koneko40Ortho"
         (path "/dea5f69c-d02e-47df-8e1a-a63949fabb21"
           (reference "#PWR07") (unit 1)
         )
@@ -2513,7 +2729,7 @@
     (pin "5" (uuid 01379d9f-39bf-4efd-a716-79dfe48ebf7b))
     (pin "6" (uuid fdcd4dc3-a500-4ce8-83b3-a1e628a6c780))
     (instances
-      (project "PCB"
+      (project "Koneko40Ortho"
         (path "/dea5f69c-d02e-47df-8e1a-a63949fabb21"
           (reference "J2") (unit 1)
         )
@@ -2538,7 +2754,7 @@
     )
     (pin "1" (uuid 35079daf-31d0-4f23-b4d0-3a0ecbc76c92))
     (instances
-      (project "PCB"
+      (project "Koneko40Ortho"
         (path "/dea5f69c-d02e-47df-8e1a-a63949fabb21"
           (reference "#PWR02") (unit 1)
         )
@@ -2563,7 +2779,7 @@
     )
     (pin "1" (uuid e4668c5c-cb1d-4751-bb74-41a7086a1082))
     (instances
-      (project "PCB"
+      (project "Koneko40Ortho"
         (path "/dea5f69c-d02e-47df-8e1a-a63949fabb21"
           (reference "#PWR08") (unit 1)
         )
@@ -2591,7 +2807,7 @@
     (pin "3" (uuid e0db628c-7183-4681-88d8-2d406806383a))
     (pin "4" (uuid e8315ef9-b903-4f86-ba82-940bfbc5e995))
     (instances
-      (project "PCB"
+      (project "Koneko40Ortho"
         (path "/dea5f69c-d02e-47df-8e1a-a63949fabb21"
           (reference "LED11") (unit 1)
         )
@@ -2619,7 +2835,7 @@
     (pin "3" (uuid ea5dc5da-887d-4d70-ab1a-d3c20b577418))
     (pin "4" (uuid b9941604-c6eb-4bde-a041-3a282f31644c))
     (instances
-      (project "PCB"
+      (project "Koneko40Ortho"
         (path "/dea5f69c-d02e-47df-8e1a-a63949fabb21"
           (reference "LED12") (unit 1)
         )
@@ -2644,7 +2860,7 @@
     )
     (pin "1" (uuid 745f6fb9-ba98-4a47-b499-7b7076b8853b))
     (instances
-      (project "PCB"
+      (project "Koneko40Ortho"
         (path "/dea5f69c-d02e-47df-8e1a-a63949fabb21"
           (reference "#PWR030") (unit 1)
         )
@@ -2669,7 +2885,7 @@
     )
     (pin "1" (uuid 94040819-34de-4ce2-9756-33583ec86cf2))
     (instances
-      (project "PCB"
+      (project "Koneko40Ortho"
         (path "/dea5f69c-d02e-47df-8e1a-a63949fabb21"
           (reference "#PWR031") (unit 1)
         )
@@ -2694,7 +2910,7 @@
     )
     (pin "1" (uuid fcdf7623-3817-47cf-88cc-03a27a8dc9d8))
     (instances
-      (project "PCB"
+      (project "Koneko40Ortho"
         (path "/dea5f69c-d02e-47df-8e1a-a63949fabb21"
           (reference "#PWR022") (unit 1)
         )
@@ -2719,7 +2935,7 @@
     )
     (pin "1" (uuid bfc860f0-555b-46a4-996d-070055595e20))
     (instances
-      (project "PCB"
+      (project "Koneko40Ortho"
         (path "/dea5f69c-d02e-47df-8e1a-a63949fabb21"
           (reference "#PWR010") (unit 1)
         )
@@ -2738,7 +2954,7 @@
       (effects (font (size 1.27 1.27)) (justify left top))
     )
     (instances
-      (project "PCB"
+      (project "Koneko40Ortho"
         (path "/dea5f69c-d02e-47df-8e1a-a63949fabb21" (page "2"))
       )
     )
