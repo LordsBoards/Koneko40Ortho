@@ -1,11 +1,11 @@
-(kicad_sch (version 20230121) (generator eeschema)
+(kicad_sch (version 20230819) (generator eeschema)
 
   (uuid 2e3181fe-ee3c-478d-8961-58256639dc5f)
 
   (paper "A4")
 
   (lib_symbols
-    (symbol "Device:D_Small" (pin_numbers hide) (pin_names (offset 0.254) hide) (in_bom yes) (on_board yes)
+    (symbol "Device:D_Small" (pin_numbers hide) (pin_names (offset 0.254) hide) (exclude_from_sim no) (in_bom yes) (on_board yes)
       (property "Reference" "D" (at -1.27 2.032 0)
         (effects (font (size 1.27 1.27)) (justify left))
       )
@@ -18,6 +18,9 @@
       (property "Datasheet" "~" (at 0 0 90)
         (effects (font (size 1.27 1.27)) hide)
       )
+      (property "Description" "Diode, small symbol" (at 0 0 0)
+        (effects (font (size 1.27 1.27)) hide)
+      )
       (property "Sim.Device" "D" (at 0 0 0)
         (effects (font (size 1.27 1.27)) hide)
       )
@@ -25,9 +28,6 @@
         (effects (font (size 1.27 1.27)) hide)
       )
       (property "ki_keywords" "diode" (at 0 0 0)
-        (effects (font (size 1.27 1.27)) hide)
-      )
-      (property "ki_description" "Diode, small symbol" (at 0 0 0)
         (effects (font (size 1.27 1.27)) hide)
       )
       (property "ki_fp_filters" "TO-???* *_Diode_* *SingleDiode* D_*" (at 0 0 0)
@@ -72,7 +72,7 @@
         )
       )
     )
-    (symbol "Device:Q_PMOS_GSD" (pin_names (offset 0) hide) (in_bom yes) (on_board yes)
+    (symbol "Device:Q_PMOS_GSD" (pin_names (offset 0) hide) (exclude_from_sim no) (in_bom yes) (on_board yes)
       (property "Reference" "Q" (at 5.08 1.27 0)
         (effects (font (size 1.27 1.27)) (justify left))
       )
@@ -85,10 +85,10 @@
       (property "Datasheet" "~" (at 0 0 0)
         (effects (font (size 1.27 1.27)) hide)
       )
-      (property "ki_keywords" "transistor PMOS P-MOS P-MOSFET" (at 0 0 0)
+      (property "Description" "P-MOSFET transistor, gate/source/drain" (at 0 0 0)
         (effects (font (size 1.27 1.27)) hide)
       )
-      (property "ki_description" "P-MOSFET transistor, gate/source/drain" (at 0 0 0)
+      (property "ki_keywords" "transistor PMOS P-MOS P-MOSFET" (at 0 0 0)
         (effects (font (size 1.27 1.27)) hide)
       )
       (symbol "Q_PMOS_GSD_0_1"
@@ -217,7 +217,7 @@
         )
       )
     )
-    (symbol "Device:R_Small_US" (pin_numbers hide) (pin_names (offset 0.254) hide) (in_bom yes) (on_board yes)
+    (symbol "Device:R_Small_US" (pin_numbers hide) (pin_names (offset 0.254) hide) (exclude_from_sim no) (in_bom yes) (on_board yes)
       (property "Reference" "R" (at 0.762 0.508 0)
         (effects (font (size 1.27 1.27)) (justify left))
       )
@@ -230,10 +230,10 @@
       (property "Datasheet" "~" (at 0 0 0)
         (effects (font (size 1.27 1.27)) hide)
       )
-      (property "ki_keywords" "r resistor" (at 0 0 0)
+      (property "Description" "Resistor, small US symbol" (at 0 0 0)
         (effects (font (size 1.27 1.27)) hide)
       )
-      (property "ki_description" "Resistor, small US symbol" (at 0 0 0)
+      (property "ki_keywords" "r resistor" (at 0 0 0)
         (effects (font (size 1.27 1.27)) hide)
       )
       (property "ki_fp_filters" "R_*" (at 0 0 0)
@@ -272,7 +272,7 @@
         )
       )
     )
-    (symbol "PCM_marbastlib-various:ROT_SKYLOONG_HS-Switch" (pin_names hide) (in_bom no) (on_board yes)
+    (symbol "PCM_marbastlib-various:ROT_SKYLOONG_HS-Switch" (pin_names hide) (exclude_from_sim no) (in_bom no) (on_board yes)
       (property "Reference" "SW" (at 0 8.89 0)
         (effects (font (size 1.27 1.27)))
       )
@@ -285,10 +285,10 @@
       (property "Datasheet" "https://skyloong.vip/products/abs-hot-swappable-knobs-madule" (at 0 0 0)
         (effects (font (size 1.27 1.27)) hide)
       )
-      (property "ki_keywords" "hotswap encoder ec6 switch" (at 0 0 0)
+      (property "Description" "SKYLOONG hotswap encoder module" (at 0 0 0)
         (effects (font (size 1.27 1.27)) hide)
       )
-      (property "ki_description" "SKYLOONG hotswap encoder module" (at 0 0 0)
+      (property "ki_keywords" "hotswap encoder ec6 switch" (at 0 0 0)
         (effects (font (size 1.27 1.27)) hide)
       )
       (symbol "ROT_SKYLOONG_HS-Switch_0_1"
@@ -452,7 +452,7 @@
         )
       )
     )
-    (symbol "marbastlib-mx:MX_SW_HS" (pin_numbers hide) (pin_names (offset 1.016) hide) (in_bom yes) (on_board yes)
+    (symbol "marbastlib-mx:MX_SW_HS" (pin_numbers hide) (pin_names (offset 1.016) hide) (exclude_from_sim no) (in_bom yes) (on_board yes)
       (property "Reference" "SW" (at 3.048 1.016 0)
         (effects (font (size 1.27 1.27)) (justify left))
       )
@@ -465,10 +465,10 @@
       (property "Datasheet" "~" (at 0 0 0)
         (effects (font (size 1.27 1.27)) hide)
       )
-      (property "ki_keywords" "switch normally-open pushbutton push-button" (at 0 0 0)
+      (property "Description" "Push button switch, normally open, two pins, 45° tilted" (at 0 0 0)
         (effects (font (size 1.27 1.27)) hide)
       )
-      (property "ki_description" "Push button switch, normally open, two pins, 45° tilted" (at 0 0 0)
+      (property "ki_keywords" "switch normally-open pushbutton push-button" (at 0 0 0)
         (effects (font (size 1.27 1.27)) hide)
       )
       (symbol "MX_SW_HS_0_1"
@@ -525,7 +525,7 @@
         )
       )
     )
-    (symbol "marbastlib-mx:MX_stab" (pin_names (offset 1.016)) (in_bom yes) (on_board yes)
+    (symbol "marbastlib-mx:MX_stab" (pin_names (offset 1.016)) (exclude_from_sim no) (in_bom yes) (on_board yes)
       (property "Reference" "S" (at -5.08 6.35 0)
         (effects (font (size 1.27 1.27)) (justify left))
       )
@@ -538,10 +538,10 @@
       (property "Datasheet" "" (at 0 0 0)
         (effects (font (size 1.27 1.27)) hide)
       )
-      (property "ki_keywords" "cherry mx stabilizer stab" (at 0 0 0)
+      (property "Description" "Cherry MX-style stabilizer" (at 0 0 0)
         (effects (font (size 1.27 1.27)) hide)
       )
-      (property "ki_description" "Cherry MX-style stabilizer" (at 0 0 0)
+      (property "ki_keywords" "cherry mx stabilizer stab" (at 0 0 0)
         (effects (font (size 1.27 1.27)) hide)
       )
       (symbol "MX_stab_0_1"
@@ -591,7 +591,7 @@
         )
       )
     )
-    (symbol "power:+3.3V" (power) (pin_names (offset 0)) (in_bom yes) (on_board yes)
+    (symbol "power:+3.3V" (power) (pin_names (offset 0)) (exclude_from_sim no) (in_bom yes) (on_board yes)
       (property "Reference" "#PWR" (at 0 -3.81 0)
         (effects (font (size 1.27 1.27)) hide)
       )
@@ -604,10 +604,10 @@
       (property "Datasheet" "" (at 0 0 0)
         (effects (font (size 1.27 1.27)) hide)
       )
-      (property "ki_keywords" "global power" (at 0 0 0)
+      (property "Description" "Power symbol creates a global label with name \"+3.3V\"" (at 0 0 0)
         (effects (font (size 1.27 1.27)) hide)
       )
-      (property "ki_description" "Power symbol creates a global label with name \"+3.3V\"" (at 0 0 0)
+      (property "ki_keywords" "global power" (at 0 0 0)
         (effects (font (size 1.27 1.27)) hide)
       )
       (symbol "+3.3V_0_1"
@@ -643,7 +643,7 @@
         )
       )
     )
-    (symbol "power:GND" (power) (pin_names (offset 0)) (in_bom yes) (on_board yes)
+    (symbol "power:GND" (power) (pin_names (offset 0)) (exclude_from_sim no) (in_bom yes) (on_board yes)
       (property "Reference" "#PWR" (at 0 -6.35 0)
         (effects (font (size 1.27 1.27)) hide)
       )
@@ -656,10 +656,10 @@
       (property "Datasheet" "" (at 0 0 0)
         (effects (font (size 1.27 1.27)) hide)
       )
-      (property "ki_keywords" "global power" (at 0 0 0)
+      (property "Description" "Power symbol creates a global label with name \"GND\" , ground" (at 0 0 0)
         (effects (font (size 1.27 1.27)) hide)
       )
-      (property "ki_description" "Power symbol creates a global label with name \"GND\" , ground" (at 0 0 0)
+      (property "ki_keywords" "global power" (at 0 0 0)
         (effects (font (size 1.27 1.27)) hide)
       )
       (symbol "GND_0_1"
@@ -702,6 +702,9 @@
   )
   (junction (at 132.08 66.04) (diameter 0) (color 0 0 0 0)
     (uuid 16145ca8-33c6-492a-aad1-92626f2249b9)
+  )
+  (junction (at 115.57 156.21) (diameter 0) (color 0 0 0 0)
+    (uuid 178b4661-84ee-40e2-ab66-2d25e0633c1c)
   )
   (junction (at 26.67 66.04) (diameter 0) (color 0 0 0 0)
     (uuid 1ef98889-a861-4141-b7a6-e1fc03728b9e)
@@ -835,6 +838,9 @@
   (junction (at 242.57 76.2) (diameter 0) (color 0 0 0 0)
     (uuid a84f8158-4a33-4356-a21c-63fde5df28f6)
   )
+  (junction (at 157.48 156.21) (diameter 0) (color 0 0 0 0)
+    (uuid a9d7b677-9c51-480e-a353-29819cd410cc)
+  )
   (junction (at 115.57 39.37) (diameter 0) (color 0 0 0 0)
     (uuid af63257d-55f3-49b6-88f4-59d2a3f17c1e)
   )
@@ -939,6 +945,9 @@
   )
   (junction (at 200.66 39.37) (diameter 0) (color 0 0 0 0)
     (uuid fe9a56d9-c9da-4a40-98c1-d632c034936e)
+  )
+  (junction (at 137.16 156.21) (diameter 0) (color 0 0 0 0)
+    (uuid fff55daf-21b3-4f80-82de-c5595f700b28)
   )
 
   (wire (pts (xy 173.99 100.33) (xy 173.99 151.13))
@@ -1217,6 +1226,10 @@
     (stroke (width 0) (type default))
     (uuid 9f528532-fb11-4b59-8ee6-5400529ec9bc)
   )
+  (wire (pts (xy 137.16 144.78) (xy 137.16 156.21))
+    (stroke (width 0) (type default))
+    (uuid a06a2c25-d8cb-4d5c-952c-5daf9be2c69c)
+  )
   (wire (pts (xy 22.86 39.37) (xy 31.75 39.37))
     (stroke (width 0) (type default))
     (uuid a084ebc6-220d-4367-bc85-1a88fda4158d)
@@ -1273,6 +1286,10 @@
     (stroke (width 0) (type default))
     (uuid c3bd4e15-803f-4ae6-9dc6-f87eccef6999)
   )
+  (wire (pts (xy 157.48 144.78) (xy 157.48 156.21))
+    (stroke (width 0) (type default))
+    (uuid c88b1fa4-beba-4aa0-8e8a-a751f86cc846)
+  )
   (wire (pts (xy 53.34 76.2) (xy 73.66 76.2))
     (stroke (width 0) (type default))
     (uuid c9e438df-f5b4-4450-a960-dcd8fedd7666)
@@ -1296,6 +1313,10 @@
   (wire (pts (xy 22.86 76.2) (xy 31.75 76.2))
     (stroke (width 0) (type default))
     (uuid cd7a9771-11e5-414a-b1a7-48af4ee64645)
+  )
+  (wire (pts (xy 115.57 144.78) (xy 115.57 156.21))
+    (stroke (width 0) (type default))
+    (uuid d0b3c447-1008-4e26-8dca-7dc2ff629565)
   )
   (wire (pts (xy 68.58 21.59) (xy 68.58 29.21))
     (stroke (width 0) (type default))
@@ -1561,7 +1582,7 @@
   )
 
   (symbol (lib_id "marbastlib-mx:MX_SW_HS") (at 92.71 153.67 0) (unit 1)
-    (in_bom yes) (on_board yes) (dnp no) (fields_autoplaced)
+    (exclude_from_sim no) (in_bom yes) (on_board yes) (dnp no) (fields_autoplaced)
     (uuid 001c13c6-95b2-4f9c-982c-dd143669f345)
     (property "Reference" "SW40" (at 92.71 147.32 0)
       (effects (font (size 1.27 1.27)))
@@ -1575,9 +1596,20 @@
     (property "Datasheet" "~" (at 92.71 153.67 0)
       (effects (font (size 1.27 1.27)) hide)
     )
+    (property "Description" "" (at 92.71 153.67 0)
+      (effects (font (size 1.27 1.27)) hide)
+    )
+    (property "Field-1" "" (at 92.71 153.67 0)
+      (effects (font (size 1.27 1.27)) hide)
+    )
     (pin "1" (uuid d6ead243-0586-45e4-aa5c-7f8f4aa7b2c1))
     (pin "2" (uuid ca289c99-6a3f-419e-9f32-9a63c216e6b9))
     (instances
+      (project "switch_matrix"
+        (path "/2e3181fe-ee3c-478d-8961-58256639dc5f"
+          (reference "SW40") (unit 1)
+        )
+      )
       (project "Koneko40Ortho"
         (path "/dea5f69c-d02e-47df-8e1a-a63949fabb21/0cbd56a0-84b2-4041-9681-83c3815281ca"
           (reference "SW40") (unit 1)
@@ -1587,7 +1619,7 @@
   )
 
   (symbol (lib_id "marbastlib-mx:MX_SW_HS") (at 154.94 68.58 0) (unit 1)
-    (in_bom yes) (on_board yes) (dnp no) (fields_autoplaced)
+    (exclude_from_sim no) (in_bom yes) (on_board yes) (dnp no) (fields_autoplaced)
     (uuid 02b3f425-137a-4586-9bdc-e4bb0402d408)
     (property "Reference" "SW19" (at 154.94 62.23 0)
       (effects (font (size 1.27 1.27)))
@@ -1601,9 +1633,20 @@
     (property "Datasheet" "~" (at 154.94 68.58 0)
       (effects (font (size 1.27 1.27)) hide)
     )
+    (property "Description" "" (at 154.94 68.58 0)
+      (effects (font (size 1.27 1.27)) hide)
+    )
+    (property "Field-1" "" (at 154.94 68.58 0)
+      (effects (font (size 1.27 1.27)) hide)
+    )
     (pin "1" (uuid cc41ffa5-d73f-4c24-9430-9edcaaf3922b))
     (pin "2" (uuid bc7d69d0-769f-448d-af09-d1b9fa423a30))
     (instances
+      (project "switch_matrix"
+        (path "/2e3181fe-ee3c-478d-8961-58256639dc5f"
+          (reference "SW19") (unit 1)
+        )
+      )
       (project "Koneko40Ortho"
         (path "/dea5f69c-d02e-47df-8e1a-a63949fabb21/0cbd56a0-84b2-4041-9681-83c3815281ca"
           (reference "SW19") (unit 1)
@@ -1613,7 +1656,7 @@
   )
 
   (symbol (lib_id "Device:D_Small") (at 157.48 73.66 90) (unit 1)
-    (in_bom yes) (on_board yes) (dnp no) (fields_autoplaced)
+    (exclude_from_sim no) (in_bom yes) (on_board yes) (dnp no) (fields_autoplaced)
     (uuid 083cfafe-ebc2-4551-98e2-6272e79e6a40)
     (property "Reference" "D19" (at 160.02 73.025 90)
       (effects (font (size 1.27 1.27)) (justify right))
@@ -1627,6 +1670,9 @@
     (property "Datasheet" "~" (at 157.48 73.66 90)
       (effects (font (size 1.27 1.27)) hide)
     )
+    (property "Description" "" (at 157.48 73.66 0)
+      (effects (font (size 1.27 1.27)) hide)
+    )
     (property "Sim.Device" "D" (at 157.48 73.66 0)
       (effects (font (size 1.27 1.27)) hide)
     )
@@ -1636,9 +1682,17 @@
     (property "LCSC" "C81598" (at 157.48 73.66 0)
       (effects (font (size 1.27 1.27)) hide)
     )
+    (property "Field-1" "" (at 157.48 73.66 0)
+      (effects (font (size 1.27 1.27)) hide)
+    )
     (pin "1" (uuid 19d3f278-beea-42a0-a4cd-c4448d945eba))
     (pin "2" (uuid 5f3780fb-c92d-4c61-97d0-b6028f4d9dd1))
     (instances
+      (project "switch_matrix"
+        (path "/2e3181fe-ee3c-478d-8961-58256639dc5f"
+          (reference "D19") (unit 1)
+        )
+      )
       (project "Koneko40Ortho"
         (path "/dea5f69c-d02e-47df-8e1a-a63949fabb21/0cbd56a0-84b2-4041-9681-83c3815281ca"
           (reference "D19") (unit 1)
@@ -1648,7 +1702,7 @@
   )
 
   (symbol (lib_id "PCM_marbastlib-various:ROT_SKYLOONG_HS-Switch") (at 257.81 -3.81 0) (unit 1)
-    (in_bom no) (on_board yes) (dnp no)
+    (exclude_from_sim no) (in_bom no) (on_board yes) (dnp no)
     (uuid 0c4c4724-b3b9-487a-9d2c-bc9c415e4994)
     (property "Reference" "SW53" (at 257.81 -13.97 0)
       (effects (font (size 1.27 1.27)))
@@ -1662,11 +1716,22 @@
     (property "Datasheet" "https://skyloong.vip/products/abs-hot-swappable-knobs-madule" (at 257.81 -3.81 0)
       (effects (font (size 1.27 1.27)) hide)
     )
+    (property "Description" "" (at 257.81 -3.81 0)
+      (effects (font (size 1.27 1.27)) hide)
+    )
+    (property "Field-1" "" (at 257.81 -3.81 0)
+      (effects (font (size 1.27 1.27)) hide)
+    )
     (pin "A" (uuid ad460a61-af05-4d25-919f-df5835fe59c4))
     (pin "B" (uuid c10a4999-c83e-4b86-8223-c8d63ea368d0))
     (pin "C" (uuid 678135ce-b6bf-411c-ba5b-bd8aa0614d85))
     (pin "S" (uuid d8759bf5-82df-4307-bf60-7085b71201be))
     (instances
+      (project "switch_matrix"
+        (path "/2e3181fe-ee3c-478d-8961-58256639dc5f"
+          (reference "SW53") (unit 1)
+        )
+      )
       (project "Koneko40Ortho"
         (path "/dea5f69c-d02e-47df-8e1a-a63949fabb21/0cbd56a0-84b2-4041-9681-83c3815281ca"
           (reference "SW53") (unit 1)
@@ -1676,7 +1741,7 @@
   )
 
   (symbol (lib_id "marbastlib-mx:MX_stab") (at 158.75 177.8 0) (unit 1)
-    (in_bom yes) (on_board yes) (dnp no) (fields_autoplaced)
+    (exclude_from_sim no) (in_bom yes) (on_board yes) (dnp no) (fields_autoplaced)
     (uuid 0d982fc7-af89-4a60-ac54-f8606328da29)
     (property "Reference" "S6" (at 165.1 177.038 0)
       (effects (font (size 1.27 1.27)) (justify left))
@@ -1690,7 +1755,18 @@
     (property "Datasheet" "" (at 158.75 177.8 0)
       (effects (font (size 1.27 1.27)) hide)
     )
+    (property "Description" "" (at 158.75 177.8 0)
+      (effects (font (size 1.27 1.27)) hide)
+    )
+    (property "Field-1" "" (at 158.75 177.8 0)
+      (effects (font (size 1.27 1.27)) hide)
+    )
     (instances
+      (project "switch_matrix"
+        (path "/2e3181fe-ee3c-478d-8961-58256639dc5f"
+          (reference "S6") (unit 1)
+        )
+      )
       (project "Koneko40Ortho"
         (path "/dea5f69c-d02e-47df-8e1a-a63949fabb21/0cbd56a0-84b2-4041-9681-83c3815281ca"
           (reference "S6") (unit 1)
@@ -1700,7 +1776,7 @@
   )
 
   (symbol (lib_id "marbastlib-mx:MX_SW_HS") (at 219.71 153.67 0) (unit 1)
-    (in_bom yes) (on_board yes) (dnp no) (fields_autoplaced)
+    (exclude_from_sim no) (in_bom yes) (on_board yes) (dnp no) (fields_autoplaced)
     (uuid 107426d4-87a6-4b77-807c-5decd7885d4e)
     (property "Reference" "SW46" (at 219.71 147.32 0)
       (effects (font (size 1.27 1.27)))
@@ -1714,9 +1790,20 @@
     (property "Datasheet" "~" (at 219.71 153.67 0)
       (effects (font (size 1.27 1.27)) hide)
     )
+    (property "Description" "" (at 219.71 153.67 0)
+      (effects (font (size 1.27 1.27)) hide)
+    )
+    (property "Field-1" "" (at 219.71 153.67 0)
+      (effects (font (size 1.27 1.27)) hide)
+    )
     (pin "1" (uuid 173ffb60-08c9-4c9d-8942-4b52b7efc8c3))
     (pin "2" (uuid c6a6e16b-a6cd-49c6-9066-cc252907a57e))
     (instances
+      (project "switch_matrix"
+        (path "/2e3181fe-ee3c-478d-8961-58256639dc5f"
+          (reference "SW46") (unit 1)
+        )
+      )
       (project "Koneko40Ortho"
         (path "/dea5f69c-d02e-47df-8e1a-a63949fabb21/0cbd56a0-84b2-4041-9681-83c3815281ca"
           (reference "SW46") (unit 1)
@@ -1726,7 +1813,7 @@
   )
 
   (symbol (lib_id "marbastlib-mx:MX_SW_HS") (at 198.12 31.75 0) (unit 1)
-    (in_bom yes) (on_board yes) (dnp no) (fields_autoplaced)
+    (exclude_from_sim no) (in_bom yes) (on_board yes) (dnp no) (fields_autoplaced)
     (uuid 13d848d9-27ee-487d-af6d-f7d8b4bb372d)
     (property "Reference" "SW9" (at 198.12 25.4 0)
       (effects (font (size 1.27 1.27)))
@@ -1740,9 +1827,20 @@
     (property "Datasheet" "~" (at 198.12 31.75 0)
       (effects (font (size 1.27 1.27)) hide)
     )
+    (property "Description" "" (at 198.12 31.75 0)
+      (effects (font (size 1.27 1.27)) hide)
+    )
+    (property "Field-1" "" (at 198.12 31.75 0)
+      (effects (font (size 1.27 1.27)) hide)
+    )
     (pin "1" (uuid 208349f3-83e0-41c9-87df-ca0e77de0930))
     (pin "2" (uuid afbdbead-f48f-4768-9410-6b7ea62e12ce))
     (instances
+      (project "switch_matrix"
+        (path "/2e3181fe-ee3c-478d-8961-58256639dc5f"
+          (reference "SW9") (unit 1)
+        )
+      )
       (project "Koneko40Ortho"
         (path "/dea5f69c-d02e-47df-8e1a-a63949fabb21/0cbd56a0-84b2-4041-9681-83c3815281ca"
           (reference "SW9") (unit 1)
@@ -1752,7 +1850,7 @@
   )
 
   (symbol (lib_id "Device:D_Small") (at 222.25 158.75 90) (unit 1)
-    (in_bom yes) (on_board yes) (dnp no) (fields_autoplaced)
+    (exclude_from_sim no) (in_bom yes) (on_board yes) (dnp no) (fields_autoplaced)
     (uuid 151a9841-77ce-41df-b45b-3f3df702b16d)
     (property "Reference" "D46" (at 224.79 158.115 90)
       (effects (font (size 1.27 1.27)) (justify right))
@@ -1766,6 +1864,9 @@
     (property "Datasheet" "~" (at 222.25 158.75 90)
       (effects (font (size 1.27 1.27)) hide)
     )
+    (property "Description" "" (at 222.25 158.75 0)
+      (effects (font (size 1.27 1.27)) hide)
+    )
     (property "Sim.Device" "D" (at 222.25 158.75 0)
       (effects (font (size 1.27 1.27)) hide)
     )
@@ -1775,9 +1876,17 @@
     (property "LCSC" "C81598" (at 222.25 158.75 0)
       (effects (font (size 1.27 1.27)) hide)
     )
+    (property "Field-1" "" (at 222.25 158.75 0)
+      (effects (font (size 1.27 1.27)) hide)
+    )
     (pin "1" (uuid 496464d5-dcd7-439a-ac0a-9f644c9f2aac))
     (pin "2" (uuid adf491e2-7c96-4997-b64d-8026c395372b))
     (instances
+      (project "switch_matrix"
+        (path "/2e3181fe-ee3c-478d-8961-58256639dc5f"
+          (reference "D46") (unit 1)
+        )
+      )
       (project "Koneko40Ortho"
         (path "/dea5f69c-d02e-47df-8e1a-a63949fabb21/0cbd56a0-84b2-4041-9681-83c3815281ca"
           (reference "D46") (unit 1)
@@ -1787,7 +1896,7 @@
   )
 
   (symbol (lib_id "marbastlib-mx:MX_SW_HS") (at 29.21 31.75 0) (unit 1)
-    (in_bom yes) (on_board yes) (dnp no) (fields_autoplaced)
+    (exclude_from_sim no) (in_bom yes) (on_board yes) (dnp no) (fields_autoplaced)
     (uuid 18459dca-f145-4f4d-b2c4-56733d39c900)
     (property "Reference" "SW1" (at 29.21 25.4 0)
       (effects (font (size 1.27 1.27)))
@@ -1801,9 +1910,20 @@
     (property "Datasheet" "~" (at 29.21 31.75 0)
       (effects (font (size 1.27 1.27)) hide)
     )
+    (property "Description" "" (at 29.21 31.75 0)
+      (effects (font (size 1.27 1.27)) hide)
+    )
+    (property "Field-1" "" (at 29.21 31.75 0)
+      (effects (font (size 1.27 1.27)) hide)
+    )
     (pin "1" (uuid 6dc47c0d-bf31-452c-9262-9515224d3adc))
     (pin "2" (uuid 27f4c5c1-cd65-418d-9ce4-5b25d19c5b73))
     (instances
+      (project "switch_matrix"
+        (path "/2e3181fe-ee3c-478d-8961-58256639dc5f"
+          (reference "SW1") (unit 1)
+        )
+      )
       (project "Koneko40Ortho"
         (path "/dea5f69c-d02e-47df-8e1a-a63949fabb21/0cbd56a0-84b2-4041-9681-83c3815281ca"
           (reference "SW1") (unit 1)
@@ -1813,7 +1933,7 @@
   )
 
   (symbol (lib_id "marbastlib-mx:MX_SW_HS") (at 29.21 102.87 0) (unit 1)
-    (in_bom yes) (on_board yes) (dnp no) (fields_autoplaced)
+    (exclude_from_sim no) (in_bom yes) (on_board yes) (dnp no) (fields_autoplaced)
     (uuid 1a1a3b68-7a65-40a1-835f-54fed77bce36)
     (property "Reference" "SW25" (at 29.21 96.52 0)
       (effects (font (size 1.27 1.27)))
@@ -1827,9 +1947,20 @@
     (property "Datasheet" "~" (at 29.21 102.87 0)
       (effects (font (size 1.27 1.27)) hide)
     )
+    (property "Description" "" (at 29.21 102.87 0)
+      (effects (font (size 1.27 1.27)) hide)
+    )
+    (property "Field-1" "" (at 29.21 102.87 0)
+      (effects (font (size 1.27 1.27)) hide)
+    )
     (pin "1" (uuid 45adb2ab-f8f6-4f60-bf2d-bb570e4d0830))
     (pin "2" (uuid a61ade7f-b279-4927-8fc1-cd617e2e0a32))
     (instances
+      (project "switch_matrix"
+        (path "/2e3181fe-ee3c-478d-8961-58256639dc5f"
+          (reference "SW25") (unit 1)
+        )
+      )
       (project "Koneko40Ortho"
         (path "/dea5f69c-d02e-47df-8e1a-a63949fabb21/0cbd56a0-84b2-4041-9681-83c3815281ca"
           (reference "SW25") (unit 1)
@@ -1839,7 +1970,7 @@
   )
 
   (symbol (lib_id "marbastlib-mx:MX_SW_HS") (at 92.71 68.58 0) (unit 1)
-    (in_bom yes) (on_board yes) (dnp no) (fields_autoplaced)
+    (exclude_from_sim no) (in_bom yes) (on_board yes) (dnp no) (fields_autoplaced)
     (uuid 1d74029a-1d01-4440-92fc-d6a1f7f33688)
     (property "Reference" "SW16" (at 92.71 62.23 0)
       (effects (font (size 1.27 1.27)))
@@ -1853,9 +1984,20 @@
     (property "Datasheet" "~" (at 92.71 68.58 0)
       (effects (font (size 1.27 1.27)) hide)
     )
+    (property "Description" "" (at 92.71 68.58 0)
+      (effects (font (size 1.27 1.27)) hide)
+    )
+    (property "Field-1" "" (at 92.71 68.58 0)
+      (effects (font (size 1.27 1.27)) hide)
+    )
     (pin "1" (uuid 07768b11-7da9-48a1-91d2-27b15bcbd976))
     (pin "2" (uuid 8e6c681f-06ac-42e7-9551-fd359bf653f3))
     (instances
+      (project "switch_matrix"
+        (path "/2e3181fe-ee3c-478d-8961-58256639dc5f"
+          (reference "SW16") (unit 1)
+        )
+      )
       (project "Koneko40Ortho"
         (path "/dea5f69c-d02e-47df-8e1a-a63949fabb21/0cbd56a0-84b2-4041-9681-83c3815281ca"
           (reference "SW16") (unit 1)
@@ -1865,7 +2007,7 @@
   )
 
   (symbol (lib_id "Device:R_Small_US") (at 269.24 -16.51 180) (unit 1)
-    (in_bom yes) (on_board yes) (dnp no) (fields_autoplaced)
+    (exclude_from_sim no) (in_bom yes) (on_board yes) (dnp no) (fields_autoplaced)
     (uuid 20c84ed4-a485-480d-b28a-542106abdbc2)
     (property "Reference" "R3" (at 273.05 -17.145 0)
       (effects (font (size 1.27 1.27)) (justify right))
@@ -1879,12 +2021,23 @@
     (property "Datasheet" "~" (at 269.24 -16.51 0)
       (effects (font (size 1.27 1.27)) hide)
     )
+    (property "Description" "" (at 269.24 -16.51 0)
+      (effects (font (size 1.27 1.27)) hide)
+    )
     (property "LCSC" "C106234" (at 269.24 -16.51 0)
+      (effects (font (size 1.27 1.27)) hide)
+    )
+    (property "Field-1" "" (at 269.24 -16.51 0)
       (effects (font (size 1.27 1.27)) hide)
     )
     (pin "1" (uuid 8a46f776-7862-4213-be01-4da536b7417a))
     (pin "2" (uuid a027baaa-ac56-47c7-a477-28086416b00b))
     (instances
+      (project "switch_matrix"
+        (path "/2e3181fe-ee3c-478d-8961-58256639dc5f"
+          (reference "R3") (unit 1)
+        )
+      )
       (project "Koneko40Ortho"
         (path "/dea5f69c-d02e-47df-8e1a-a63949fabb21"
           (reference "R3") (unit 1)
@@ -1897,7 +2050,7 @@
   )
 
   (symbol (lib_id "marbastlib-mx:MX_SW_HS") (at 198.12 153.67 0) (unit 1)
-    (in_bom yes) (on_board yes) (dnp no) (fields_autoplaced)
+    (exclude_from_sim no) (in_bom yes) (on_board yes) (dnp no) (fields_autoplaced)
     (uuid 214b49e4-622a-4417-9611-4dde38e134cd)
     (property "Reference" "SW45" (at 198.12 147.32 0)
       (effects (font (size 1.27 1.27)))
@@ -1911,9 +2064,20 @@
     (property "Datasheet" "~" (at 198.12 153.67 0)
       (effects (font (size 1.27 1.27)) hide)
     )
+    (property "Description" "" (at 198.12 153.67 0)
+      (effects (font (size 1.27 1.27)) hide)
+    )
+    (property "Field-1" "" (at 198.12 153.67 0)
+      (effects (font (size 1.27 1.27)) hide)
+    )
     (pin "1" (uuid 3b2a641d-dded-4e31-a75e-6c6d6597ffbc))
     (pin "2" (uuid 07ab8f9a-5ccd-43be-a0c8-88d0df27f2d5))
     (instances
+      (project "switch_matrix"
+        (path "/2e3181fe-ee3c-478d-8961-58256639dc5f"
+          (reference "SW45") (unit 1)
+        )
+      )
       (project "Koneko40Ortho"
         (path "/dea5f69c-d02e-47df-8e1a-a63949fabb21/0cbd56a0-84b2-4041-9681-83c3815281ca"
           (reference "SW45") (unit 1)
@@ -1923,7 +2087,7 @@
   )
 
   (symbol (lib_id "Device:D_Small") (at 115.57 36.83 90) (unit 1)
-    (in_bom yes) (on_board yes) (dnp no) (fields_autoplaced)
+    (exclude_from_sim no) (in_bom yes) (on_board yes) (dnp no) (fields_autoplaced)
     (uuid 26814b45-d950-4b9e-a3ef-54de3d4e4904)
     (property "Reference" "D5" (at 118.11 36.195 90)
       (effects (font (size 1.27 1.27)) (justify right))
@@ -1937,6 +2101,9 @@
     (property "Datasheet" "~" (at 115.57 36.83 90)
       (effects (font (size 1.27 1.27)) hide)
     )
+    (property "Description" "" (at 115.57 36.83 0)
+      (effects (font (size 1.27 1.27)) hide)
+    )
     (property "Sim.Device" "D" (at 115.57 36.83 0)
       (effects (font (size 1.27 1.27)) hide)
     )
@@ -1946,9 +2113,17 @@
     (property "LCSC" "C81598" (at 115.57 36.83 0)
       (effects (font (size 1.27 1.27)) hide)
     )
+    (property "Field-1" "" (at 115.57 36.83 0)
+      (effects (font (size 1.27 1.27)) hide)
+    )
     (pin "1" (uuid 62ec21d5-679a-42bc-8e10-b54dd5b1f0e7))
     (pin "2" (uuid 37367d7a-215a-4c22-b1ed-8efad73b236c))
     (instances
+      (project "switch_matrix"
+        (path "/2e3181fe-ee3c-478d-8961-58256639dc5f"
+          (reference "D5") (unit 1)
+        )
+      )
       (project "Koneko40Ortho"
         (path "/dea5f69c-d02e-47df-8e1a-a63949fabb21/0cbd56a0-84b2-4041-9681-83c3815281ca"
           (reference "D5") (unit 1)
@@ -1958,7 +2133,7 @@
   )
 
   (symbol (lib_id "Device:D_Small") (at 179.07 107.95 90) (unit 1)
-    (in_bom yes) (on_board yes) (dnp no) (fields_autoplaced)
+    (exclude_from_sim no) (in_bom yes) (on_board yes) (dnp no) (fields_autoplaced)
     (uuid 2850e7a8-a286-43ce-8af4-4182544bf877)
     (property "Reference" "D32" (at 181.61 107.315 90)
       (effects (font (size 1.27 1.27)) (justify right))
@@ -1972,6 +2147,9 @@
     (property "Datasheet" "~" (at 179.07 107.95 90)
       (effects (font (size 1.27 1.27)) hide)
     )
+    (property "Description" "" (at 179.07 107.95 0)
+      (effects (font (size 1.27 1.27)) hide)
+    )
     (property "Sim.Device" "D" (at 179.07 107.95 0)
       (effects (font (size 1.27 1.27)) hide)
     )
@@ -1981,9 +2159,17 @@
     (property "LCSC" "C81598" (at 179.07 107.95 0)
       (effects (font (size 1.27 1.27)) hide)
     )
+    (property "Field-1" "" (at 179.07 107.95 0)
+      (effects (font (size 1.27 1.27)) hide)
+    )
     (pin "1" (uuid 83b14899-33e5-4fab-b3a9-9dcab30247f7))
     (pin "2" (uuid d2c78660-7a4f-41cc-ad6e-4bfb8d6dbc78))
     (instances
+      (project "switch_matrix"
+        (path "/2e3181fe-ee3c-478d-8961-58256639dc5f"
+          (reference "D32") (unit 1)
+        )
+      )
       (project "Koneko40Ortho"
         (path "/dea5f69c-d02e-47df-8e1a-a63949fabb21/0cbd56a0-84b2-4041-9681-83c3815281ca"
           (reference "D32") (unit 1)
@@ -1993,7 +2179,7 @@
   )
 
   (symbol (lib_id "Device:D_Small") (at 222.25 36.83 90) (unit 1)
-    (in_bom yes) (on_board yes) (dnp no) (fields_autoplaced)
+    (exclude_from_sim no) (in_bom yes) (on_board yes) (dnp no) (fields_autoplaced)
     (uuid 28bdffca-221b-4a46-ba93-f0740394f39c)
     (property "Reference" "D10" (at 224.79 36.195 90)
       (effects (font (size 1.27 1.27)) (justify right))
@@ -2007,6 +2193,9 @@
     (property "Datasheet" "~" (at 222.25 36.83 90)
       (effects (font (size 1.27 1.27)) hide)
     )
+    (property "Description" "" (at 222.25 36.83 0)
+      (effects (font (size 1.27 1.27)) hide)
+    )
     (property "Sim.Device" "D" (at 222.25 36.83 0)
       (effects (font (size 1.27 1.27)) hide)
     )
@@ -2016,9 +2205,17 @@
     (property "LCSC" "C81598" (at 222.25 36.83 0)
       (effects (font (size 1.27 1.27)) hide)
     )
+    (property "Field-1" "" (at 222.25 36.83 0)
+      (effects (font (size 1.27 1.27)) hide)
+    )
     (pin "1" (uuid 7df32b39-94ca-4340-a51f-6874e90982d5))
     (pin "2" (uuid e7216602-b4be-41b6-90d8-4ab486485189))
     (instances
+      (project "switch_matrix"
+        (path "/2e3181fe-ee3c-478d-8961-58256639dc5f"
+          (reference "D10") (unit 1)
+        )
+      )
       (project "Koneko40Ortho"
         (path "/dea5f69c-d02e-47df-8e1a-a63949fabb21/0cbd56a0-84b2-4041-9681-83c3815281ca"
           (reference "D10") (unit 1)
@@ -2028,7 +2225,7 @@
   )
 
   (symbol (lib_id "marbastlib-mx:MX_SW_HS") (at 113.03 142.24 0) (unit 1)
-    (in_bom yes) (on_board yes) (dnp no) (fields_autoplaced)
+    (exclude_from_sim no) (in_bom yes) (on_board yes) (dnp no) (fields_autoplaced)
     (uuid 2a67e624-5f4b-4ac2-a3c8-ccc713224ba1)
     (property "Reference" "SW49" (at 113.03 135.89 0)
       (effects (font (size 1.27 1.27)))
@@ -2042,9 +2239,20 @@
     (property "Datasheet" "~" (at 113.03 142.24 0)
       (effects (font (size 1.27 1.27)) hide)
     )
+    (property "Description" "" (at 113.03 142.24 0)
+      (effects (font (size 1.27 1.27)) hide)
+    )
+    (property "Field-1" "" (at 113.03 142.24 0)
+      (effects (font (size 1.27 1.27)) hide)
+    )
     (pin "1" (uuid 8908d5e6-ec7e-4b2d-9dcd-84dc0607bf77))
     (pin "2" (uuid 011b4b9b-fe21-4e37-a0ab-7cb366f10018))
     (instances
+      (project "switch_matrix"
+        (path "/2e3181fe-ee3c-478d-8961-58256639dc5f"
+          (reference "SW49") (unit 1)
+        )
+      )
       (project "Koneko40Ortho"
         (path "/dea5f69c-d02e-47df-8e1a-a63949fabb21/0cbd56a0-84b2-4041-9681-83c3815281ca"
           (reference "SW49") (unit 1)
@@ -2054,7 +2262,7 @@
   )
 
   (symbol (lib_id "Device:D_Small") (at 264.16 158.75 90) (unit 1)
-    (in_bom yes) (on_board yes) (dnp no) (fields_autoplaced)
+    (exclude_from_sim no) (in_bom yes) (on_board yes) (dnp no) (fields_autoplaced)
     (uuid 2e183ec5-e98f-4d2c-a588-ca0137997e2b)
     (property "Reference" "D48" (at 266.7 158.115 90)
       (effects (font (size 1.27 1.27)) (justify right))
@@ -2068,6 +2276,9 @@
     (property "Datasheet" "~" (at 264.16 158.75 90)
       (effects (font (size 1.27 1.27)) hide)
     )
+    (property "Description" "" (at 264.16 158.75 0)
+      (effects (font (size 1.27 1.27)) hide)
+    )
     (property "Sim.Device" "D" (at 264.16 158.75 0)
       (effects (font (size 1.27 1.27)) hide)
     )
@@ -2077,9 +2288,17 @@
     (property "LCSC" "C81598" (at 264.16 158.75 0)
       (effects (font (size 1.27 1.27)) hide)
     )
+    (property "Field-1" "" (at 264.16 158.75 0)
+      (effects (font (size 1.27 1.27)) hide)
+    )
     (pin "1" (uuid 76ed1e82-5a17-47e4-803f-735dfe8f912b))
     (pin "2" (uuid 9a07a654-81dd-4c3b-a5b3-80a32a7db122))
     (instances
+      (project "switch_matrix"
+        (path "/2e3181fe-ee3c-478d-8961-58256639dc5f"
+          (reference "D48") (unit 1)
+        )
+      )
       (project "Koneko40Ortho"
         (path "/dea5f69c-d02e-47df-8e1a-a63949fabb21/0cbd56a0-84b2-4041-9681-83c3815281ca"
           (reference "D48") (unit 1)
@@ -2089,7 +2308,7 @@
   )
 
   (symbol (lib_id "Device:D_Small") (at 200.66 107.95 90) (unit 1)
-    (in_bom yes) (on_board yes) (dnp no) (fields_autoplaced)
+    (exclude_from_sim no) (in_bom yes) (on_board yes) (dnp no) (fields_autoplaced)
     (uuid 2f3cfa95-2342-49a0-bdd7-879e9dfc66bb)
     (property "Reference" "D33" (at 203.2 107.315 90)
       (effects (font (size 1.27 1.27)) (justify right))
@@ -2103,6 +2322,9 @@
     (property "Datasheet" "~" (at 200.66 107.95 90)
       (effects (font (size 1.27 1.27)) hide)
     )
+    (property "Description" "" (at 200.66 107.95 0)
+      (effects (font (size 1.27 1.27)) hide)
+    )
     (property "Sim.Device" "D" (at 200.66 107.95 0)
       (effects (font (size 1.27 1.27)) hide)
     )
@@ -2112,9 +2334,17 @@
     (property "LCSC" "C81598" (at 200.66 107.95 0)
       (effects (font (size 1.27 1.27)) hide)
     )
+    (property "Field-1" "" (at 200.66 107.95 0)
+      (effects (font (size 1.27 1.27)) hide)
+    )
     (pin "1" (uuid f9de375b-9f0e-46be-9d12-56abb7812b05))
     (pin "2" (uuid 64affeb9-f699-47f7-802c-7f01ffcdf9a2))
     (instances
+      (project "switch_matrix"
+        (path "/2e3181fe-ee3c-478d-8961-58256639dc5f"
+          (reference "D33") (unit 1)
+        )
+      )
       (project "Koneko40Ortho"
         (path "/dea5f69c-d02e-47df-8e1a-a63949fabb21/0cbd56a0-84b2-4041-9681-83c3815281ca"
           (reference "D33") (unit 1)
@@ -2124,7 +2354,7 @@
   )
 
   (symbol (lib_id "marbastlib-mx:MX_SW_HS") (at 50.8 102.87 0) (unit 1)
-    (in_bom yes) (on_board yes) (dnp no) (fields_autoplaced)
+    (exclude_from_sim no) (in_bom yes) (on_board yes) (dnp no) (fields_autoplaced)
     (uuid 30bb1ee9-068b-480a-8b95-6d608c843eab)
     (property "Reference" "SW26" (at 50.8 96.52 0)
       (effects (font (size 1.27 1.27)))
@@ -2138,9 +2368,20 @@
     (property "Datasheet" "~" (at 50.8 102.87 0)
       (effects (font (size 1.27 1.27)) hide)
     )
+    (property "Description" "" (at 50.8 102.87 0)
+      (effects (font (size 1.27 1.27)) hide)
+    )
+    (property "Field-1" "" (at 50.8 102.87 0)
+      (effects (font (size 1.27 1.27)) hide)
+    )
     (pin "1" (uuid 2d3c63b7-0b48-4fa6-9aba-f087b310020a))
     (pin "2" (uuid d8e58533-1343-488e-b53e-76ac3eb6d8e3))
     (instances
+      (project "switch_matrix"
+        (path "/2e3181fe-ee3c-478d-8961-58256639dc5f"
+          (reference "SW26") (unit 1)
+        )
+      )
       (project "Koneko40Ortho"
         (path "/dea5f69c-d02e-47df-8e1a-a63949fabb21/0cbd56a0-84b2-4041-9681-83c3815281ca"
           (reference "SW26") (unit 1)
@@ -2150,7 +2391,7 @@
   )
 
   (symbol (lib_id "marbastlib-mx:MX_SW_HS") (at 50.8 153.67 0) (unit 1)
-    (in_bom yes) (on_board yes) (dnp no) (fields_autoplaced)
+    (exclude_from_sim no) (in_bom yes) (on_board yes) (dnp no) (fields_autoplaced)
     (uuid 324a06b8-e447-4df6-a6e0-e583a5c26e1f)
     (property "Reference" "SW38" (at 50.8 147.32 0)
       (effects (font (size 1.27 1.27)))
@@ -2164,9 +2405,20 @@
     (property "Datasheet" "~" (at 50.8 153.67 0)
       (effects (font (size 1.27 1.27)) hide)
     )
+    (property "Description" "" (at 50.8 153.67 0)
+      (effects (font (size 1.27 1.27)) hide)
+    )
+    (property "Field-1" "" (at 50.8 153.67 0)
+      (effects (font (size 1.27 1.27)) hide)
+    )
     (pin "1" (uuid 18a7af49-da7f-49ce-8167-e4a69d602f64))
     (pin "2" (uuid 60876803-8e37-463a-a9e7-550869296fd2))
     (instances
+      (project "switch_matrix"
+        (path "/2e3181fe-ee3c-478d-8961-58256639dc5f"
+          (reference "SW38") (unit 1)
+        )
+      )
       (project "Koneko40Ortho"
         (path "/dea5f69c-d02e-47df-8e1a-a63949fabb21/0cbd56a0-84b2-4041-9681-83c3815281ca"
           (reference "SW38") (unit 1)
@@ -2176,7 +2428,7 @@
   )
 
   (symbol (lib_id "Device:D_Small") (at 53.34 107.95 90) (unit 1)
-    (in_bom yes) (on_board yes) (dnp no) (fields_autoplaced)
+    (exclude_from_sim no) (in_bom yes) (on_board yes) (dnp no) (fields_autoplaced)
     (uuid 34b340f6-2652-46a1-adaa-518e9acaee74)
     (property "Reference" "D26" (at 55.88 107.315 90)
       (effects (font (size 1.27 1.27)) (justify right))
@@ -2190,6 +2442,9 @@
     (property "Datasheet" "~" (at 53.34 107.95 90)
       (effects (font (size 1.27 1.27)) hide)
     )
+    (property "Description" "" (at 53.34 107.95 0)
+      (effects (font (size 1.27 1.27)) hide)
+    )
     (property "Sim.Device" "D" (at 53.34 107.95 0)
       (effects (font (size 1.27 1.27)) hide)
     )
@@ -2199,9 +2454,17 @@
     (property "LCSC" "C81598" (at 53.34 107.95 0)
       (effects (font (size 1.27 1.27)) hide)
     )
+    (property "Field-1" "" (at 53.34 107.95 0)
+      (effects (font (size 1.27 1.27)) hide)
+    )
     (pin "1" (uuid cd57bbd5-09fe-4a33-ab78-3efcee0e938a))
     (pin "2" (uuid 30edd4b0-7959-4dfb-8396-42e6df26f176))
     (instances
+      (project "switch_matrix"
+        (path "/2e3181fe-ee3c-478d-8961-58256639dc5f"
+          (reference "D26") (unit 1)
+        )
+      )
       (project "Koneko40Ortho"
         (path "/dea5f69c-d02e-47df-8e1a-a63949fabb21/0cbd56a0-84b2-4041-9681-83c3815281ca"
           (reference "D26") (unit 1)
@@ -2211,7 +2474,7 @@
   )
 
   (symbol (lib_id "marbastlib-mx:MX_SW_HS") (at 261.62 153.67 0) (unit 1)
-    (in_bom yes) (on_board yes) (dnp no) (fields_autoplaced)
+    (exclude_from_sim no) (in_bom yes) (on_board yes) (dnp no) (fields_autoplaced)
     (uuid 3818eef8-d38c-4569-abb1-f5a3c6e64e11)
     (property "Reference" "SW48" (at 261.62 147.32 0)
       (effects (font (size 1.27 1.27)))
@@ -2225,9 +2488,20 @@
     (property "Datasheet" "~" (at 261.62 153.67 0)
       (effects (font (size 1.27 1.27)) hide)
     )
+    (property "Description" "" (at 261.62 153.67 0)
+      (effects (font (size 1.27 1.27)) hide)
+    )
+    (property "Field-1" "" (at 261.62 153.67 0)
+      (effects (font (size 1.27 1.27)) hide)
+    )
     (pin "1" (uuid 77d34602-99ae-4a90-8dd9-3258c1417047))
     (pin "2" (uuid 802fc1c3-c3e4-4c42-8ab0-70671e4acb04))
     (instances
+      (project "switch_matrix"
+        (path "/2e3181fe-ee3c-478d-8961-58256639dc5f"
+          (reference "SW48") (unit 1)
+        )
+      )
       (project "Koneko40Ortho"
         (path "/dea5f69c-d02e-47df-8e1a-a63949fabb21/0cbd56a0-84b2-4041-9681-83c3815281ca"
           (reference "SW48") (unit 1)
@@ -2237,7 +2511,7 @@
   )
 
   (symbol (lib_id "marbastlib-mx:MX_SW_HS") (at 71.12 153.67 0) (unit 1)
-    (in_bom yes) (on_board yes) (dnp no) (fields_autoplaced)
+    (exclude_from_sim no) (in_bom yes) (on_board yes) (dnp no) (fields_autoplaced)
     (uuid 3d558665-4811-4815-946c-bc48f05698e1)
     (property "Reference" "SW39" (at 71.12 147.32 0)
       (effects (font (size 1.27 1.27)))
@@ -2251,9 +2525,20 @@
     (property "Datasheet" "~" (at 71.12 153.67 0)
       (effects (font (size 1.27 1.27)) hide)
     )
+    (property "Description" "" (at 71.12 153.67 0)
+      (effects (font (size 1.27 1.27)) hide)
+    )
+    (property "Field-1" "" (at 71.12 153.67 0)
+      (effects (font (size 1.27 1.27)) hide)
+    )
     (pin "1" (uuid ebc6944e-552e-4753-a149-ac963e6135c9))
     (pin "2" (uuid 8b0f70b7-d834-4fdf-a8a2-4d3b2573b1bc))
     (instances
+      (project "switch_matrix"
+        (path "/2e3181fe-ee3c-478d-8961-58256639dc5f"
+          (reference "SW39") (unit 1)
+        )
+      )
       (project "Koneko40Ortho"
         (path "/dea5f69c-d02e-47df-8e1a-a63949fabb21/0cbd56a0-84b2-4041-9681-83c3815281ca"
           (reference "SW39") (unit 1)
@@ -2263,7 +2548,7 @@
   )
 
   (symbol (lib_id "Device:D_Small") (at 115.57 107.95 90) (unit 1)
-    (in_bom yes) (on_board yes) (dnp no) (fields_autoplaced)
+    (exclude_from_sim no) (in_bom yes) (on_board yes) (dnp no) (fields_autoplaced)
     (uuid 3e3aa763-63f9-41e6-9cf2-5c3c3482127b)
     (property "Reference" "D29" (at 118.11 107.315 90)
       (effects (font (size 1.27 1.27)) (justify right))
@@ -2277,6 +2562,9 @@
     (property "Datasheet" "~" (at 115.57 107.95 90)
       (effects (font (size 1.27 1.27)) hide)
     )
+    (property "Description" "" (at 115.57 107.95 0)
+      (effects (font (size 1.27 1.27)) hide)
+    )
     (property "Sim.Device" "D" (at 115.57 107.95 0)
       (effects (font (size 1.27 1.27)) hide)
     )
@@ -2286,9 +2574,17 @@
     (property "LCSC" "C81598" (at 115.57 107.95 0)
       (effects (font (size 1.27 1.27)) hide)
     )
+    (property "Field-1" "" (at 115.57 107.95 0)
+      (effects (font (size 1.27 1.27)) hide)
+    )
     (pin "1" (uuid ad4bb2f7-00eb-4eb0-b7ba-5d5c820d1fe8))
     (pin "2" (uuid a6e0c223-8800-49ce-b6a9-f92d6f8b4aae))
     (instances
+      (project "switch_matrix"
+        (path "/2e3181fe-ee3c-478d-8961-58256639dc5f"
+          (reference "D29") (unit 1)
+        )
+      )
       (project "Koneko40Ortho"
         (path "/dea5f69c-d02e-47df-8e1a-a63949fabb21/0cbd56a0-84b2-4041-9681-83c3815281ca"
           (reference "D29") (unit 1)
@@ -2298,7 +2594,7 @@
   )
 
   (symbol (lib_id "Device:D_Small") (at 73.66 158.75 90) (unit 1)
-    (in_bom yes) (on_board yes) (dnp no) (fields_autoplaced)
+    (exclude_from_sim no) (in_bom yes) (on_board yes) (dnp no) (fields_autoplaced)
     (uuid 4440ec84-8a44-4d20-8439-49ca4787c61c)
     (property "Reference" "D39" (at 76.2 158.115 90)
       (effects (font (size 1.27 1.27)) (justify right))
@@ -2312,6 +2608,9 @@
     (property "Datasheet" "~" (at 73.66 158.75 90)
       (effects (font (size 1.27 1.27)) hide)
     )
+    (property "Description" "" (at 73.66 158.75 0)
+      (effects (font (size 1.27 1.27)) hide)
+    )
     (property "Sim.Device" "D" (at 73.66 158.75 0)
       (effects (font (size 1.27 1.27)) hide)
     )
@@ -2321,9 +2620,17 @@
     (property "LCSC" "C81598" (at 73.66 158.75 0)
       (effects (font (size 1.27 1.27)) hide)
     )
+    (property "Field-1" "" (at 73.66 158.75 0)
+      (effects (font (size 1.27 1.27)) hide)
+    )
     (pin "1" (uuid bcdc122b-d7d2-4a5b-905a-66644aae9933))
     (pin "2" (uuid c62dc679-8366-4d48-aa5e-5499fae3f5ab))
     (instances
+      (project "switch_matrix"
+        (path "/2e3181fe-ee3c-478d-8961-58256639dc5f"
+          (reference "D39") (unit 1)
+        )
+      )
       (project "Koneko40Ortho"
         (path "/dea5f69c-d02e-47df-8e1a-a63949fabb21/0cbd56a0-84b2-4041-9681-83c3815281ca"
           (reference "D39") (unit 1)
@@ -2333,7 +2640,7 @@
   )
 
   (symbol (lib_id "Device:D_Small") (at 31.75 107.95 90) (unit 1)
-    (in_bom yes) (on_board yes) (dnp no) (fields_autoplaced)
+    (exclude_from_sim no) (in_bom yes) (on_board yes) (dnp no) (fields_autoplaced)
     (uuid 46652632-072e-4674-80f7-f8423968e6e5)
     (property "Reference" "D25" (at 34.29 107.315 90)
       (effects (font (size 1.27 1.27)) (justify right))
@@ -2347,6 +2654,9 @@
     (property "Datasheet" "~" (at 31.75 107.95 90)
       (effects (font (size 1.27 1.27)) hide)
     )
+    (property "Description" "" (at 31.75 107.95 0)
+      (effects (font (size 1.27 1.27)) hide)
+    )
     (property "Sim.Device" "D" (at 31.75 107.95 0)
       (effects (font (size 1.27 1.27)) hide)
     )
@@ -2356,9 +2666,17 @@
     (property "LCSC" "C81598" (at 31.75 107.95 0)
       (effects (font (size 1.27 1.27)) hide)
     )
+    (property "Field-1" "" (at 31.75 107.95 0)
+      (effects (font (size 1.27 1.27)) hide)
+    )
     (pin "1" (uuid a42862ba-7e05-485f-a080-b8554185e296))
     (pin "2" (uuid 472f2130-0cab-42e8-aa8e-283bc9ab1a91))
     (instances
+      (project "switch_matrix"
+        (path "/2e3181fe-ee3c-478d-8961-58256639dc5f"
+          (reference "D25") (unit 1)
+        )
+      )
       (project "Koneko40Ortho"
         (path "/dea5f69c-d02e-47df-8e1a-a63949fabb21/0cbd56a0-84b2-4041-9681-83c3815281ca"
           (reference "D25") (unit 1)
@@ -2368,7 +2686,7 @@
   )
 
   (symbol (lib_id "marbastlib-mx:MX_stab") (at 115.57 168.91 0) (unit 1)
-    (in_bom yes) (on_board yes) (dnp no) (fields_autoplaced)
+    (exclude_from_sim no) (in_bom yes) (on_board yes) (dnp no) (fields_autoplaced)
     (uuid 4c6dd59e-6a9b-4bf3-8b2a-30882934fed9)
     (property "Reference" "S5" (at 121.92 168.148 0)
       (effects (font (size 1.27 1.27)) (justify left))
@@ -2382,7 +2700,18 @@
     (property "Datasheet" "" (at 115.57 168.91 0)
       (effects (font (size 1.27 1.27)) hide)
     )
+    (property "Description" "" (at 115.57 168.91 0)
+      (effects (font (size 1.27 1.27)) hide)
+    )
+    (property "Field-1" "" (at 115.57 168.91 0)
+      (effects (font (size 1.27 1.27)) hide)
+    )
     (instances
+      (project "switch_matrix"
+        (path "/2e3181fe-ee3c-478d-8961-58256639dc5f"
+          (reference "S5") (unit 1)
+        )
+      )
       (project "Koneko40Ortho"
         (path "/dea5f69c-d02e-47df-8e1a-a63949fabb21/0cbd56a0-84b2-4041-9681-83c3815281ca"
           (reference "S5") (unit 1)
@@ -2392,7 +2721,7 @@
   )
 
   (symbol (lib_id "Device:D_Small") (at 200.66 36.83 90) (unit 1)
-    (in_bom yes) (on_board yes) (dnp no) (fields_autoplaced)
+    (exclude_from_sim no) (in_bom yes) (on_board yes) (dnp no) (fields_autoplaced)
     (uuid 515bcd58-432c-4e62-a97d-70fbc3fc804c)
     (property "Reference" "D9" (at 203.2 36.195 90)
       (effects (font (size 1.27 1.27)) (justify right))
@@ -2406,6 +2735,9 @@
     (property "Datasheet" "~" (at 200.66 36.83 90)
       (effects (font (size 1.27 1.27)) hide)
     )
+    (property "Description" "" (at 200.66 36.83 0)
+      (effects (font (size 1.27 1.27)) hide)
+    )
     (property "Sim.Device" "D" (at 200.66 36.83 0)
       (effects (font (size 1.27 1.27)) hide)
     )
@@ -2415,9 +2747,17 @@
     (property "LCSC" "C81598" (at 200.66 36.83 0)
       (effects (font (size 1.27 1.27)) hide)
     )
+    (property "Field-1" "" (at 200.66 36.83 0)
+      (effects (font (size 1.27 1.27)) hide)
+    )
     (pin "1" (uuid 4ca20f8a-7a5a-418a-928d-fe950f07fd9c))
     (pin "2" (uuid a00d0251-1aee-4a82-9551-70d630a39973))
     (instances
+      (project "switch_matrix"
+        (path "/2e3181fe-ee3c-478d-8961-58256639dc5f"
+          (reference "D9") (unit 1)
+        )
+      )
       (project "Koneko40Ortho"
         (path "/dea5f69c-d02e-47df-8e1a-a63949fabb21/0cbd56a0-84b2-4041-9681-83c3815281ca"
           (reference "D9") (unit 1)
@@ -2427,7 +2767,7 @@
   )
 
   (symbol (lib_id "Device:D_Small") (at 179.07 158.75 90) (unit 1)
-    (in_bom yes) (on_board yes) (dnp no) (fields_autoplaced)
+    (exclude_from_sim no) (in_bom yes) (on_board yes) (dnp no) (fields_autoplaced)
     (uuid 54f5d067-e844-4f3f-a17e-61846a38b61a)
     (property "Reference" "D44" (at 181.61 158.115 90)
       (effects (font (size 1.27 1.27)) (justify right))
@@ -2441,6 +2781,9 @@
     (property "Datasheet" "~" (at 179.07 158.75 90)
       (effects (font (size 1.27 1.27)) hide)
     )
+    (property "Description" "" (at 179.07 158.75 0)
+      (effects (font (size 1.27 1.27)) hide)
+    )
     (property "Sim.Device" "D" (at 179.07 158.75 0)
       (effects (font (size 1.27 1.27)) hide)
     )
@@ -2450,9 +2793,17 @@
     (property "LCSC" "C81598" (at 179.07 158.75 0)
       (effects (font (size 1.27 1.27)) hide)
     )
+    (property "Field-1" "" (at 179.07 158.75 0)
+      (effects (font (size 1.27 1.27)) hide)
+    )
     (pin "1" (uuid cc2b5e18-f806-45ab-8aa7-6d3e63d476ea))
     (pin "2" (uuid 09408802-4f72-4342-9b5e-4a4863153df3))
     (instances
+      (project "switch_matrix"
+        (path "/2e3181fe-ee3c-478d-8961-58256639dc5f"
+          (reference "D44") (unit 1)
+        )
+      )
       (project "Koneko40Ortho"
         (path "/dea5f69c-d02e-47df-8e1a-a63949fabb21/0cbd56a0-84b2-4041-9681-83c3815281ca"
           (reference "D44") (unit 1)
@@ -2462,7 +2813,7 @@
   )
 
   (symbol (lib_id "power:+3.3V") (at 27.94 -16.51 0) (unit 1)
-    (in_bom yes) (on_board yes) (dnp no) (fields_autoplaced)
+    (exclude_from_sim no) (in_bom yes) (on_board yes) (dnp no) (fields_autoplaced)
     (uuid 5787cda5-aefc-4ef9-9015-151c8cce2e1b)
     (property "Reference" "#PWR027" (at 27.94 -12.7 0)
       (effects (font (size 1.27 1.27)) hide)
@@ -2476,8 +2827,16 @@
     (property "Datasheet" "" (at 27.94 -16.51 0)
       (effects (font (size 1.27 1.27)) hide)
     )
+    (property "Description" "" (at 27.94 -16.51 0)
+      (effects (font (size 1.27 1.27)) hide)
+    )
     (pin "1" (uuid a6fe5cf5-a901-4ebc-b481-77a6cb7ab671))
     (instances
+      (project "switch_matrix"
+        (path "/2e3181fe-ee3c-478d-8961-58256639dc5f"
+          (reference "#PWR027") (unit 1)
+        )
+      )
       (project "Koneko40Ortho"
         (path "/dea5f69c-d02e-47df-8e1a-a63949fabb21/0cbd56a0-84b2-4041-9681-83c3815281ca"
           (reference "#PWR027") (unit 1)
@@ -2487,7 +2846,7 @@
   )
 
   (symbol (lib_id "Device:D_Small") (at 137.16 73.66 90) (unit 1)
-    (in_bom yes) (on_board yes) (dnp no) (fields_autoplaced)
+    (exclude_from_sim no) (in_bom yes) (on_board yes) (dnp no) (fields_autoplaced)
     (uuid 599b6349-40b1-450a-ad95-722710f23aa6)
     (property "Reference" "D18" (at 139.7 73.025 90)
       (effects (font (size 1.27 1.27)) (justify right))
@@ -2501,6 +2860,9 @@
     (property "Datasheet" "~" (at 137.16 73.66 90)
       (effects (font (size 1.27 1.27)) hide)
     )
+    (property "Description" "" (at 137.16 73.66 0)
+      (effects (font (size 1.27 1.27)) hide)
+    )
     (property "Sim.Device" "D" (at 137.16 73.66 0)
       (effects (font (size 1.27 1.27)) hide)
     )
@@ -2510,9 +2872,17 @@
     (property "LCSC" "C81598" (at 137.16 73.66 0)
       (effects (font (size 1.27 1.27)) hide)
     )
+    (property "Field-1" "" (at 137.16 73.66 0)
+      (effects (font (size 1.27 1.27)) hide)
+    )
     (pin "1" (uuid 4f1021cd-08d0-4b19-90b3-d6b3bcb5dc11))
     (pin "2" (uuid 10bf6c39-a19d-49a9-9a59-ba089d5359af))
     (instances
+      (project "switch_matrix"
+        (path "/2e3181fe-ee3c-478d-8961-58256639dc5f"
+          (reference "D18") (unit 1)
+        )
+      )
       (project "Koneko40Ortho"
         (path "/dea5f69c-d02e-47df-8e1a-a63949fabb21/0cbd56a0-84b2-4041-9681-83c3815281ca"
           (reference "D18") (unit 1)
@@ -2522,7 +2892,7 @@
   )
 
   (symbol (lib_id "Device:D_Small") (at 157.48 107.95 90) (unit 1)
-    (in_bom yes) (on_board yes) (dnp no) (fields_autoplaced)
+    (exclude_from_sim no) (in_bom yes) (on_board yes) (dnp no) (fields_autoplaced)
     (uuid 59ce58e1-7865-42d1-8b74-ae64386b808d)
     (property "Reference" "D31" (at 160.02 107.315 90)
       (effects (font (size 1.27 1.27)) (justify right))
@@ -2536,6 +2906,9 @@
     (property "Datasheet" "~" (at 157.48 107.95 90)
       (effects (font (size 1.27 1.27)) hide)
     )
+    (property "Description" "" (at 157.48 107.95 0)
+      (effects (font (size 1.27 1.27)) hide)
+    )
     (property "Sim.Device" "D" (at 157.48 107.95 0)
       (effects (font (size 1.27 1.27)) hide)
     )
@@ -2545,9 +2918,17 @@
     (property "LCSC" "C81598" (at 157.48 107.95 0)
       (effects (font (size 1.27 1.27)) hide)
     )
+    (property "Field-1" "" (at 157.48 107.95 0)
+      (effects (font (size 1.27 1.27)) hide)
+    )
     (pin "1" (uuid 2a404417-8f42-41b7-a025-77ac7bb77c22))
     (pin "2" (uuid 1d78fda3-335b-443a-8314-ff7fa03ef04f))
     (instances
+      (project "switch_matrix"
+        (path "/2e3181fe-ee3c-478d-8961-58256639dc5f"
+          (reference "D31") (unit 1)
+        )
+      )
       (project "Koneko40Ortho"
         (path "/dea5f69c-d02e-47df-8e1a-a63949fabb21/0cbd56a0-84b2-4041-9681-83c3815281ca"
           (reference "D31") (unit 1)
@@ -2557,7 +2938,7 @@
   )
 
   (symbol (lib_id "marbastlib-mx:MX_SW_HS") (at 50.8 31.75 0) (unit 1)
-    (in_bom yes) (on_board yes) (dnp no) (fields_autoplaced)
+    (exclude_from_sim no) (in_bom yes) (on_board yes) (dnp no) (fields_autoplaced)
     (uuid 59eca624-928b-4539-bde9-c1605052d727)
     (property "Reference" "SW2" (at 50.8 25.4 0)
       (effects (font (size 1.27 1.27)))
@@ -2571,9 +2952,20 @@
     (property "Datasheet" "~" (at 50.8 31.75 0)
       (effects (font (size 1.27 1.27)) hide)
     )
+    (property "Description" "" (at 50.8 31.75 0)
+      (effects (font (size 1.27 1.27)) hide)
+    )
+    (property "Field-1" "" (at 50.8 31.75 0)
+      (effects (font (size 1.27 1.27)) hide)
+    )
     (pin "1" (uuid 3615f15e-01fa-43f1-9a11-73ea33ece09a))
     (pin "2" (uuid ce3f6efe-8e32-4067-9002-3f7389474092))
     (instances
+      (project "switch_matrix"
+        (path "/2e3181fe-ee3c-478d-8961-58256639dc5f"
+          (reference "SW2") (unit 1)
+        )
+      )
       (project "Koneko40Ortho"
         (path "/dea5f69c-d02e-47df-8e1a-a63949fabb21/0cbd56a0-84b2-4041-9681-83c3815281ca"
           (reference "SW2") (unit 1)
@@ -2583,7 +2975,7 @@
   )
 
   (symbol (lib_id "power:GND") (at 237.49 -2.54 0) (unit 1)
-    (in_bom yes) (on_board yes) (dnp no) (fields_autoplaced)
+    (exclude_from_sim no) (in_bom yes) (on_board yes) (dnp no) (fields_autoplaced)
     (uuid 5a478163-7f10-469c-838c-6313b077529d)
     (property "Reference" "#PWR018" (at 237.49 3.81 0)
       (effects (font (size 1.27 1.27)) hide)
@@ -2597,8 +2989,16 @@
     (property "Datasheet" "" (at 237.49 -2.54 0)
       (effects (font (size 1.27 1.27)) hide)
     )
+    (property "Description" "" (at 237.49 -2.54 0)
+      (effects (font (size 1.27 1.27)) hide)
+    )
     (pin "1" (uuid 18ec8db5-b3a1-414c-9fea-3a5cf0233297))
     (instances
+      (project "switch_matrix"
+        (path "/2e3181fe-ee3c-478d-8961-58256639dc5f"
+          (reference "#PWR018") (unit 1)
+        )
+      )
       (project "Koneko40Ortho"
         (path "/dea5f69c-d02e-47df-8e1a-a63949fabb21/0cbd56a0-84b2-4041-9681-83c3815281ca"
           (reference "#PWR018") (unit 1)
@@ -2608,7 +3008,7 @@
   )
 
   (symbol (lib_id "marbastlib-mx:MX_SW_HS") (at 219.71 102.87 0) (unit 1)
-    (in_bom yes) (on_board yes) (dnp no) (fields_autoplaced)
+    (exclude_from_sim no) (in_bom yes) (on_board yes) (dnp no) (fields_autoplaced)
     (uuid 5c7428e6-7822-4cd3-b26a-ba244432e2c9)
     (property "Reference" "SW34" (at 219.71 96.52 0)
       (effects (font (size 1.27 1.27)))
@@ -2622,9 +3022,20 @@
     (property "Datasheet" "~" (at 219.71 102.87 0)
       (effects (font (size 1.27 1.27)) hide)
     )
+    (property "Description" "" (at 219.71 102.87 0)
+      (effects (font (size 1.27 1.27)) hide)
+    )
+    (property "Field-1" "" (at 219.71 102.87 0)
+      (effects (font (size 1.27 1.27)) hide)
+    )
     (pin "1" (uuid 8070e1ba-089d-4991-9e07-fb66bc804a04))
     (pin "2" (uuid a7c0fcb3-c551-4685-9347-7224eb460bd3))
     (instances
+      (project "switch_matrix"
+        (path "/2e3181fe-ee3c-478d-8961-58256639dc5f"
+          (reference "SW34") (unit 1)
+        )
+      )
       (project "Koneko40Ortho"
         (path "/dea5f69c-d02e-47df-8e1a-a63949fabb21/0cbd56a0-84b2-4041-9681-83c3815281ca"
           (reference "SW34") (unit 1)
@@ -2634,7 +3045,7 @@
   )
 
   (symbol (lib_id "marbastlib-mx:MX_SW_HS") (at 71.12 68.58 0) (unit 1)
-    (in_bom yes) (on_board yes) (dnp no) (fields_autoplaced)
+    (exclude_from_sim no) (in_bom yes) (on_board yes) (dnp no) (fields_autoplaced)
     (uuid 5cf02060-1410-4b8e-a6b1-b9b64416b9e7)
     (property "Reference" "SW15" (at 71.12 62.23 0)
       (effects (font (size 1.27 1.27)))
@@ -2648,9 +3059,20 @@
     (property "Datasheet" "~" (at 71.12 68.58 0)
       (effects (font (size 1.27 1.27)) hide)
     )
+    (property "Description" "" (at 71.12 68.58 0)
+      (effects (font (size 1.27 1.27)) hide)
+    )
+    (property "Field-1" "" (at 71.12 68.58 0)
+      (effects (font (size 1.27 1.27)) hide)
+    )
     (pin "1" (uuid 14dd7326-9ac2-4381-9e8f-b94a53a77ee7))
     (pin "2" (uuid 2cf2e651-2546-4c33-a916-8c1e8e010b72))
     (instances
+      (project "switch_matrix"
+        (path "/2e3181fe-ee3c-478d-8961-58256639dc5f"
+          (reference "SW15") (unit 1)
+        )
+      )
       (project "Koneko40Ortho"
         (path "/dea5f69c-d02e-47df-8e1a-a63949fabb21/0cbd56a0-84b2-4041-9681-83c3815281ca"
           (reference "SW15") (unit 1)
@@ -2660,7 +3082,7 @@
   )
 
   (symbol (lib_id "Device:Q_PMOS_GSD") (at 278.13 -6.35 0) (mirror x) (unit 1)
-    (in_bom yes) (on_board yes) (dnp no)
+    (exclude_from_sim no) (in_bom yes) (on_board yes) (dnp no)
     (uuid 5cf4ecc4-1c77-45c5-b2fc-072ba682ccfc)
     (property "Reference" "Q1" (at 287.02 -6.35 90)
       (effects (font (size 1.27 1.27)))
@@ -2672,6 +3094,9 @@
       (effects (font (size 1.27 1.27)) hide)
     )
     (property "Datasheet" "~" (at 278.13 -6.35 0)
+      (effects (font (size 1.27 1.27)) hide)
+    )
+    (property "Description" "" (at 278.13 -6.35 0)
       (effects (font (size 1.27 1.27)) hide)
     )
     (property "Sim.Device" "PMOS" (at 278.13 -23.495 0)
@@ -2686,10 +3111,18 @@
     (property "LCSC" "C99272" (at 278.13 -6.35 90)
       (effects (font (size 1.27 1.27)) hide)
     )
+    (property "Field-1" "" (at 278.13 -6.35 0)
+      (effects (font (size 1.27 1.27)) hide)
+    )
     (pin "1" (uuid 85293548-9238-49d9-88f8-bcf2c97aa14f))
     (pin "2" (uuid e5e55871-ee20-4c06-819c-a93c68f23f91))
     (pin "3" (uuid 9ed09d3e-8063-42c4-87a8-2c4fccab010d))
     (instances
+      (project "switch_matrix"
+        (path "/2e3181fe-ee3c-478d-8961-58256639dc5f"
+          (reference "Q1") (unit 1)
+        )
+      )
       (project "Koneko40Ortho"
         (path "/dea5f69c-d02e-47df-8e1a-a63949fabb21"
           (reference "Q1") (unit 1)
@@ -2702,7 +3135,7 @@
   )
 
   (symbol (lib_id "marbastlib-mx:MX_SW_HS") (at 134.62 102.87 0) (unit 1)
-    (in_bom yes) (on_board yes) (dnp no) (fields_autoplaced)
+    (exclude_from_sim no) (in_bom yes) (on_board yes) (dnp no) (fields_autoplaced)
     (uuid 5f4ac5e2-b34b-42a1-9b7b-a4cb65a7e002)
     (property "Reference" "SW30" (at 134.62 96.52 0)
       (effects (font (size 1.27 1.27)))
@@ -2716,9 +3149,20 @@
     (property "Datasheet" "~" (at 134.62 102.87 0)
       (effects (font (size 1.27 1.27)) hide)
     )
+    (property "Description" "" (at 134.62 102.87 0)
+      (effects (font (size 1.27 1.27)) hide)
+    )
+    (property "Field-1" "" (at 134.62 102.87 0)
+      (effects (font (size 1.27 1.27)) hide)
+    )
     (pin "1" (uuid b4bdd757-b6d5-4660-8e37-7fd574181ee0))
     (pin "2" (uuid c32b1978-c9f7-4419-8e7b-e60611fd44cf))
     (instances
+      (project "switch_matrix"
+        (path "/2e3181fe-ee3c-478d-8961-58256639dc5f"
+          (reference "SW30") (unit 1)
+        )
+      )
       (project "Koneko40Ortho"
         (path "/dea5f69c-d02e-47df-8e1a-a63949fabb21/0cbd56a0-84b2-4041-9681-83c3815281ca"
           (reference "SW30") (unit 1)
@@ -2728,7 +3172,7 @@
   )
 
   (symbol (lib_id "marbastlib-mx:MX_stab") (at 137.16 177.8 0) (unit 1)
-    (in_bom yes) (on_board yes) (dnp no) (fields_autoplaced)
+    (exclude_from_sim no) (in_bom yes) (on_board yes) (dnp no) (fields_autoplaced)
     (uuid 5fd3d6fd-2f01-40f4-a31e-ade3dd048a7a)
     (property "Reference" "S2" (at 143.51 177.038 0)
       (effects (font (size 1.27 1.27)) (justify left))
@@ -2742,7 +3186,18 @@
     (property "Datasheet" "" (at 137.16 177.8 0)
       (effects (font (size 1.27 1.27)) hide)
     )
+    (property "Description" "" (at 137.16 177.8 0)
+      (effects (font (size 1.27 1.27)) hide)
+    )
+    (property "Field-1" "" (at 137.16 177.8 0)
+      (effects (font (size 1.27 1.27)) hide)
+    )
     (instances
+      (project "switch_matrix"
+        (path "/2e3181fe-ee3c-478d-8961-58256639dc5f"
+          (reference "S2") (unit 1)
+        )
+      )
       (project "Koneko40Ortho"
         (path "/dea5f69c-d02e-47df-8e1a-a63949fabb21/0cbd56a0-84b2-4041-9681-83c3815281ca"
           (reference "S2") (unit 1)
@@ -2752,7 +3207,7 @@
   )
 
   (symbol (lib_id "marbastlib-mx:MX_SW_HS") (at 50.8 68.58 0) (unit 1)
-    (in_bom yes) (on_board yes) (dnp no) (fields_autoplaced)
+    (exclude_from_sim no) (in_bom yes) (on_board yes) (dnp no) (fields_autoplaced)
     (uuid 644b8c5d-888c-48f8-9676-8752fda588d0)
     (property "Reference" "SW14" (at 50.8 62.23 0)
       (effects (font (size 1.27 1.27)))
@@ -2766,9 +3221,20 @@
     (property "Datasheet" "~" (at 50.8 68.58 0)
       (effects (font (size 1.27 1.27)) hide)
     )
+    (property "Description" "" (at 50.8 68.58 0)
+      (effects (font (size 1.27 1.27)) hide)
+    )
+    (property "Field-1" "" (at 50.8 68.58 0)
+      (effects (font (size 1.27 1.27)) hide)
+    )
     (pin "1" (uuid ad57172b-ea23-462b-9071-decb74aab058))
     (pin "2" (uuid aeeb3552-c907-47c9-abee-dad779b9c2a7))
     (instances
+      (project "switch_matrix"
+        (path "/2e3181fe-ee3c-478d-8961-58256639dc5f"
+          (reference "SW14") (unit 1)
+        )
+      )
       (project "Koneko40Ortho"
         (path "/dea5f69c-d02e-47df-8e1a-a63949fabb21/0cbd56a0-84b2-4041-9681-83c3815281ca"
           (reference "SW14") (unit 1)
@@ -2778,7 +3244,7 @@
   )
 
   (symbol (lib_id "Device:D_Small") (at 31.75 36.83 90) (unit 1)
-    (in_bom yes) (on_board yes) (dnp no) (fields_autoplaced)
+    (exclude_from_sim no) (in_bom yes) (on_board yes) (dnp no) (fields_autoplaced)
     (uuid 69c97f35-7fa8-46d6-a8ec-2371a49929df)
     (property "Reference" "D1" (at 34.29 36.195 90)
       (effects (font (size 1.27 1.27)) (justify right))
@@ -2792,6 +3258,9 @@
     (property "Datasheet" "~" (at 31.75 36.83 90)
       (effects (font (size 1.27 1.27)) hide)
     )
+    (property "Description" "" (at 31.75 36.83 0)
+      (effects (font (size 1.27 1.27)) hide)
+    )
     (property "Sim.Device" "D" (at 31.75 36.83 0)
       (effects (font (size 1.27 1.27)) hide)
     )
@@ -2801,9 +3270,17 @@
     (property "LCSC" "C81598" (at 31.75 36.83 0)
       (effects (font (size 1.27 1.27)) hide)
     )
+    (property "Field-1" "" (at 31.75 36.83 0)
+      (effects (font (size 1.27 1.27)) hide)
+    )
     (pin "1" (uuid d1e18bbf-fb5f-4a08-a510-352986c36f4b))
     (pin "2" (uuid bbc6ce68-d9b3-491e-a6ed-c184f00842fa))
     (instances
+      (project "switch_matrix"
+        (path "/2e3181fe-ee3c-478d-8961-58256639dc5f"
+          (reference "D1") (unit 1)
+        )
+      )
       (project "Koneko40Ortho"
         (path "/dea5f69c-d02e-47df-8e1a-a63949fabb21/0cbd56a0-84b2-4041-9681-83c3815281ca"
           (reference "D1") (unit 1)
@@ -2813,7 +3290,7 @@
   )
 
   (symbol (lib_id "marbastlib-mx:MX_stab") (at 137.16 170.18 0) (unit 1)
-    (in_bom yes) (on_board yes) (dnp no) (fields_autoplaced)
+    (exclude_from_sim no) (in_bom yes) (on_board yes) (dnp no) (fields_autoplaced)
     (uuid 6e359b41-dbc7-4da0-b7b4-bf1327b21261)
     (property "Reference" "S1" (at 143.51 169.418 0)
       (effects (font (size 1.27 1.27)) (justify left))
@@ -2827,7 +3304,18 @@
     (property "Datasheet" "" (at 137.16 170.18 0)
       (effects (font (size 1.27 1.27)) hide)
     )
+    (property "Description" "" (at 137.16 170.18 0)
+      (effects (font (size 1.27 1.27)) hide)
+    )
+    (property "Field-1" "" (at 137.16 170.18 0)
+      (effects (font (size 1.27 1.27)) hide)
+    )
     (instances
+      (project "switch_matrix"
+        (path "/2e3181fe-ee3c-478d-8961-58256639dc5f"
+          (reference "S1") (unit 1)
+        )
+      )
       (project "Koneko40Ortho"
         (path "/dea5f69c-d02e-47df-8e1a-a63949fabb21/0cbd56a0-84b2-4041-9681-83c3815281ca"
           (reference "S1") (unit 1)
@@ -2837,7 +3325,7 @@
   )
 
   (symbol (lib_id "Device:D_Small") (at 53.34 158.75 90) (unit 1)
-    (in_bom yes) (on_board yes) (dnp no) (fields_autoplaced)
+    (exclude_from_sim no) (in_bom yes) (on_board yes) (dnp no) (fields_autoplaced)
     (uuid 70c17aa7-fa7d-482c-b7ce-912933a7c04a)
     (property "Reference" "D38" (at 55.88 158.115 90)
       (effects (font (size 1.27 1.27)) (justify right))
@@ -2851,6 +3339,9 @@
     (property "Datasheet" "~" (at 53.34 158.75 90)
       (effects (font (size 1.27 1.27)) hide)
     )
+    (property "Description" "" (at 53.34 158.75 0)
+      (effects (font (size 1.27 1.27)) hide)
+    )
     (property "Sim.Device" "D" (at 53.34 158.75 0)
       (effects (font (size 1.27 1.27)) hide)
     )
@@ -2860,9 +3351,17 @@
     (property "LCSC" "C81598" (at 53.34 158.75 0)
       (effects (font (size 1.27 1.27)) hide)
     )
+    (property "Field-1" "" (at 53.34 158.75 0)
+      (effects (font (size 1.27 1.27)) hide)
+    )
     (pin "1" (uuid 33ea3ae9-2f04-4ab1-9f3e-3c85336a5431))
     (pin "2" (uuid 6cbce71f-3d56-4823-bc53-358f041eb9d6))
     (instances
+      (project "switch_matrix"
+        (path "/2e3181fe-ee3c-478d-8961-58256639dc5f"
+          (reference "D38") (unit 1)
+        )
+      )
       (project "Koneko40Ortho"
         (path "/dea5f69c-d02e-47df-8e1a-a63949fabb21/0cbd56a0-84b2-4041-9681-83c3815281ca"
           (reference "D38") (unit 1)
@@ -2872,7 +3371,7 @@
   )
 
   (symbol (lib_id "marbastlib-mx:MX_SW_HS") (at 134.62 68.58 0) (unit 1)
-    (in_bom yes) (on_board yes) (dnp no) (fields_autoplaced)
+    (exclude_from_sim no) (in_bom yes) (on_board yes) (dnp no) (fields_autoplaced)
     (uuid 7435348a-8a66-4970-9140-d1a88e0cb66d)
     (property "Reference" "SW18" (at 134.62 62.23 0)
       (effects (font (size 1.27 1.27)))
@@ -2886,9 +3385,20 @@
     (property "Datasheet" "~" (at 134.62 68.58 0)
       (effects (font (size 1.27 1.27)) hide)
     )
+    (property "Description" "" (at 134.62 68.58 0)
+      (effects (font (size 1.27 1.27)) hide)
+    )
+    (property "Field-1" "" (at 134.62 68.58 0)
+      (effects (font (size 1.27 1.27)) hide)
+    )
     (pin "1" (uuid f3f9075e-5fd0-4a61-b60b-bb77c0ab846d))
     (pin "2" (uuid db813f8c-3109-48c9-bef8-c3575484d956))
     (instances
+      (project "switch_matrix"
+        (path "/2e3181fe-ee3c-478d-8961-58256639dc5f"
+          (reference "SW18") (unit 1)
+        )
+      )
       (project "Koneko40Ortho"
         (path "/dea5f69c-d02e-47df-8e1a-a63949fabb21/0cbd56a0-84b2-4041-9681-83c3815281ca"
           (reference "SW18") (unit 1)
@@ -2898,7 +3408,7 @@
   )
 
   (symbol (lib_id "marbastlib-mx:MX_SW_HS") (at 261.62 68.58 0) (unit 1)
-    (in_bom yes) (on_board yes) (dnp no) (fields_autoplaced)
+    (exclude_from_sim no) (in_bom yes) (on_board yes) (dnp no) (fields_autoplaced)
     (uuid 76a6e828-a304-4076-a489-85ff79012116)
     (property "Reference" "SW24" (at 261.62 62.23 0)
       (effects (font (size 1.27 1.27)))
@@ -2912,9 +3422,20 @@
     (property "Datasheet" "~" (at 261.62 68.58 0)
       (effects (font (size 1.27 1.27)) hide)
     )
+    (property "Description" "" (at 261.62 68.58 0)
+      (effects (font (size 1.27 1.27)) hide)
+    )
+    (property "Field-1" "" (at 261.62 68.58 0)
+      (effects (font (size 1.27 1.27)) hide)
+    )
     (pin "1" (uuid 3bbf2181-7e00-4436-bd0a-2f57e088dabb))
     (pin "2" (uuid f4043e59-0bde-486c-9585-750ff1edb9c7))
     (instances
+      (project "switch_matrix"
+        (path "/2e3181fe-ee3c-478d-8961-58256639dc5f"
+          (reference "SW24") (unit 1)
+        )
+      )
       (project "Koneko40Ortho"
         (path "/dea5f69c-d02e-47df-8e1a-a63949fabb21/0cbd56a0-84b2-4041-9681-83c3815281ca"
           (reference "SW24") (unit 1)
@@ -2924,7 +3445,7 @@
   )
 
   (symbol (lib_id "Device:D_Small") (at 242.57 107.95 90) (unit 1)
-    (in_bom yes) (on_board yes) (dnp no) (fields_autoplaced)
+    (exclude_from_sim no) (in_bom yes) (on_board yes) (dnp no) (fields_autoplaced)
     (uuid 7b35ad0d-7a2d-459a-aaf5-8cacc53ee691)
     (property "Reference" "D35" (at 245.11 107.315 90)
       (effects (font (size 1.27 1.27)) (justify right))
@@ -2938,6 +3459,9 @@
     (property "Datasheet" "~" (at 242.57 107.95 90)
       (effects (font (size 1.27 1.27)) hide)
     )
+    (property "Description" "" (at 242.57 107.95 0)
+      (effects (font (size 1.27 1.27)) hide)
+    )
     (property "Sim.Device" "D" (at 242.57 107.95 0)
       (effects (font (size 1.27 1.27)) hide)
     )
@@ -2947,9 +3471,17 @@
     (property "LCSC" "C81598" (at 242.57 107.95 0)
       (effects (font (size 1.27 1.27)) hide)
     )
+    (property "Field-1" "" (at 242.57 107.95 0)
+      (effects (font (size 1.27 1.27)) hide)
+    )
     (pin "1" (uuid f0a0f7c3-df7d-416b-b7ce-e3a81c7ac583))
     (pin "2" (uuid fd998e4c-bf99-40b5-a772-665dc5ff45b4))
     (instances
+      (project "switch_matrix"
+        (path "/2e3181fe-ee3c-478d-8961-58256639dc5f"
+          (reference "D35") (unit 1)
+        )
+      )
       (project "Koneko40Ortho"
         (path "/dea5f69c-d02e-47df-8e1a-a63949fabb21/0cbd56a0-84b2-4041-9681-83c3815281ca"
           (reference "D35") (unit 1)
@@ -2959,7 +3491,7 @@
   )
 
   (symbol (lib_id "Device:D_Small") (at 73.66 36.83 90) (unit 1)
-    (in_bom yes) (on_board yes) (dnp no) (fields_autoplaced)
+    (exclude_from_sim no) (in_bom yes) (on_board yes) (dnp no) (fields_autoplaced)
     (uuid 7b837eb5-2c8d-48cb-89ea-ba5657331aec)
     (property "Reference" "D3" (at 76.2 36.195 90)
       (effects (font (size 1.27 1.27)) (justify right))
@@ -2973,6 +3505,9 @@
     (property "Datasheet" "~" (at 73.66 36.83 90)
       (effects (font (size 1.27 1.27)) hide)
     )
+    (property "Description" "" (at 73.66 36.83 0)
+      (effects (font (size 1.27 1.27)) hide)
+    )
     (property "Sim.Device" "D" (at 73.66 36.83 0)
       (effects (font (size 1.27 1.27)) hide)
     )
@@ -2982,9 +3517,17 @@
     (property "LCSC" "C81598" (at 73.66 36.83 0)
       (effects (font (size 1.27 1.27)) hide)
     )
+    (property "Field-1" "" (at 73.66 36.83 0)
+      (effects (font (size 1.27 1.27)) hide)
+    )
     (pin "1" (uuid 997f8aa1-5345-4920-951f-950f79195728))
     (pin "2" (uuid 742faf59-9495-4df0-9771-6109daaa1546))
     (instances
+      (project "switch_matrix"
+        (path "/2e3181fe-ee3c-478d-8961-58256639dc5f"
+          (reference "D3") (unit 1)
+        )
+      )
       (project "Koneko40Ortho"
         (path "/dea5f69c-d02e-47df-8e1a-a63949fabb21/0cbd56a0-84b2-4041-9681-83c3815281ca"
           (reference "D3") (unit 1)
@@ -2994,7 +3537,7 @@
   )
 
   (symbol (lib_id "Device:D_Small") (at 222.25 107.95 90) (unit 1)
-    (in_bom yes) (on_board yes) (dnp no) (fields_autoplaced)
+    (exclude_from_sim no) (in_bom yes) (on_board yes) (dnp no) (fields_autoplaced)
     (uuid 7d1f0884-f1ea-4343-9028-1c49f4aa9f47)
     (property "Reference" "D34" (at 224.79 107.315 90)
       (effects (font (size 1.27 1.27)) (justify right))
@@ -3008,6 +3551,9 @@
     (property "Datasheet" "~" (at 222.25 107.95 90)
       (effects (font (size 1.27 1.27)) hide)
     )
+    (property "Description" "" (at 222.25 107.95 0)
+      (effects (font (size 1.27 1.27)) hide)
+    )
     (property "Sim.Device" "D" (at 222.25 107.95 0)
       (effects (font (size 1.27 1.27)) hide)
     )
@@ -3017,9 +3563,17 @@
     (property "LCSC" "C81598" (at 222.25 107.95 0)
       (effects (font (size 1.27 1.27)) hide)
     )
+    (property "Field-1" "" (at 222.25 107.95 0)
+      (effects (font (size 1.27 1.27)) hide)
+    )
     (pin "1" (uuid a5b2fbc0-548e-44aa-b4be-b6363923d9ca))
     (pin "2" (uuid bf2ae03c-644f-4f3c-8d9a-e05e2ae57de7))
     (instances
+      (project "switch_matrix"
+        (path "/2e3181fe-ee3c-478d-8961-58256639dc5f"
+          (reference "D34") (unit 1)
+        )
+      )
       (project "Koneko40Ortho"
         (path "/dea5f69c-d02e-47df-8e1a-a63949fabb21/0cbd56a0-84b2-4041-9681-83c3815281ca"
           (reference "D34") (unit 1)
@@ -3029,7 +3583,7 @@
   )
 
   (symbol (lib_id "marbastlib-mx:MX_SW_HS") (at 154.94 153.67 0) (unit 1)
-    (in_bom yes) (on_board yes) (dnp no) (fields_autoplaced)
+    (exclude_from_sim no) (in_bom yes) (on_board yes) (dnp no) (fields_autoplaced)
     (uuid 7da07b91-f5af-481e-8639-62b6243aadcf)
     (property "Reference" "SW43" (at 154.94 147.32 0)
       (effects (font (size 1.27 1.27)))
@@ -3043,9 +3597,20 @@
     (property "Datasheet" "~" (at 154.94 153.67 0)
       (effects (font (size 1.27 1.27)) hide)
     )
+    (property "Description" "" (at 154.94 153.67 0)
+      (effects (font (size 1.27 1.27)) hide)
+    )
+    (property "Field-1" "" (at 154.94 153.67 0)
+      (effects (font (size 1.27 1.27)) hide)
+    )
     (pin "1" (uuid 64db4442-05a2-42b5-9feb-361acbddba1f))
     (pin "2" (uuid df0b6fcd-94a6-487a-9933-a02215ec9531))
     (instances
+      (project "switch_matrix"
+        (path "/2e3181fe-ee3c-478d-8961-58256639dc5f"
+          (reference "SW43") (unit 1)
+        )
+      )
       (project "Koneko40Ortho"
         (path "/dea5f69c-d02e-47df-8e1a-a63949fabb21/0cbd56a0-84b2-4041-9681-83c3815281ca"
           (reference "SW43") (unit 1)
@@ -3055,7 +3620,7 @@
   )
 
   (symbol (lib_id "Device:D_Small") (at 179.07 73.66 90) (unit 1)
-    (in_bom yes) (on_board yes) (dnp no) (fields_autoplaced)
+    (exclude_from_sim no) (in_bom yes) (on_board yes) (dnp no) (fields_autoplaced)
     (uuid 7dd88e6d-a5fd-4871-a0f1-50e5a38de773)
     (property "Reference" "D20" (at 181.61 73.025 90)
       (effects (font (size 1.27 1.27)) (justify right))
@@ -3069,6 +3634,9 @@
     (property "Datasheet" "~" (at 179.07 73.66 90)
       (effects (font (size 1.27 1.27)) hide)
     )
+    (property "Description" "" (at 179.07 73.66 0)
+      (effects (font (size 1.27 1.27)) hide)
+    )
     (property "Sim.Device" "D" (at 179.07 73.66 0)
       (effects (font (size 1.27 1.27)) hide)
     )
@@ -3078,9 +3646,17 @@
     (property "LCSC" "C81598" (at 179.07 73.66 0)
       (effects (font (size 1.27 1.27)) hide)
     )
+    (property "Field-1" "" (at 179.07 73.66 0)
+      (effects (font (size 1.27 1.27)) hide)
+    )
     (pin "1" (uuid a799d175-2e09-4a8c-8132-e3cce42ff84b))
     (pin "2" (uuid 77d86186-dd71-4caa-a1be-1485037efe97))
     (instances
+      (project "switch_matrix"
+        (path "/2e3181fe-ee3c-478d-8961-58256639dc5f"
+          (reference "D20") (unit 1)
+        )
+      )
       (project "Koneko40Ortho"
         (path "/dea5f69c-d02e-47df-8e1a-a63949fabb21/0cbd56a0-84b2-4041-9681-83c3815281ca"
           (reference "D20") (unit 1)
@@ -3090,7 +3666,7 @@
   )
 
   (symbol (lib_id "Device:D_Small") (at 31.75 73.66 90) (unit 1)
-    (in_bom yes) (on_board yes) (dnp no) (fields_autoplaced)
+    (exclude_from_sim no) (in_bom yes) (on_board yes) (dnp no) (fields_autoplaced)
     (uuid 80334561-fa2f-4cf2-9212-730c8233416e)
     (property "Reference" "D13" (at 34.29 73.025 90)
       (effects (font (size 1.27 1.27)) (justify right))
@@ -3104,6 +3680,9 @@
     (property "Datasheet" "~" (at 31.75 73.66 90)
       (effects (font (size 1.27 1.27)) hide)
     )
+    (property "Description" "" (at 31.75 73.66 0)
+      (effects (font (size 1.27 1.27)) hide)
+    )
     (property "Sim.Device" "D" (at 31.75 73.66 0)
       (effects (font (size 1.27 1.27)) hide)
     )
@@ -3113,9 +3692,17 @@
     (property "LCSC" "C81598" (at 31.75 73.66 0)
       (effects (font (size 1.27 1.27)) hide)
     )
+    (property "Field-1" "" (at 31.75 73.66 0)
+      (effects (font (size 1.27 1.27)) hide)
+    )
     (pin "1" (uuid dc497d5e-d03b-40a8-a2c7-280dc348a005))
     (pin "2" (uuid f65d7964-9231-4928-a1c4-7ce16c9fb9e1))
     (instances
+      (project "switch_matrix"
+        (path "/2e3181fe-ee3c-478d-8961-58256639dc5f"
+          (reference "D13") (unit 1)
+        )
+      )
       (project "Koneko40Ortho"
         (path "/dea5f69c-d02e-47df-8e1a-a63949fabb21/0cbd56a0-84b2-4041-9681-83c3815281ca"
           (reference "D13") (unit 1)
@@ -3125,7 +3712,7 @@
   )
 
   (symbol (lib_id "Device:D_Small") (at 157.48 158.75 90) (unit 1)
-    (in_bom yes) (on_board yes) (dnp no) (fields_autoplaced)
+    (exclude_from_sim no) (in_bom yes) (on_board yes) (dnp no) (fields_autoplaced)
     (uuid 8041829d-9b61-40da-8801-df01c7cbdb30)
     (property "Reference" "D43" (at 160.02 158.115 90)
       (effects (font (size 1.27 1.27)) (justify right))
@@ -3139,6 +3726,9 @@
     (property "Datasheet" "~" (at 157.48 158.75 90)
       (effects (font (size 1.27 1.27)) hide)
     )
+    (property "Description" "" (at 157.48 158.75 0)
+      (effects (font (size 1.27 1.27)) hide)
+    )
     (property "Sim.Device" "D" (at 157.48 158.75 0)
       (effects (font (size 1.27 1.27)) hide)
     )
@@ -3148,9 +3738,17 @@
     (property "LCSC" "C81598" (at 157.48 158.75 0)
       (effects (font (size 1.27 1.27)) hide)
     )
+    (property "Field-1" "" (at 157.48 158.75 0)
+      (effects (font (size 1.27 1.27)) hide)
+    )
     (pin "1" (uuid 04d1391d-2560-4f9e-bc1f-87c93a17cd54))
     (pin "2" (uuid 30706795-cb81-482d-b873-84e64685700c))
     (instances
+      (project "switch_matrix"
+        (path "/2e3181fe-ee3c-478d-8961-58256639dc5f"
+          (reference "D43") (unit 1)
+        )
+      )
       (project "Koneko40Ortho"
         (path "/dea5f69c-d02e-47df-8e1a-a63949fabb21/0cbd56a0-84b2-4041-9681-83c3815281ca"
           (reference "D43") (unit 1)
@@ -3160,7 +3758,7 @@
   )
 
   (symbol (lib_id "Device:Q_PMOS_GSD") (at 36.83 -3.81 0) (mirror x) (unit 1)
-    (in_bom yes) (on_board yes) (dnp no)
+    (exclude_from_sim no) (in_bom yes) (on_board yes) (dnp no)
     (uuid 809fbc24-2dc2-439c-9281-d0921112d8e9)
     (property "Reference" "Q1" (at 45.72 -3.81 90)
       (effects (font (size 1.27 1.27)))
@@ -3172,6 +3770,9 @@
       (effects (font (size 1.27 1.27)) hide)
     )
     (property "Datasheet" "~" (at 36.83 -3.81 0)
+      (effects (font (size 1.27 1.27)) hide)
+    )
+    (property "Description" "" (at 36.83 -3.81 0)
       (effects (font (size 1.27 1.27)) hide)
     )
     (property "Sim.Device" "PMOS" (at 36.83 -20.955 0)
@@ -3186,10 +3787,18 @@
     (property "LCSC" "C99272" (at 36.83 -3.81 90)
       (effects (font (size 1.27 1.27)) hide)
     )
+    (property "Field-1" "" (at 36.83 -3.81 0)
+      (effects (font (size 1.27 1.27)) hide)
+    )
     (pin "1" (uuid 0f6a27c5-7685-49b5-a5a2-6ffef14496eb))
     (pin "2" (uuid ba7d42db-7396-4549-819f-a5459b515ada))
     (pin "3" (uuid dcaa3725-dbc5-4d31-84df-addc48332759))
     (instances
+      (project "switch_matrix"
+        (path "/2e3181fe-ee3c-478d-8961-58256639dc5f"
+          (reference "Q1") (unit 1)
+        )
+      )
       (project "Koneko40Ortho"
         (path "/dea5f69c-d02e-47df-8e1a-a63949fabb21"
           (reference "Q1") (unit 1)
@@ -3202,7 +3811,7 @@
   )
 
   (symbol (lib_id "Device:D_Small") (at 242.57 158.75 90) (unit 1)
-    (in_bom yes) (on_board yes) (dnp no) (fields_autoplaced)
+    (exclude_from_sim no) (in_bom yes) (on_board yes) (dnp no) (fields_autoplaced)
     (uuid 847965e4-5ee8-4cc9-8abc-0f9084e26e23)
     (property "Reference" "D47" (at 245.11 158.115 90)
       (effects (font (size 1.27 1.27)) (justify right))
@@ -3216,6 +3825,9 @@
     (property "Datasheet" "~" (at 242.57 158.75 90)
       (effects (font (size 1.27 1.27)) hide)
     )
+    (property "Description" "" (at 242.57 158.75 0)
+      (effects (font (size 1.27 1.27)) hide)
+    )
     (property "Sim.Device" "D" (at 242.57 158.75 0)
       (effects (font (size 1.27 1.27)) hide)
     )
@@ -3225,9 +3837,17 @@
     (property "LCSC" "C81598" (at 242.57 158.75 0)
       (effects (font (size 1.27 1.27)) hide)
     )
+    (property "Field-1" "" (at 242.57 158.75 0)
+      (effects (font (size 1.27 1.27)) hide)
+    )
     (pin "1" (uuid 44679a1e-a8eb-40a1-8548-24d59ca2f354))
     (pin "2" (uuid 181419b9-3d26-45ce-885e-b409c1a10c22))
     (instances
+      (project "switch_matrix"
+        (path "/2e3181fe-ee3c-478d-8961-58256639dc5f"
+          (reference "D47") (unit 1)
+        )
+      )
       (project "Koneko40Ortho"
         (path "/dea5f69c-d02e-47df-8e1a-a63949fabb21/0cbd56a0-84b2-4041-9681-83c3815281ca"
           (reference "D47") (unit 1)
@@ -3237,7 +3857,7 @@
   )
 
   (symbol (lib_id "marbastlib-mx:MX_SW_HS") (at 92.71 31.75 0) (unit 1)
-    (in_bom yes) (on_board yes) (dnp no) (fields_autoplaced)
+    (exclude_from_sim no) (in_bom yes) (on_board yes) (dnp no) (fields_autoplaced)
     (uuid 866c9b05-9232-41b2-a3dd-e675177b877f)
     (property "Reference" "SW4" (at 92.71 25.4 0)
       (effects (font (size 1.27 1.27)))
@@ -3251,9 +3871,20 @@
     (property "Datasheet" "~" (at 92.71 31.75 0)
       (effects (font (size 1.27 1.27)) hide)
     )
+    (property "Description" "" (at 92.71 31.75 0)
+      (effects (font (size 1.27 1.27)) hide)
+    )
+    (property "Field-1" "" (at 92.71 31.75 0)
+      (effects (font (size 1.27 1.27)) hide)
+    )
     (pin "1" (uuid 13892712-d71b-46d5-b46a-18c9a086602b))
     (pin "2" (uuid d4f7a7c4-cb93-46d1-9e50-96dd23a3acf6))
     (instances
+      (project "switch_matrix"
+        (path "/2e3181fe-ee3c-478d-8961-58256639dc5f"
+          (reference "SW4") (unit 1)
+        )
+      )
       (project "Koneko40Ortho"
         (path "/dea5f69c-d02e-47df-8e1a-a63949fabb21/0cbd56a0-84b2-4041-9681-83c3815281ca"
           (reference "SW4") (unit 1)
@@ -3263,7 +3894,7 @@
   )
 
   (symbol (lib_id "marbastlib-mx:MX_SW_HS") (at 240.03 102.87 0) (unit 1)
-    (in_bom yes) (on_board yes) (dnp no) (fields_autoplaced)
+    (exclude_from_sim no) (in_bom yes) (on_board yes) (dnp no) (fields_autoplaced)
     (uuid 8e6923af-d4b5-45b2-b028-eee6cfa842cb)
     (property "Reference" "SW35" (at 240.03 96.52 0)
       (effects (font (size 1.27 1.27)))
@@ -3277,9 +3908,20 @@
     (property "Datasheet" "~" (at 240.03 102.87 0)
       (effects (font (size 1.27 1.27)) hide)
     )
+    (property "Description" "" (at 240.03 102.87 0)
+      (effects (font (size 1.27 1.27)) hide)
+    )
+    (property "Field-1" "" (at 240.03 102.87 0)
+      (effects (font (size 1.27 1.27)) hide)
+    )
     (pin "1" (uuid 91700d15-8ea5-46ab-8cb8-da47255c2b65))
     (pin "2" (uuid 72ef930d-a67c-4ab7-82bc-271de063a795))
     (instances
+      (project "switch_matrix"
+        (path "/2e3181fe-ee3c-478d-8961-58256639dc5f"
+          (reference "SW35") (unit 1)
+        )
+      )
       (project "Koneko40Ortho"
         (path "/dea5f69c-d02e-47df-8e1a-a63949fabb21/0cbd56a0-84b2-4041-9681-83c3815281ca"
           (reference "SW35") (unit 1)
@@ -3289,7 +3931,7 @@
   )
 
   (symbol (lib_id "marbastlib-mx:MX_SW_HS") (at 113.03 153.67 0) (unit 1)
-    (in_bom yes) (on_board yes) (dnp no) (fields_autoplaced)
+    (exclude_from_sim no) (in_bom yes) (on_board yes) (dnp no) (fields_autoplaced)
     (uuid 8f54dd94-46ff-4500-9660-7edec1c6ea1a)
     (property "Reference" "SW41" (at 113.03 147.32 0)
       (effects (font (size 1.27 1.27)))
@@ -3303,9 +3945,20 @@
     (property "Datasheet" "~" (at 113.03 153.67 0)
       (effects (font (size 1.27 1.27)) hide)
     )
+    (property "Description" "" (at 113.03 153.67 0)
+      (effects (font (size 1.27 1.27)) hide)
+    )
+    (property "Field-1" "" (at 113.03 153.67 0)
+      (effects (font (size 1.27 1.27)) hide)
+    )
     (pin "1" (uuid 96b40525-7d32-4e13-85fb-1f46f739d70f))
     (pin "2" (uuid 766aec6d-3a2e-4af0-a9da-47ebde07a9ae))
     (instances
+      (project "switch_matrix"
+        (path "/2e3181fe-ee3c-478d-8961-58256639dc5f"
+          (reference "SW41") (unit 1)
+        )
+      )
       (project "Koneko40Ortho"
         (path "/dea5f69c-d02e-47df-8e1a-a63949fabb21/0cbd56a0-84b2-4041-9681-83c3815281ca"
           (reference "SW41") (unit 1)
@@ -3315,7 +3968,7 @@
   )
 
   (symbol (lib_id "Device:D_Small") (at 200.66 73.66 90) (unit 1)
-    (in_bom yes) (on_board yes) (dnp no) (fields_autoplaced)
+    (exclude_from_sim no) (in_bom yes) (on_board yes) (dnp no) (fields_autoplaced)
     (uuid 92568a11-1cf5-49c8-b132-31ec0c65a555)
     (property "Reference" "D21" (at 203.2 73.025 90)
       (effects (font (size 1.27 1.27)) (justify right))
@@ -3329,6 +3982,9 @@
     (property "Datasheet" "~" (at 200.66 73.66 90)
       (effects (font (size 1.27 1.27)) hide)
     )
+    (property "Description" "" (at 200.66 73.66 0)
+      (effects (font (size 1.27 1.27)) hide)
+    )
     (property "Sim.Device" "D" (at 200.66 73.66 0)
       (effects (font (size 1.27 1.27)) hide)
     )
@@ -3338,9 +3994,17 @@
     (property "LCSC" "C81598" (at 200.66 73.66 0)
       (effects (font (size 1.27 1.27)) hide)
     )
+    (property "Field-1" "" (at 200.66 73.66 0)
+      (effects (font (size 1.27 1.27)) hide)
+    )
     (pin "1" (uuid ed2d883e-5bec-4c20-9b4b-471bc7984397))
     (pin "2" (uuid d0fd4bf0-c25c-462b-a66a-33336c5d0fd3))
     (instances
+      (project "switch_matrix"
+        (path "/2e3181fe-ee3c-478d-8961-58256639dc5f"
+          (reference "D21") (unit 1)
+        )
+      )
       (project "Koneko40Ortho"
         (path "/dea5f69c-d02e-47df-8e1a-a63949fabb21/0cbd56a0-84b2-4041-9681-83c3815281ca"
           (reference "D21") (unit 1)
@@ -3350,7 +4014,7 @@
   )
 
   (symbol (lib_id "Device:D_Small") (at 137.16 158.75 90) (unit 1)
-    (in_bom yes) (on_board yes) (dnp no) (fields_autoplaced)
+    (exclude_from_sim no) (in_bom yes) (on_board yes) (dnp no) (fields_autoplaced)
     (uuid 9327f2e0-82b5-4355-a0ee-e54dcdea73bb)
     (property "Reference" "D42" (at 139.7 158.115 90)
       (effects (font (size 1.27 1.27)) (justify right))
@@ -3364,6 +4028,9 @@
     (property "Datasheet" "~" (at 137.16 158.75 90)
       (effects (font (size 1.27 1.27)) hide)
     )
+    (property "Description" "" (at 137.16 158.75 0)
+      (effects (font (size 1.27 1.27)) hide)
+    )
     (property "Sim.Device" "D" (at 137.16 158.75 0)
       (effects (font (size 1.27 1.27)) hide)
     )
@@ -3373,9 +4040,17 @@
     (property "LCSC" "C81598" (at 137.16 158.75 0)
       (effects (font (size 1.27 1.27)) hide)
     )
+    (property "Field-1" "" (at 137.16 158.75 0)
+      (effects (font (size 1.27 1.27)) hide)
+    )
     (pin "1" (uuid 638198e3-9685-4599-a16a-4d146ca1ddf4))
     (pin "2" (uuid aa203314-e33d-4c8d-849d-89879690ddd6))
     (instances
+      (project "switch_matrix"
+        (path "/2e3181fe-ee3c-478d-8961-58256639dc5f"
+          (reference "D42") (unit 1)
+        )
+      )
       (project "Koneko40Ortho"
         (path "/dea5f69c-d02e-47df-8e1a-a63949fabb21/0cbd56a0-84b2-4041-9681-83c3815281ca"
           (reference "D42") (unit 1)
@@ -3385,7 +4060,7 @@
   )
 
   (symbol (lib_id "Device:D_Small") (at 95.25 73.66 90) (unit 1)
-    (in_bom yes) (on_board yes) (dnp no) (fields_autoplaced)
+    (exclude_from_sim no) (in_bom yes) (on_board yes) (dnp no) (fields_autoplaced)
     (uuid 946d4c74-717f-4948-bc6c-68f37021dfe4)
     (property "Reference" "D16" (at 97.79 73.025 90)
       (effects (font (size 1.27 1.27)) (justify right))
@@ -3399,6 +4074,9 @@
     (property "Datasheet" "~" (at 95.25 73.66 90)
       (effects (font (size 1.27 1.27)) hide)
     )
+    (property "Description" "" (at 95.25 73.66 0)
+      (effects (font (size 1.27 1.27)) hide)
+    )
     (property "Sim.Device" "D" (at 95.25 73.66 0)
       (effects (font (size 1.27 1.27)) hide)
     )
@@ -3408,9 +4086,17 @@
     (property "LCSC" "C81598" (at 95.25 73.66 0)
       (effects (font (size 1.27 1.27)) hide)
     )
+    (property "Field-1" "" (at 95.25 73.66 0)
+      (effects (font (size 1.27 1.27)) hide)
+    )
     (pin "1" (uuid 76c74036-d98f-48f4-bb10-7ed4da7d4a44))
     (pin "2" (uuid aebda510-ca3f-4da9-8c2a-88ce427107a3))
     (instances
+      (project "switch_matrix"
+        (path "/2e3181fe-ee3c-478d-8961-58256639dc5f"
+          (reference "D16") (unit 1)
+        )
+      )
       (project "Koneko40Ortho"
         (path "/dea5f69c-d02e-47df-8e1a-a63949fabb21/0cbd56a0-84b2-4041-9681-83c3815281ca"
           (reference "D16") (unit 1)
@@ -3420,7 +4106,7 @@
   )
 
   (symbol (lib_id "marbastlib-mx:MX_SW_HS") (at 176.53 102.87 0) (unit 1)
-    (in_bom yes) (on_board yes) (dnp no) (fields_autoplaced)
+    (exclude_from_sim no) (in_bom yes) (on_board yes) (dnp no) (fields_autoplaced)
     (uuid 986726d9-a891-4614-a32e-f3ccd7a1af71)
     (property "Reference" "SW32" (at 176.53 96.52 0)
       (effects (font (size 1.27 1.27)))
@@ -3434,9 +4120,20 @@
     (property "Datasheet" "~" (at 176.53 102.87 0)
       (effects (font (size 1.27 1.27)) hide)
     )
+    (property "Description" "" (at 176.53 102.87 0)
+      (effects (font (size 1.27 1.27)) hide)
+    )
+    (property "Field-1" "" (at 176.53 102.87 0)
+      (effects (font (size 1.27 1.27)) hide)
+    )
     (pin "1" (uuid fb2fe5b7-bf1d-4b2c-9565-2870af60c272))
     (pin "2" (uuid 9e4c5173-deff-43cf-8f31-36968402078b))
     (instances
+      (project "switch_matrix"
+        (path "/2e3181fe-ee3c-478d-8961-58256639dc5f"
+          (reference "SW32") (unit 1)
+        )
+      )
       (project "Koneko40Ortho"
         (path "/dea5f69c-d02e-47df-8e1a-a63949fabb21/0cbd56a0-84b2-4041-9681-83c3815281ca"
           (reference "SW32") (unit 1)
@@ -3446,7 +4143,7 @@
   )
 
   (symbol (lib_id "Device:D_Small") (at 73.66 73.66 90) (unit 1)
-    (in_bom yes) (on_board yes) (dnp no) (fields_autoplaced)
+    (exclude_from_sim no) (in_bom yes) (on_board yes) (dnp no) (fields_autoplaced)
     (uuid 9a0c6ec2-907f-4398-90ea-0b28f2bd0f99)
     (property "Reference" "D15" (at 76.2 73.025 90)
       (effects (font (size 1.27 1.27)) (justify right))
@@ -3460,6 +4157,9 @@
     (property "Datasheet" "~" (at 73.66 73.66 90)
       (effects (font (size 1.27 1.27)) hide)
     )
+    (property "Description" "" (at 73.66 73.66 0)
+      (effects (font (size 1.27 1.27)) hide)
+    )
     (property "Sim.Device" "D" (at 73.66 73.66 0)
       (effects (font (size 1.27 1.27)) hide)
     )
@@ -3469,9 +4169,17 @@
     (property "LCSC" "C81598" (at 73.66 73.66 0)
       (effects (font (size 1.27 1.27)) hide)
     )
+    (property "Field-1" "" (at 73.66 73.66 0)
+      (effects (font (size 1.27 1.27)) hide)
+    )
     (pin "1" (uuid 6fca4cdc-8012-415b-8193-a0682613044c))
     (pin "2" (uuid c0335380-42f5-44ad-a0ae-f69fbc9fb23a))
     (instances
+      (project "switch_matrix"
+        (path "/2e3181fe-ee3c-478d-8961-58256639dc5f"
+          (reference "D15") (unit 1)
+        )
+      )
       (project "Koneko40Ortho"
         (path "/dea5f69c-d02e-47df-8e1a-a63949fabb21/0cbd56a0-84b2-4041-9681-83c3815281ca"
           (reference "D15") (unit 1)
@@ -3481,7 +4189,7 @@
   )
 
   (symbol (lib_id "power:GND") (at -2.54 0 0) (unit 1)
-    (in_bom yes) (on_board yes) (dnp no) (fields_autoplaced)
+    (exclude_from_sim no) (in_bom yes) (on_board yes) (dnp no) (fields_autoplaced)
     (uuid 9a188831-4096-4d0c-9d5d-c507739b1c96)
     (property "Reference" "#PWR021" (at -2.54 6.35 0)
       (effects (font (size 1.27 1.27)) hide)
@@ -3495,8 +4203,16 @@
     (property "Datasheet" "" (at -2.54 0 0)
       (effects (font (size 1.27 1.27)) hide)
     )
+    (property "Description" "" (at -2.54 0 0)
+      (effects (font (size 1.27 1.27)) hide)
+    )
     (pin "1" (uuid 8641974d-22da-4002-ac7c-ea0d073b31f2))
     (instances
+      (project "switch_matrix"
+        (path "/2e3181fe-ee3c-478d-8961-58256639dc5f"
+          (reference "#PWR021") (unit 1)
+        )
+      )
       (project "Koneko40Ortho"
         (path "/dea5f69c-d02e-47df-8e1a-a63949fabb21/0cbd56a0-84b2-4041-9681-83c3815281ca"
           (reference "#PWR021") (unit 1)
@@ -3506,7 +4222,7 @@
   )
 
   (symbol (lib_id "marbastlib-mx:MX_SW_HS") (at 198.12 102.87 0) (unit 1)
-    (in_bom yes) (on_board yes) (dnp no) (fields_autoplaced)
+    (exclude_from_sim no) (in_bom yes) (on_board yes) (dnp no) (fields_autoplaced)
     (uuid 9c5b4283-4a58-4f32-818f-12c766740897)
     (property "Reference" "SW33" (at 198.12 96.52 0)
       (effects (font (size 1.27 1.27)))
@@ -3520,9 +4236,20 @@
     (property "Datasheet" "~" (at 198.12 102.87 0)
       (effects (font (size 1.27 1.27)) hide)
     )
+    (property "Description" "" (at 198.12 102.87 0)
+      (effects (font (size 1.27 1.27)) hide)
+    )
+    (property "Field-1" "" (at 198.12 102.87 0)
+      (effects (font (size 1.27 1.27)) hide)
+    )
     (pin "1" (uuid ed43ed87-ee03-4aae-a090-ae21b458c256))
     (pin "2" (uuid 3dc81ec7-c91e-4649-a880-e5f143e0e0df))
     (instances
+      (project "switch_matrix"
+        (path "/2e3181fe-ee3c-478d-8961-58256639dc5f"
+          (reference "SW33") (unit 1)
+        )
+      )
       (project "Koneko40Ortho"
         (path "/dea5f69c-d02e-47df-8e1a-a63949fabb21/0cbd56a0-84b2-4041-9681-83c3815281ca"
           (reference "SW33") (unit 1)
@@ -3532,7 +4259,7 @@
   )
 
   (symbol (lib_id "marbastlib-mx:MX_SW_HS") (at 154.94 31.75 0) (unit 1)
-    (in_bom yes) (on_board yes) (dnp no) (fields_autoplaced)
+    (exclude_from_sim no) (in_bom yes) (on_board yes) (dnp no) (fields_autoplaced)
     (uuid 9c9b31c8-6fd7-4582-a7ef-cf5d79b30ced)
     (property "Reference" "SW7" (at 154.94 25.4 0)
       (effects (font (size 1.27 1.27)))
@@ -3546,9 +4273,20 @@
     (property "Datasheet" "~" (at 154.94 31.75 0)
       (effects (font (size 1.27 1.27)) hide)
     )
+    (property "Description" "" (at 154.94 31.75 0)
+      (effects (font (size 1.27 1.27)) hide)
+    )
+    (property "Field-1" "" (at 154.94 31.75 0)
+      (effects (font (size 1.27 1.27)) hide)
+    )
     (pin "1" (uuid 4c040484-7886-4b6e-aaa5-41068cede47e))
     (pin "2" (uuid 5095b1cf-d633-4922-af76-fa592373fe87))
     (instances
+      (project "switch_matrix"
+        (path "/2e3181fe-ee3c-478d-8961-58256639dc5f"
+          (reference "SW7") (unit 1)
+        )
+      )
       (project "Koneko40Ortho"
         (path "/dea5f69c-d02e-47df-8e1a-a63949fabb21/0cbd56a0-84b2-4041-9681-83c3815281ca"
           (reference "SW7") (unit 1)
@@ -3558,7 +4296,7 @@
   )
 
   (symbol (lib_id "marbastlib-mx:MX_SW_HS") (at 176.53 31.75 0) (unit 1)
-    (in_bom yes) (on_board yes) (dnp no) (fields_autoplaced)
+    (exclude_from_sim no) (in_bom yes) (on_board yes) (dnp no) (fields_autoplaced)
     (uuid 9cbd1930-18e0-41b1-a5da-63755f27de61)
     (property "Reference" "SW8" (at 176.53 25.4 0)
       (effects (font (size 1.27 1.27)))
@@ -3572,9 +4310,20 @@
     (property "Datasheet" "~" (at 176.53 31.75 0)
       (effects (font (size 1.27 1.27)) hide)
     )
+    (property "Description" "" (at 176.53 31.75 0)
+      (effects (font (size 1.27 1.27)) hide)
+    )
+    (property "Field-1" "" (at 176.53 31.75 0)
+      (effects (font (size 1.27 1.27)) hide)
+    )
     (pin "1" (uuid 15492b70-9658-4bcc-93fb-1e831be38006))
     (pin "2" (uuid 7da18f9f-781e-4881-bc05-671d1c09d7bf))
     (instances
+      (project "switch_matrix"
+        (path "/2e3181fe-ee3c-478d-8961-58256639dc5f"
+          (reference "SW8") (unit 1)
+        )
+      )
       (project "Koneko40Ortho"
         (path "/dea5f69c-d02e-47df-8e1a-a63949fabb21/0cbd56a0-84b2-4041-9681-83c3815281ca"
           (reference "SW8") (unit 1)
@@ -3584,7 +4333,7 @@
   )
 
   (symbol (lib_id "Device:D_Small") (at 242.57 36.83 90) (unit 1)
-    (in_bom yes) (on_board yes) (dnp no) (fields_autoplaced)
+    (exclude_from_sim no) (in_bom yes) (on_board yes) (dnp no) (fields_autoplaced)
     (uuid 9dc52149-7b05-4aec-95fb-d7ac0bb78f85)
     (property "Reference" "D11" (at 245.11 36.195 90)
       (effects (font (size 1.27 1.27)) (justify right))
@@ -3598,6 +4347,9 @@
     (property "Datasheet" "~" (at 242.57 36.83 90)
       (effects (font (size 1.27 1.27)) hide)
     )
+    (property "Description" "" (at 242.57 36.83 0)
+      (effects (font (size 1.27 1.27)) hide)
+    )
     (property "Sim.Device" "D" (at 242.57 36.83 0)
       (effects (font (size 1.27 1.27)) hide)
     )
@@ -3607,9 +4359,17 @@
     (property "LCSC" "C81598" (at 242.57 36.83 0)
       (effects (font (size 1.27 1.27)) hide)
     )
+    (property "Field-1" "" (at 242.57 36.83 0)
+      (effects (font (size 1.27 1.27)) hide)
+    )
     (pin "1" (uuid 0f849d22-098a-4433-8409-b6ce2383aa65))
     (pin "2" (uuid 196a82be-bc24-43a4-963f-4fc445791114))
     (instances
+      (project "switch_matrix"
+        (path "/2e3181fe-ee3c-478d-8961-58256639dc5f"
+          (reference "D11") (unit 1)
+        )
+      )
       (project "Koneko40Ortho"
         (path "/dea5f69c-d02e-47df-8e1a-a63949fabb21/0cbd56a0-84b2-4041-9681-83c3815281ca"
           (reference "D11") (unit 1)
@@ -3619,7 +4379,7 @@
   )
 
   (symbol (lib_id "Device:D_Small") (at 95.25 107.95 90) (unit 1)
-    (in_bom yes) (on_board yes) (dnp no) (fields_autoplaced)
+    (exclude_from_sim no) (in_bom yes) (on_board yes) (dnp no) (fields_autoplaced)
     (uuid 9ddbc597-2de0-42ef-af3f-e9f434650f31)
     (property "Reference" "D28" (at 97.79 107.315 90)
       (effects (font (size 1.27 1.27)) (justify right))
@@ -3633,6 +4393,9 @@
     (property "Datasheet" "~" (at 95.25 107.95 90)
       (effects (font (size 1.27 1.27)) hide)
     )
+    (property "Description" "" (at 95.25 107.95 0)
+      (effects (font (size 1.27 1.27)) hide)
+    )
     (property "Sim.Device" "D" (at 95.25 107.95 0)
       (effects (font (size 1.27 1.27)) hide)
     )
@@ -3642,9 +4405,17 @@
     (property "LCSC" "C81598" (at 95.25 107.95 0)
       (effects (font (size 1.27 1.27)) hide)
     )
+    (property "Field-1" "" (at 95.25 107.95 0)
+      (effects (font (size 1.27 1.27)) hide)
+    )
     (pin "1" (uuid 7629ed22-df70-45fc-ade8-a10f90be5630))
     (pin "2" (uuid e0cd8696-be3f-43dc-b506-80c1dfc492cb))
     (instances
+      (project "switch_matrix"
+        (path "/2e3181fe-ee3c-478d-8961-58256639dc5f"
+          (reference "D28") (unit 1)
+        )
+      )
       (project "Koneko40Ortho"
         (path "/dea5f69c-d02e-47df-8e1a-a63949fabb21/0cbd56a0-84b2-4041-9681-83c3815281ca"
           (reference "D28") (unit 1)
@@ -3654,7 +4425,7 @@
   )
 
   (symbol (lib_id "Device:D_Small") (at 115.57 73.66 90) (unit 1)
-    (in_bom yes) (on_board yes) (dnp no) (fields_autoplaced)
+    (exclude_from_sim no) (in_bom yes) (on_board yes) (dnp no) (fields_autoplaced)
     (uuid 9fb4c792-4644-4a90-b847-ef856ec7f874)
     (property "Reference" "D17" (at 118.11 73.025 90)
       (effects (font (size 1.27 1.27)) (justify right))
@@ -3668,6 +4439,9 @@
     (property "Datasheet" "~" (at 115.57 73.66 90)
       (effects (font (size 1.27 1.27)) hide)
     )
+    (property "Description" "" (at 115.57 73.66 0)
+      (effects (font (size 1.27 1.27)) hide)
+    )
     (property "Sim.Device" "D" (at 115.57 73.66 0)
       (effects (font (size 1.27 1.27)) hide)
     )
@@ -3677,9 +4451,17 @@
     (property "LCSC" "C81598" (at 115.57 73.66 0)
       (effects (font (size 1.27 1.27)) hide)
     )
+    (property "Field-1" "" (at 115.57 73.66 0)
+      (effects (font (size 1.27 1.27)) hide)
+    )
     (pin "1" (uuid f829aef1-0f4b-4c39-8a6c-ad7a8ee8a4cb))
     (pin "2" (uuid fb1326a6-24fa-4cf5-a924-d74fa0e576e3))
     (instances
+      (project "switch_matrix"
+        (path "/2e3181fe-ee3c-478d-8961-58256639dc5f"
+          (reference "D17") (unit 1)
+        )
+      )
       (project "Koneko40Ortho"
         (path "/dea5f69c-d02e-47df-8e1a-a63949fabb21/0cbd56a0-84b2-4041-9681-83c3815281ca"
           (reference "D17") (unit 1)
@@ -3689,7 +4471,7 @@
   )
 
   (symbol (lib_id "Device:D_Small") (at 179.07 36.83 90) (unit 1)
-    (in_bom yes) (on_board yes) (dnp no) (fields_autoplaced)
+    (exclude_from_sim no) (in_bom yes) (on_board yes) (dnp no) (fields_autoplaced)
     (uuid a0874b04-4e3a-4c29-8712-15fd5f049787)
     (property "Reference" "D8" (at 181.61 36.195 90)
       (effects (font (size 1.27 1.27)) (justify right))
@@ -3703,6 +4485,9 @@
     (property "Datasheet" "~" (at 179.07 36.83 90)
       (effects (font (size 1.27 1.27)) hide)
     )
+    (property "Description" "" (at 179.07 36.83 0)
+      (effects (font (size 1.27 1.27)) hide)
+    )
     (property "Sim.Device" "D" (at 179.07 36.83 0)
       (effects (font (size 1.27 1.27)) hide)
     )
@@ -3712,9 +4497,17 @@
     (property "LCSC" "C81598" (at 179.07 36.83 0)
       (effects (font (size 1.27 1.27)) hide)
     )
+    (property "Field-1" "" (at 179.07 36.83 0)
+      (effects (font (size 1.27 1.27)) hide)
+    )
     (pin "1" (uuid 53a78762-c9e4-4c11-90a1-35f1cb50f463))
     (pin "2" (uuid bc0a86d1-d269-438e-9f58-1c731a049fa9))
     (instances
+      (project "switch_matrix"
+        (path "/2e3181fe-ee3c-478d-8961-58256639dc5f"
+          (reference "D8") (unit 1)
+        )
+      )
       (project "Koneko40Ortho"
         (path "/dea5f69c-d02e-47df-8e1a-a63949fabb21/0cbd56a0-84b2-4041-9681-83c3815281ca"
           (reference "D8") (unit 1)
@@ -3724,7 +4517,7 @@
   )
 
   (symbol (lib_id "marbastlib-mx:MX_SW_HS") (at 71.12 31.75 0) (unit 1)
-    (in_bom yes) (on_board yes) (dnp no) (fields_autoplaced)
+    (exclude_from_sim no) (in_bom yes) (on_board yes) (dnp no) (fields_autoplaced)
     (uuid a13380d4-91be-4375-abbd-cd7ab67ca58b)
     (property "Reference" "SW3" (at 71.12 25.4 0)
       (effects (font (size 1.27 1.27)))
@@ -3738,9 +4531,20 @@
     (property "Datasheet" "~" (at 71.12 31.75 0)
       (effects (font (size 1.27 1.27)) hide)
     )
+    (property "Description" "" (at 71.12 31.75 0)
+      (effects (font (size 1.27 1.27)) hide)
+    )
+    (property "Field-1" "" (at 71.12 31.75 0)
+      (effects (font (size 1.27 1.27)) hide)
+    )
     (pin "1" (uuid 2aacdbd6-d255-4ab2-beba-40921b6b6d88))
     (pin "2" (uuid 0f01d53c-85b4-4a0a-a35b-6f8fb84ff1ff))
     (instances
+      (project "switch_matrix"
+        (path "/2e3181fe-ee3c-478d-8961-58256639dc5f"
+          (reference "SW3") (unit 1)
+        )
+      )
       (project "Koneko40Ortho"
         (path "/dea5f69c-d02e-47df-8e1a-a63949fabb21/0cbd56a0-84b2-4041-9681-83c3815281ca"
           (reference "SW3") (unit 1)
@@ -3750,7 +4554,7 @@
   )
 
   (symbol (lib_id "marbastlib-mx:MX_SW_HS") (at 154.94 102.87 0) (unit 1)
-    (in_bom yes) (on_board yes) (dnp no) (fields_autoplaced)
+    (exclude_from_sim no) (in_bom yes) (on_board yes) (dnp no) (fields_autoplaced)
     (uuid a6ebe80e-5a93-4802-8d0f-7b9781331674)
     (property "Reference" "SW31" (at 154.94 96.52 0)
       (effects (font (size 1.27 1.27)))
@@ -3764,9 +4568,20 @@
     (property "Datasheet" "~" (at 154.94 102.87 0)
       (effects (font (size 1.27 1.27)) hide)
     )
+    (property "Description" "" (at 154.94 102.87 0)
+      (effects (font (size 1.27 1.27)) hide)
+    )
+    (property "Field-1" "" (at 154.94 102.87 0)
+      (effects (font (size 1.27 1.27)) hide)
+    )
     (pin "1" (uuid 68588cc4-f3b3-4fde-b7d8-982150b11dee))
     (pin "2" (uuid 4950392b-d92f-4f89-aed7-1f36365ba5bd))
     (instances
+      (project "switch_matrix"
+        (path "/2e3181fe-ee3c-478d-8961-58256639dc5f"
+          (reference "SW31") (unit 1)
+        )
+      )
       (project "Koneko40Ortho"
         (path "/dea5f69c-d02e-47df-8e1a-a63949fabb21/0cbd56a0-84b2-4041-9681-83c3815281ca"
           (reference "SW31") (unit 1)
@@ -3776,7 +4591,7 @@
   )
 
   (symbol (lib_id "marbastlib-mx:MX_SW_HS") (at 134.62 31.75 0) (unit 1)
-    (in_bom yes) (on_board yes) (dnp no) (fields_autoplaced)
+    (exclude_from_sim no) (in_bom yes) (on_board yes) (dnp no) (fields_autoplaced)
     (uuid a887a504-2f29-4eec-a277-2ff473159536)
     (property "Reference" "SW6" (at 134.62 25.4 0)
       (effects (font (size 1.27 1.27)))
@@ -3790,9 +4605,20 @@
     (property "Datasheet" "~" (at 134.62 31.75 0)
       (effects (font (size 1.27 1.27)) hide)
     )
+    (property "Description" "" (at 134.62 31.75 0)
+      (effects (font (size 1.27 1.27)) hide)
+    )
+    (property "Field-1" "" (at 134.62 31.75 0)
+      (effects (font (size 1.27 1.27)) hide)
+    )
     (pin "1" (uuid 6594d937-801f-40bc-bb2e-6474e1643dce))
     (pin "2" (uuid 621bcfd9-0c87-4bf3-93b8-dc25132f8ace))
     (instances
+      (project "switch_matrix"
+        (path "/2e3181fe-ee3c-478d-8961-58256639dc5f"
+          (reference "SW6") (unit 1)
+        )
+      )
       (project "Koneko40Ortho"
         (path "/dea5f69c-d02e-47df-8e1a-a63949fabb21/0cbd56a0-84b2-4041-9681-83c3815281ca"
           (reference "SW6") (unit 1)
@@ -3802,7 +4628,7 @@
   )
 
   (symbol (lib_id "Device:D_Small") (at 157.48 36.83 90) (unit 1)
-    (in_bom yes) (on_board yes) (dnp no) (fields_autoplaced)
+    (exclude_from_sim no) (in_bom yes) (on_board yes) (dnp no) (fields_autoplaced)
     (uuid a92004bf-6a7d-4893-9e05-542808db1d91)
     (property "Reference" "D7" (at 160.02 36.195 90)
       (effects (font (size 1.27 1.27)) (justify right))
@@ -3816,6 +4642,9 @@
     (property "Datasheet" "~" (at 157.48 36.83 90)
       (effects (font (size 1.27 1.27)) hide)
     )
+    (property "Description" "" (at 157.48 36.83 0)
+      (effects (font (size 1.27 1.27)) hide)
+    )
     (property "Sim.Device" "D" (at 157.48 36.83 0)
       (effects (font (size 1.27 1.27)) hide)
     )
@@ -3825,9 +4654,17 @@
     (property "LCSC" "C81598" (at 157.48 36.83 0)
       (effects (font (size 1.27 1.27)) hide)
     )
+    (property "Field-1" "" (at 157.48 36.83 0)
+      (effects (font (size 1.27 1.27)) hide)
+    )
     (pin "1" (uuid 8c14be47-5b73-4b5b-a371-ad3017df0153))
     (pin "2" (uuid 23cd5b17-d4b2-4d06-a341-ab72e4dbe812))
     (instances
+      (project "switch_matrix"
+        (path "/2e3181fe-ee3c-478d-8961-58256639dc5f"
+          (reference "D7") (unit 1)
+        )
+      )
       (project "Koneko40Ortho"
         (path "/dea5f69c-d02e-47df-8e1a-a63949fabb21/0cbd56a0-84b2-4041-9681-83c3815281ca"
           (reference "D7") (unit 1)
@@ -3837,7 +4674,7 @@
   )
 
   (symbol (lib_id "marbastlib-mx:MX_SW_HS") (at 29.21 153.67 0) (unit 1)
-    (in_bom yes) (on_board yes) (dnp no) (fields_autoplaced)
+    (exclude_from_sim no) (in_bom yes) (on_board yes) (dnp no) (fields_autoplaced)
     (uuid a9e1e0c6-b595-49e8-88ad-3b277ac5cc3d)
     (property "Reference" "SW37" (at 29.21 147.32 0)
       (effects (font (size 1.27 1.27)))
@@ -3851,9 +4688,20 @@
     (property "Datasheet" "~" (at 29.21 153.67 0)
       (effects (font (size 1.27 1.27)) hide)
     )
+    (property "Description" "" (at 29.21 153.67 0)
+      (effects (font (size 1.27 1.27)) hide)
+    )
+    (property "Field-1" "" (at 29.21 153.67 0)
+      (effects (font (size 1.27 1.27)) hide)
+    )
     (pin "1" (uuid e5252706-1283-4700-927d-386f06169f93))
     (pin "2" (uuid b0a8d51d-8b96-4601-94cb-8c0b71bb10ff))
     (instances
+      (project "switch_matrix"
+        (path "/2e3181fe-ee3c-478d-8961-58256639dc5f"
+          (reference "SW37") (unit 1)
+        )
+      )
       (project "Koneko40Ortho"
         (path "/dea5f69c-d02e-47df-8e1a-a63949fabb21/0cbd56a0-84b2-4041-9681-83c3815281ca"
           (reference "SW37") (unit 1)
@@ -3863,7 +4711,7 @@
   )
 
   (symbol (lib_id "marbastlib-mx:MX_SW_HS") (at 176.53 68.58 0) (unit 1)
-    (in_bom yes) (on_board yes) (dnp no) (fields_autoplaced)
+    (exclude_from_sim no) (in_bom yes) (on_board yes) (dnp no) (fields_autoplaced)
     (uuid ab7a33dd-5e02-4fcd-a0ae-7b8872089d26)
     (property "Reference" "SW20" (at 176.53 62.23 0)
       (effects (font (size 1.27 1.27)))
@@ -3877,9 +4725,20 @@
     (property "Datasheet" "~" (at 176.53 68.58 0)
       (effects (font (size 1.27 1.27)) hide)
     )
+    (property "Description" "" (at 176.53 68.58 0)
+      (effects (font (size 1.27 1.27)) hide)
+    )
+    (property "Field-1" "" (at 176.53 68.58 0)
+      (effects (font (size 1.27 1.27)) hide)
+    )
     (pin "1" (uuid 0556108b-219e-4f00-80c8-c0ab327ac9cc))
     (pin "2" (uuid d2cd1c05-42ae-4fb8-84e3-046cccb9ef1d))
     (instances
+      (project "switch_matrix"
+        (path "/2e3181fe-ee3c-478d-8961-58256639dc5f"
+          (reference "SW20") (unit 1)
+        )
+      )
       (project "Koneko40Ortho"
         (path "/dea5f69c-d02e-47df-8e1a-a63949fabb21/0cbd56a0-84b2-4041-9681-83c3815281ca"
           (reference "SW20") (unit 1)
@@ -3889,7 +4748,7 @@
   )
 
   (symbol (lib_id "marbastlib-mx:MX_stab") (at 179.07 177.8 0) (unit 1)
-    (in_bom yes) (on_board yes) (dnp no) (fields_autoplaced)
+    (exclude_from_sim no) (in_bom yes) (on_board yes) (dnp no) (fields_autoplaced)
     (uuid af73c2c0-56e5-42f0-b112-1c32b1fc820a)
     (property "Reference" "S4" (at 185.42 177.038 0)
       (effects (font (size 1.27 1.27)) (justify left))
@@ -3903,7 +4762,18 @@
     (property "Datasheet" "" (at 179.07 177.8 0)
       (effects (font (size 1.27 1.27)) hide)
     )
+    (property "Description" "" (at 179.07 177.8 0)
+      (effects (font (size 1.27 1.27)) hide)
+    )
+    (property "Field-1" "" (at 179.07 177.8 0)
+      (effects (font (size 1.27 1.27)) hide)
+    )
     (instances
+      (project "switch_matrix"
+        (path "/2e3181fe-ee3c-478d-8961-58256639dc5f"
+          (reference "S4") (unit 1)
+        )
+      )
       (project "Koneko40Ortho"
         (path "/dea5f69c-d02e-47df-8e1a-a63949fabb21/0cbd56a0-84b2-4041-9681-83c3815281ca"
           (reference "S4") (unit 1)
@@ -3913,7 +4783,7 @@
   )
 
   (symbol (lib_id "marbastlib-mx:MX_SW_HS") (at 240.03 31.75 0) (unit 1)
-    (in_bom yes) (on_board yes) (dnp no) (fields_autoplaced)
+    (exclude_from_sim no) (in_bom yes) (on_board yes) (dnp no) (fields_autoplaced)
     (uuid b1901693-18d4-41f0-9d8a-58f83ef6d64a)
     (property "Reference" "SW11" (at 240.03 25.4 0)
       (effects (font (size 1.27 1.27)))
@@ -3927,9 +4797,20 @@
     (property "Datasheet" "~" (at 240.03 31.75 0)
       (effects (font (size 1.27 1.27)) hide)
     )
+    (property "Description" "" (at 240.03 31.75 0)
+      (effects (font (size 1.27 1.27)) hide)
+    )
+    (property "Field-1" "" (at 240.03 31.75 0)
+      (effects (font (size 1.27 1.27)) hide)
+    )
     (pin "1" (uuid c254dbc8-87c5-4e48-a2ee-ea67013a75a8))
     (pin "2" (uuid 652c6c20-3487-4201-8669-f5c9c42e2b86))
     (instances
+      (project "switch_matrix"
+        (path "/2e3181fe-ee3c-478d-8961-58256639dc5f"
+          (reference "SW11") (unit 1)
+        )
+      )
       (project "Koneko40Ortho"
         (path "/dea5f69c-d02e-47df-8e1a-a63949fabb21/0cbd56a0-84b2-4041-9681-83c3815281ca"
           (reference "SW11") (unit 1)
@@ -3939,7 +4820,7 @@
   )
 
   (symbol (lib_id "Device:D_Small") (at 73.66 107.95 90) (unit 1)
-    (in_bom yes) (on_board yes) (dnp no) (fields_autoplaced)
+    (exclude_from_sim no) (in_bom yes) (on_board yes) (dnp no) (fields_autoplaced)
     (uuid b6e56548-1013-4995-9be6-9c3f6156f64c)
     (property "Reference" "D27" (at 76.2 107.315 90)
       (effects (font (size 1.27 1.27)) (justify right))
@@ -3953,6 +4834,9 @@
     (property "Datasheet" "~" (at 73.66 107.95 90)
       (effects (font (size 1.27 1.27)) hide)
     )
+    (property "Description" "" (at 73.66 107.95 0)
+      (effects (font (size 1.27 1.27)) hide)
+    )
     (property "Sim.Device" "D" (at 73.66 107.95 0)
       (effects (font (size 1.27 1.27)) hide)
     )
@@ -3962,9 +4846,17 @@
     (property "LCSC" "C81598" (at 73.66 107.95 0)
       (effects (font (size 1.27 1.27)) hide)
     )
+    (property "Field-1" "" (at 73.66 107.95 0)
+      (effects (font (size 1.27 1.27)) hide)
+    )
     (pin "1" (uuid 2d278da2-d434-491f-a9bb-dadcb756286f))
     (pin "2" (uuid 1faba40d-3e14-430b-ab16-5ceb133f34b4))
     (instances
+      (project "switch_matrix"
+        (path "/2e3181fe-ee3c-478d-8961-58256639dc5f"
+          (reference "D27") (unit 1)
+        )
+      )
       (project "Koneko40Ortho"
         (path "/dea5f69c-d02e-47df-8e1a-a63949fabb21/0cbd56a0-84b2-4041-9681-83c3815281ca"
           (reference "D27") (unit 1)
@@ -3974,7 +4866,7 @@
   )
 
   (symbol (lib_id "power:+3.3V") (at 269.24 -19.05 0) (unit 1)
-    (in_bom yes) (on_board yes) (dnp no) (fields_autoplaced)
+    (exclude_from_sim no) (in_bom yes) (on_board yes) (dnp no) (fields_autoplaced)
     (uuid bb885055-b87e-4408-9a1e-3a8071d887b5)
     (property "Reference" "#PWR028" (at 269.24 -15.24 0)
       (effects (font (size 1.27 1.27)) hide)
@@ -3988,8 +4880,16 @@
     (property "Datasheet" "" (at 269.24 -19.05 0)
       (effects (font (size 1.27 1.27)) hide)
     )
+    (property "Description" "" (at 269.24 -19.05 0)
+      (effects (font (size 1.27 1.27)) hide)
+    )
     (pin "1" (uuid 25ae48fa-16a9-4f4d-a552-6c85a584fb19))
     (instances
+      (project "switch_matrix"
+        (path "/2e3181fe-ee3c-478d-8961-58256639dc5f"
+          (reference "#PWR028") (unit 1)
+        )
+      )
       (project "Koneko40Ortho"
         (path "/dea5f69c-d02e-47df-8e1a-a63949fabb21/0cbd56a0-84b2-4041-9681-83c3815281ca"
           (reference "#PWR028") (unit 1)
@@ -3999,7 +4899,7 @@
   )
 
   (symbol (lib_id "marbastlib-mx:MX_SW_HS") (at 134.62 142.24 0) (unit 1)
-    (in_bom yes) (on_board yes) (dnp no) (fields_autoplaced)
+    (exclude_from_sim no) (in_bom yes) (on_board yes) (dnp no) (fields_autoplaced)
     (uuid bc3d6292-1ae2-4ad8-87e1-f2401ea9dbc2)
     (property "Reference" "SW50" (at 134.62 135.89 0)
       (effects (font (size 1.27 1.27)))
@@ -4013,9 +4913,20 @@
     (property "Datasheet" "~" (at 134.62 142.24 0)
       (effects (font (size 1.27 1.27)) hide)
     )
+    (property "Description" "" (at 134.62 142.24 0)
+      (effects (font (size 1.27 1.27)) hide)
+    )
+    (property "Field-1" "" (at 134.62 142.24 0)
+      (effects (font (size 1.27 1.27)) hide)
+    )
     (pin "1" (uuid ff495c28-39f7-4c0d-88dd-8c3c8a5d9f30))
     (pin "2" (uuid 3f871241-cf20-444f-ad67-9df1363053e6))
     (instances
+      (project "switch_matrix"
+        (path "/2e3181fe-ee3c-478d-8961-58256639dc5f"
+          (reference "SW50") (unit 1)
+        )
+      )
       (project "Koneko40Ortho"
         (path "/dea5f69c-d02e-47df-8e1a-a63949fabb21/0cbd56a0-84b2-4041-9681-83c3815281ca"
           (reference "SW50") (unit 1)
@@ -4025,7 +4936,7 @@
   )
 
   (symbol (lib_id "marbastlib-mx:MX_SW_HS") (at 240.03 68.58 0) (unit 1)
-    (in_bom yes) (on_board yes) (dnp no) (fields_autoplaced)
+    (exclude_from_sim no) (in_bom yes) (on_board yes) (dnp no) (fields_autoplaced)
     (uuid bcaa3ba7-b572-4d93-a2ca-a04eb2108043)
     (property "Reference" "SW23" (at 240.03 62.23 0)
       (effects (font (size 1.27 1.27)))
@@ -4039,9 +4950,20 @@
     (property "Datasheet" "~" (at 240.03 68.58 0)
       (effects (font (size 1.27 1.27)) hide)
     )
+    (property "Description" "" (at 240.03 68.58 0)
+      (effects (font (size 1.27 1.27)) hide)
+    )
+    (property "Field-1" "" (at 240.03 68.58 0)
+      (effects (font (size 1.27 1.27)) hide)
+    )
     (pin "1" (uuid d301a96c-2318-4421-bbbc-ad2a750cecd5))
     (pin "2" (uuid 1f9831c7-277c-44d6-8058-250267cbf555))
     (instances
+      (project "switch_matrix"
+        (path "/2e3181fe-ee3c-478d-8961-58256639dc5f"
+          (reference "SW23") (unit 1)
+        )
+      )
       (project "Koneko40Ortho"
         (path "/dea5f69c-d02e-47df-8e1a-a63949fabb21/0cbd56a0-84b2-4041-9681-83c3815281ca"
           (reference "SW23") (unit 1)
@@ -4051,7 +4973,7 @@
   )
 
   (symbol (lib_id "Device:D_Small") (at 200.66 158.75 90) (unit 1)
-    (in_bom yes) (on_board yes) (dnp no) (fields_autoplaced)
+    (exclude_from_sim no) (in_bom yes) (on_board yes) (dnp no) (fields_autoplaced)
     (uuid bcf9a540-0e56-41d8-8694-c17c8b72dfd1)
     (property "Reference" "D45" (at 203.2 158.115 90)
       (effects (font (size 1.27 1.27)) (justify right))
@@ -4065,6 +4987,9 @@
     (property "Datasheet" "~" (at 200.66 158.75 90)
       (effects (font (size 1.27 1.27)) hide)
     )
+    (property "Description" "" (at 200.66 158.75 0)
+      (effects (font (size 1.27 1.27)) hide)
+    )
     (property "Sim.Device" "D" (at 200.66 158.75 0)
       (effects (font (size 1.27 1.27)) hide)
     )
@@ -4074,9 +4999,17 @@
     (property "LCSC" "C81598" (at 200.66 158.75 0)
       (effects (font (size 1.27 1.27)) hide)
     )
+    (property "Field-1" "" (at 200.66 158.75 0)
+      (effects (font (size 1.27 1.27)) hide)
+    )
     (pin "1" (uuid 2d8ea504-ef1e-4a9f-81b6-64f5fd4beb00))
     (pin "2" (uuid 4954d546-9afc-4278-8f4e-0e34d1d7a9a9))
     (instances
+      (project "switch_matrix"
+        (path "/2e3181fe-ee3c-478d-8961-58256639dc5f"
+          (reference "D45") (unit 1)
+        )
+      )
       (project "Koneko40Ortho"
         (path "/dea5f69c-d02e-47df-8e1a-a63949fabb21/0cbd56a0-84b2-4041-9681-83c3815281ca"
           (reference "D45") (unit 1)
@@ -4086,7 +5019,7 @@
   )
 
   (symbol (lib_id "marbastlib-mx:MX_SW_HS") (at 154.94 142.24 0) (unit 1)
-    (in_bom yes) (on_board yes) (dnp no) (fields_autoplaced)
+    (exclude_from_sim no) (in_bom yes) (on_board yes) (dnp no) (fields_autoplaced)
     (uuid c2177b6d-dcfa-4b43-8b29-7122e2d2f7c5)
     (property "Reference" "SW51" (at 154.94 135.89 0)
       (effects (font (size 1.27 1.27)))
@@ -4100,9 +5033,20 @@
     (property "Datasheet" "~" (at 154.94 142.24 0)
       (effects (font (size 1.27 1.27)) hide)
     )
+    (property "Description" "" (at 154.94 142.24 0)
+      (effects (font (size 1.27 1.27)) hide)
+    )
+    (property "Field-1" "" (at 154.94 142.24 0)
+      (effects (font (size 1.27 1.27)) hide)
+    )
     (pin "1" (uuid 4416994c-d37e-4836-b926-63e0ed4c06d6))
     (pin "2" (uuid 599d4cbc-f51f-412c-b162-e84ece8fb5ce))
     (instances
+      (project "switch_matrix"
+        (path "/2e3181fe-ee3c-478d-8961-58256639dc5f"
+          (reference "SW51") (unit 1)
+        )
+      )
       (project "Koneko40Ortho"
         (path "/dea5f69c-d02e-47df-8e1a-a63949fabb21/0cbd56a0-84b2-4041-9681-83c3815281ca"
           (reference "SW51") (unit 1)
@@ -4112,7 +5056,7 @@
   )
 
   (symbol (lib_id "marbastlib-mx:MX_SW_HS") (at 261.62 31.75 0) (unit 1)
-    (in_bom yes) (on_board yes) (dnp no) (fields_autoplaced)
+    (exclude_from_sim no) (in_bom yes) (on_board yes) (dnp no) (fields_autoplaced)
     (uuid c22188b4-cd5a-42bb-9b6a-f2e02c7bad28)
     (property "Reference" "SW12" (at 261.62 25.4 0)
       (effects (font (size 1.27 1.27)))
@@ -4126,9 +5070,20 @@
     (property "Datasheet" "~" (at 261.62 31.75 0)
       (effects (font (size 1.27 1.27)) hide)
     )
+    (property "Description" "" (at 261.62 31.75 0)
+      (effects (font (size 1.27 1.27)) hide)
+    )
+    (property "Field-1" "" (at 261.62 31.75 0)
+      (effects (font (size 1.27 1.27)) hide)
+    )
     (pin "1" (uuid ea9640d7-9671-4bc2-878c-812dfcd584ac))
     (pin "2" (uuid 9baa0e02-876b-46b4-a6c1-f7b802013047))
     (instances
+      (project "switch_matrix"
+        (path "/2e3181fe-ee3c-478d-8961-58256639dc5f"
+          (reference "SW12") (unit 1)
+        )
+      )
       (project "Koneko40Ortho"
         (path "/dea5f69c-d02e-47df-8e1a-a63949fabb21/0cbd56a0-84b2-4041-9681-83c3815281ca"
           (reference "SW12") (unit 1)
@@ -4138,7 +5093,7 @@
   )
 
   (symbol (lib_id "Device:D_Small") (at 53.34 36.83 90) (unit 1)
-    (in_bom yes) (on_board yes) (dnp no) (fields_autoplaced)
+    (exclude_from_sim no) (in_bom yes) (on_board yes) (dnp no) (fields_autoplaced)
     (uuid c7f58bf7-a776-4663-82e9-30d89ab698cc)
     (property "Reference" "D2" (at 55.88 36.195 90)
       (effects (font (size 1.27 1.27)) (justify right))
@@ -4152,6 +5107,9 @@
     (property "Datasheet" "~" (at 53.34 36.83 90)
       (effects (font (size 1.27 1.27)) hide)
     )
+    (property "Description" "" (at 53.34 36.83 0)
+      (effects (font (size 1.27 1.27)) hide)
+    )
     (property "Sim.Device" "D" (at 53.34 36.83 0)
       (effects (font (size 1.27 1.27)) hide)
     )
@@ -4161,9 +5119,17 @@
     (property "LCSC" "C81598" (at 53.34 36.83 0)
       (effects (font (size 1.27 1.27)) hide)
     )
+    (property "Field-1" "" (at 53.34 36.83 0)
+      (effects (font (size 1.27 1.27)) hide)
+    )
     (pin "1" (uuid 882e5dd5-9695-4af3-9465-caa01b32d304))
     (pin "2" (uuid 96633dd4-710a-45e1-ae67-f63598295973))
     (instances
+      (project "switch_matrix"
+        (path "/2e3181fe-ee3c-478d-8961-58256639dc5f"
+          (reference "D2") (unit 1)
+        )
+      )
       (project "Koneko40Ortho"
         (path "/dea5f69c-d02e-47df-8e1a-a63949fabb21/0cbd56a0-84b2-4041-9681-83c3815281ca"
           (reference "D2") (unit 1)
@@ -4173,7 +5139,7 @@
   )
 
   (symbol (lib_id "Device:D_Small") (at 95.25 36.83 90) (unit 1)
-    (in_bom yes) (on_board yes) (dnp no) (fields_autoplaced)
+    (exclude_from_sim no) (in_bom yes) (on_board yes) (dnp no) (fields_autoplaced)
     (uuid c9c1f8b9-b781-44ff-aacd-909856d4b2b2)
     (property "Reference" "D4" (at 97.79 36.195 90)
       (effects (font (size 1.27 1.27)) (justify right))
@@ -4187,6 +5153,9 @@
     (property "Datasheet" "~" (at 95.25 36.83 90)
       (effects (font (size 1.27 1.27)) hide)
     )
+    (property "Description" "" (at 95.25 36.83 0)
+      (effects (font (size 1.27 1.27)) hide)
+    )
     (property "Sim.Device" "D" (at 95.25 36.83 0)
       (effects (font (size 1.27 1.27)) hide)
     )
@@ -4196,9 +5165,17 @@
     (property "LCSC" "C81598" (at 95.25 36.83 0)
       (effects (font (size 1.27 1.27)) hide)
     )
+    (property "Field-1" "" (at 95.25 36.83 0)
+      (effects (font (size 1.27 1.27)) hide)
+    )
     (pin "1" (uuid b6f58549-2dbf-422c-b88f-9a0cec21ab81))
     (pin "2" (uuid eb58bd54-9c99-412b-9576-c72df2e34ee4))
     (instances
+      (project "switch_matrix"
+        (path "/2e3181fe-ee3c-478d-8961-58256639dc5f"
+          (reference "D4") (unit 1)
+        )
+      )
       (project "Koneko40Ortho"
         (path "/dea5f69c-d02e-47df-8e1a-a63949fabb21/0cbd56a0-84b2-4041-9681-83c3815281ca"
           (reference "D4") (unit 1)
@@ -4208,7 +5185,7 @@
   )
 
   (symbol (lib_id "marbastlib-mx:MX_SW_HS") (at 198.12 68.58 0) (unit 1)
-    (in_bom yes) (on_board yes) (dnp no) (fields_autoplaced)
+    (exclude_from_sim no) (in_bom yes) (on_board yes) (dnp no) (fields_autoplaced)
     (uuid c9c91292-62dc-409a-9079-d1cb53c39c0b)
     (property "Reference" "SW21" (at 198.12 62.23 0)
       (effects (font (size 1.27 1.27)))
@@ -4222,9 +5199,20 @@
     (property "Datasheet" "~" (at 198.12 68.58 0)
       (effects (font (size 1.27 1.27)) hide)
     )
+    (property "Description" "" (at 198.12 68.58 0)
+      (effects (font (size 1.27 1.27)) hide)
+    )
+    (property "Field-1" "" (at 198.12 68.58 0)
+      (effects (font (size 1.27 1.27)) hide)
+    )
     (pin "1" (uuid b9f3ea0d-a081-4b38-a6b5-f8f1dd782cd4))
     (pin "2" (uuid 29399203-dbe6-4830-bd03-8340c3aea326))
     (instances
+      (project "switch_matrix"
+        (path "/2e3181fe-ee3c-478d-8961-58256639dc5f"
+          (reference "SW21") (unit 1)
+        )
+      )
       (project "Koneko40Ortho"
         (path "/dea5f69c-d02e-47df-8e1a-a63949fabb21/0cbd56a0-84b2-4041-9681-83c3815281ca"
           (reference "SW21") (unit 1)
@@ -4234,7 +5222,7 @@
   )
 
   (symbol (lib_id "marbastlib-mx:MX_stab") (at 115.57 177.8 0) (unit 1)
-    (in_bom yes) (on_board yes) (dnp no) (fields_autoplaced)
+    (exclude_from_sim no) (in_bom yes) (on_board yes) (dnp no) (fields_autoplaced)
     (uuid ca26ff62-d24c-4b60-9c67-6add481957ad)
     (property "Reference" "S3" (at 121.92 177.038 0)
       (effects (font (size 1.27 1.27)) (justify left))
@@ -4248,7 +5236,18 @@
     (property "Datasheet" "" (at 115.57 177.8 0)
       (effects (font (size 1.27 1.27)) hide)
     )
+    (property "Description" "" (at 115.57 177.8 0)
+      (effects (font (size 1.27 1.27)) hide)
+    )
+    (property "Field-1" "" (at 115.57 177.8 0)
+      (effects (font (size 1.27 1.27)) hide)
+    )
     (instances
+      (project "switch_matrix"
+        (path "/2e3181fe-ee3c-478d-8961-58256639dc5f"
+          (reference "S3") (unit 1)
+        )
+      )
       (project "Koneko40Ortho"
         (path "/dea5f69c-d02e-47df-8e1a-a63949fabb21/0cbd56a0-84b2-4041-9681-83c3815281ca"
           (reference "S3") (unit 1)
@@ -4258,7 +5257,7 @@
   )
 
   (symbol (lib_id "Device:D_Small") (at 264.16 36.83 90) (unit 1)
-    (in_bom yes) (on_board yes) (dnp no) (fields_autoplaced)
+    (exclude_from_sim no) (in_bom yes) (on_board yes) (dnp no) (fields_autoplaced)
     (uuid ca870d8e-b01d-471a-bb5f-dd87559a89c6)
     (property "Reference" "D12" (at 266.7 36.195 90)
       (effects (font (size 1.27 1.27)) (justify right))
@@ -4272,6 +5271,9 @@
     (property "Datasheet" "~" (at 264.16 36.83 90)
       (effects (font (size 1.27 1.27)) hide)
     )
+    (property "Description" "" (at 264.16 36.83 0)
+      (effects (font (size 1.27 1.27)) hide)
+    )
     (property "Sim.Device" "D" (at 264.16 36.83 0)
       (effects (font (size 1.27 1.27)) hide)
     )
@@ -4281,9 +5283,17 @@
     (property "LCSC" "C81598" (at 264.16 36.83 0)
       (effects (font (size 1.27 1.27)) hide)
     )
+    (property "Field-1" "" (at 264.16 36.83 0)
+      (effects (font (size 1.27 1.27)) hide)
+    )
     (pin "1" (uuid b6d24c42-2ecf-43d0-b213-ff1a99d4aa55))
     (pin "2" (uuid 38bd7375-b5e2-45d1-8899-2539f27e7fdc))
     (instances
+      (project "switch_matrix"
+        (path "/2e3181fe-ee3c-478d-8961-58256639dc5f"
+          (reference "D12") (unit 1)
+        )
+      )
       (project "Koneko40Ortho"
         (path "/dea5f69c-d02e-47df-8e1a-a63949fabb21/0cbd56a0-84b2-4041-9681-83c3815281ca"
           (reference "D12") (unit 1)
@@ -4293,7 +5303,7 @@
   )
 
   (symbol (lib_id "marbastlib-mx:MX_SW_HS") (at 113.03 68.58 0) (unit 1)
-    (in_bom yes) (on_board yes) (dnp no) (fields_autoplaced)
+    (exclude_from_sim no) (in_bom yes) (on_board yes) (dnp no) (fields_autoplaced)
     (uuid cc58ecfa-031d-4aea-90c0-e30d7c9509f8)
     (property "Reference" "SW17" (at 113.03 62.23 0)
       (effects (font (size 1.27 1.27)))
@@ -4307,9 +5317,20 @@
     (property "Datasheet" "~" (at 113.03 68.58 0)
       (effects (font (size 1.27 1.27)) hide)
     )
+    (property "Description" "" (at 113.03 68.58 0)
+      (effects (font (size 1.27 1.27)) hide)
+    )
+    (property "Field-1" "" (at 113.03 68.58 0)
+      (effects (font (size 1.27 1.27)) hide)
+    )
     (pin "1" (uuid c207350b-6ccd-475b-b9bc-035dd92840cb))
     (pin "2" (uuid 2479c7aa-69f5-4b1a-a80c-fd04d75aab39))
     (instances
+      (project "switch_matrix"
+        (path "/2e3181fe-ee3c-478d-8961-58256639dc5f"
+          (reference "SW17") (unit 1)
+        )
+      )
       (project "Koneko40Ortho"
         (path "/dea5f69c-d02e-47df-8e1a-a63949fabb21/0cbd56a0-84b2-4041-9681-83c3815281ca"
           (reference "SW17") (unit 1)
@@ -4319,7 +5340,7 @@
   )
 
   (symbol (lib_id "Device:R_Small_US") (at 27.94 -13.97 180) (unit 1)
-    (in_bom yes) (on_board yes) (dnp no) (fields_autoplaced)
+    (exclude_from_sim no) (in_bom yes) (on_board yes) (dnp no) (fields_autoplaced)
     (uuid cdb73ac3-3dc3-412e-b705-845681b7da80)
     (property "Reference" "R3" (at 31.75 -14.605 0)
       (effects (font (size 1.27 1.27)) (justify right))
@@ -4333,12 +5354,23 @@
     (property "Datasheet" "~" (at 27.94 -13.97 0)
       (effects (font (size 1.27 1.27)) hide)
     )
+    (property "Description" "" (at 27.94 -13.97 0)
+      (effects (font (size 1.27 1.27)) hide)
+    )
     (property "LCSC" "C106234" (at 27.94 -13.97 0)
+      (effects (font (size 1.27 1.27)) hide)
+    )
+    (property "Field-1" "" (at 27.94 -13.97 0)
       (effects (font (size 1.27 1.27)) hide)
     )
     (pin "1" (uuid 9b6a807a-b623-430e-8655-b8be9fc2154b))
     (pin "2" (uuid a92fa1f0-87f4-4e41-b654-731afdc9222d))
     (instances
+      (project "switch_matrix"
+        (path "/2e3181fe-ee3c-478d-8961-58256639dc5f"
+          (reference "R3") (unit 1)
+        )
+      )
       (project "Koneko40Ortho"
         (path "/dea5f69c-d02e-47df-8e1a-a63949fabb21"
           (reference "R3") (unit 1)
@@ -4351,7 +5383,7 @@
   )
 
   (symbol (lib_id "marbastlib-mx:MX_SW_HS") (at 240.03 153.67 0) (unit 1)
-    (in_bom yes) (on_board yes) (dnp no) (fields_autoplaced)
+    (exclude_from_sim no) (in_bom yes) (on_board yes) (dnp no) (fields_autoplaced)
     (uuid cdc3b66b-1191-41d8-bc20-1eca6e444e69)
     (property "Reference" "SW47" (at 240.03 147.32 0)
       (effects (font (size 1.27 1.27)))
@@ -4365,9 +5397,20 @@
     (property "Datasheet" "~" (at 240.03 153.67 0)
       (effects (font (size 1.27 1.27)) hide)
     )
+    (property "Description" "" (at 240.03 153.67 0)
+      (effects (font (size 1.27 1.27)) hide)
+    )
+    (property "Field-1" "" (at 240.03 153.67 0)
+      (effects (font (size 1.27 1.27)) hide)
+    )
     (pin "1" (uuid ac625a9c-10e0-40c1-bbef-8ada9f34b68a))
     (pin "2" (uuid e7115cd2-776c-496b-8130-5f4baec25d39))
     (instances
+      (project "switch_matrix"
+        (path "/2e3181fe-ee3c-478d-8961-58256639dc5f"
+          (reference "SW47") (unit 1)
+        )
+      )
       (project "Koneko40Ortho"
         (path "/dea5f69c-d02e-47df-8e1a-a63949fabb21/0cbd56a0-84b2-4041-9681-83c3815281ca"
           (reference "SW47") (unit 1)
@@ -4377,7 +5420,7 @@
   )
 
   (symbol (lib_id "marbastlib-mx:MX_SW_HS") (at 71.12 102.87 0) (unit 1)
-    (in_bom yes) (on_board yes) (dnp no) (fields_autoplaced)
+    (exclude_from_sim no) (in_bom yes) (on_board yes) (dnp no) (fields_autoplaced)
     (uuid d00acc3a-ddad-40a0-af29-827dbbfe6384)
     (property "Reference" "SW27" (at 71.12 96.52 0)
       (effects (font (size 1.27 1.27)))
@@ -4391,9 +5434,20 @@
     (property "Datasheet" "~" (at 71.12 102.87 0)
       (effects (font (size 1.27 1.27)) hide)
     )
+    (property "Description" "" (at 71.12 102.87 0)
+      (effects (font (size 1.27 1.27)) hide)
+    )
+    (property "Field-1" "" (at 71.12 102.87 0)
+      (effects (font (size 1.27 1.27)) hide)
+    )
     (pin "1" (uuid 948e3dfc-bead-4f4e-94b6-660f69441df6))
     (pin "2" (uuid f4f87553-c9d7-4825-8048-9c6fa6d984b7))
     (instances
+      (project "switch_matrix"
+        (path "/2e3181fe-ee3c-478d-8961-58256639dc5f"
+          (reference "SW27") (unit 1)
+        )
+      )
       (project "Koneko40Ortho"
         (path "/dea5f69c-d02e-47df-8e1a-a63949fabb21/0cbd56a0-84b2-4041-9681-83c3815281ca"
           (reference "SW27") (unit 1)
@@ -4403,7 +5457,7 @@
   )
 
   (symbol (lib_id "Device:D_Small") (at 242.57 73.66 90) (unit 1)
-    (in_bom yes) (on_board yes) (dnp no) (fields_autoplaced)
+    (exclude_from_sim no) (in_bom yes) (on_board yes) (dnp no) (fields_autoplaced)
     (uuid d68f3fdb-08b0-41d2-a083-570fdc932432)
     (property "Reference" "D23" (at 245.11 73.025 90)
       (effects (font (size 1.27 1.27)) (justify right))
@@ -4417,6 +5471,9 @@
     (property "Datasheet" "~" (at 242.57 73.66 90)
       (effects (font (size 1.27 1.27)) hide)
     )
+    (property "Description" "" (at 242.57 73.66 0)
+      (effects (font (size 1.27 1.27)) hide)
+    )
     (property "Sim.Device" "D" (at 242.57 73.66 0)
       (effects (font (size 1.27 1.27)) hide)
     )
@@ -4426,9 +5483,17 @@
     (property "LCSC" "C81598" (at 242.57 73.66 0)
       (effects (font (size 1.27 1.27)) hide)
     )
+    (property "Field-1" "" (at 242.57 73.66 0)
+      (effects (font (size 1.27 1.27)) hide)
+    )
     (pin "1" (uuid 9f179e95-1136-4a08-98f9-e1d7132405d2))
     (pin "2" (uuid 19d107e4-4310-4e76-835a-36d562c7f0a6))
     (instances
+      (project "switch_matrix"
+        (path "/2e3181fe-ee3c-478d-8961-58256639dc5f"
+          (reference "D23") (unit 1)
+        )
+      )
       (project "Koneko40Ortho"
         (path "/dea5f69c-d02e-47df-8e1a-a63949fabb21/0cbd56a0-84b2-4041-9681-83c3815281ca"
           (reference "D23") (unit 1)
@@ -4438,7 +5503,7 @@
   )
 
   (symbol (lib_id "Device:D_Small") (at 222.25 73.66 90) (unit 1)
-    (in_bom yes) (on_board yes) (dnp no) (fields_autoplaced)
+    (exclude_from_sim no) (in_bom yes) (on_board yes) (dnp no) (fields_autoplaced)
     (uuid d7254bc7-675b-4d1a-b9de-6beb898fef0b)
     (property "Reference" "D22" (at 224.79 73.025 90)
       (effects (font (size 1.27 1.27)) (justify right))
@@ -4452,6 +5517,9 @@
     (property "Datasheet" "~" (at 222.25 73.66 90)
       (effects (font (size 1.27 1.27)) hide)
     )
+    (property "Description" "" (at 222.25 73.66 0)
+      (effects (font (size 1.27 1.27)) hide)
+    )
     (property "Sim.Device" "D" (at 222.25 73.66 0)
       (effects (font (size 1.27 1.27)) hide)
     )
@@ -4461,9 +5529,17 @@
     (property "LCSC" "C81598" (at 222.25 73.66 0)
       (effects (font (size 1.27 1.27)) hide)
     )
+    (property "Field-1" "" (at 222.25 73.66 0)
+      (effects (font (size 1.27 1.27)) hide)
+    )
     (pin "1" (uuid 6d6a05cd-0d12-46a6-8e86-0c35be1aa3e6))
     (pin "2" (uuid 6b5645dd-052b-4b9d-905a-53d9103f68a7))
     (instances
+      (project "switch_matrix"
+        (path "/2e3181fe-ee3c-478d-8961-58256639dc5f"
+          (reference "D22") (unit 1)
+        )
+      )
       (project "Koneko40Ortho"
         (path "/dea5f69c-d02e-47df-8e1a-a63949fabb21/0cbd56a0-84b2-4041-9681-83c3815281ca"
           (reference "D22") (unit 1)
@@ -4473,7 +5549,7 @@
   )
 
   (symbol (lib_id "marbastlib-mx:MX_SW_HS") (at 134.62 153.67 0) (unit 1)
-    (in_bom yes) (on_board yes) (dnp no) (fields_autoplaced)
+    (exclude_from_sim no) (in_bom yes) (on_board yes) (dnp no) (fields_autoplaced)
     (uuid d84e8fe3-558c-41f2-8706-25ebb025d048)
     (property "Reference" "SW42" (at 134.62 147.32 0)
       (effects (font (size 1.27 1.27)))
@@ -4487,9 +5563,20 @@
     (property "Datasheet" "~" (at 134.62 153.67 0)
       (effects (font (size 1.27 1.27)) hide)
     )
+    (property "Description" "" (at 134.62 153.67 0)
+      (effects (font (size 1.27 1.27)) hide)
+    )
+    (property "Field-1" "" (at 134.62 153.67 0)
+      (effects (font (size 1.27 1.27)) hide)
+    )
     (pin "1" (uuid 27eaaa96-1acb-4b9d-ac34-e177aa3f540d))
     (pin "2" (uuid b0a11185-8a74-4048-b0a2-ce26380d6ce6))
     (instances
+      (project "switch_matrix"
+        (path "/2e3181fe-ee3c-478d-8961-58256639dc5f"
+          (reference "SW42") (unit 1)
+        )
+      )
       (project "Koneko40Ortho"
         (path "/dea5f69c-d02e-47df-8e1a-a63949fabb21/0cbd56a0-84b2-4041-9681-83c3815281ca"
           (reference "SW42") (unit 1)
@@ -4499,7 +5586,7 @@
   )
 
   (symbol (lib_id "Device:D_Small") (at 137.16 36.83 90) (unit 1)
-    (in_bom yes) (on_board yes) (dnp no) (fields_autoplaced)
+    (exclude_from_sim no) (in_bom yes) (on_board yes) (dnp no) (fields_autoplaced)
     (uuid d85679cb-7b1e-4013-acfc-23114003dffe)
     (property "Reference" "D6" (at 139.7 36.195 90)
       (effects (font (size 1.27 1.27)) (justify right))
@@ -4513,6 +5600,9 @@
     (property "Datasheet" "~" (at 137.16 36.83 90)
       (effects (font (size 1.27 1.27)) hide)
     )
+    (property "Description" "" (at 137.16 36.83 0)
+      (effects (font (size 1.27 1.27)) hide)
+    )
     (property "Sim.Device" "D" (at 137.16 36.83 0)
       (effects (font (size 1.27 1.27)) hide)
     )
@@ -4522,9 +5612,17 @@
     (property "LCSC" "C81598" (at 137.16 36.83 0)
       (effects (font (size 1.27 1.27)) hide)
     )
+    (property "Field-1" "" (at 137.16 36.83 0)
+      (effects (font (size 1.27 1.27)) hide)
+    )
     (pin "1" (uuid d146beff-51dd-42cb-830b-ec026f88e528))
     (pin "2" (uuid ffa1b5fc-3a8f-4a96-9651-b17fe46b4cce))
     (instances
+      (project "switch_matrix"
+        (path "/2e3181fe-ee3c-478d-8961-58256639dc5f"
+          (reference "D6") (unit 1)
+        )
+      )
       (project "Koneko40Ortho"
         (path "/dea5f69c-d02e-47df-8e1a-a63949fabb21/0cbd56a0-84b2-4041-9681-83c3815281ca"
           (reference "D6") (unit 1)
@@ -4534,7 +5632,7 @@
   )
 
   (symbol (lib_id "Device:D_Small") (at 95.25 158.75 90) (unit 1)
-    (in_bom yes) (on_board yes) (dnp no) (fields_autoplaced)
+    (exclude_from_sim no) (in_bom yes) (on_board yes) (dnp no) (fields_autoplaced)
     (uuid dadd9397-6db0-4fee-b6aa-d1d5a7d6e880)
     (property "Reference" "D40" (at 97.79 158.115 90)
       (effects (font (size 1.27 1.27)) (justify right))
@@ -4548,6 +5646,9 @@
     (property "Datasheet" "~" (at 95.25 158.75 90)
       (effects (font (size 1.27 1.27)) hide)
     )
+    (property "Description" "" (at 95.25 158.75 0)
+      (effects (font (size 1.27 1.27)) hide)
+    )
     (property "Sim.Device" "D" (at 95.25 158.75 0)
       (effects (font (size 1.27 1.27)) hide)
     )
@@ -4557,9 +5658,17 @@
     (property "LCSC" "C81598" (at 95.25 158.75 0)
       (effects (font (size 1.27 1.27)) hide)
     )
+    (property "Field-1" "" (at 95.25 158.75 0)
+      (effects (font (size 1.27 1.27)) hide)
+    )
     (pin "1" (uuid 1d4e706c-0b64-46e8-906f-b37130eff492))
     (pin "2" (uuid b1be719a-8cd5-4d81-ac3c-4c56726bc075))
     (instances
+      (project "switch_matrix"
+        (path "/2e3181fe-ee3c-478d-8961-58256639dc5f"
+          (reference "D40") (unit 1)
+        )
+      )
       (project "Koneko40Ortho"
         (path "/dea5f69c-d02e-47df-8e1a-a63949fabb21/0cbd56a0-84b2-4041-9681-83c3815281ca"
           (reference "D40") (unit 1)
@@ -4569,7 +5678,7 @@
   )
 
   (symbol (lib_id "marbastlib-mx:MX_SW_HS") (at 219.71 68.58 0) (unit 1)
-    (in_bom yes) (on_board yes) (dnp no) (fields_autoplaced)
+    (exclude_from_sim no) (in_bom yes) (on_board yes) (dnp no) (fields_autoplaced)
     (uuid db3c0553-eb3e-4730-b942-aba6694a0ab0)
     (property "Reference" "SW22" (at 219.71 62.23 0)
       (effects (font (size 1.27 1.27)))
@@ -4583,9 +5692,20 @@
     (property "Datasheet" "~" (at 219.71 68.58 0)
       (effects (font (size 1.27 1.27)) hide)
     )
+    (property "Description" "" (at 219.71 68.58 0)
+      (effects (font (size 1.27 1.27)) hide)
+    )
+    (property "Field-1" "" (at 219.71 68.58 0)
+      (effects (font (size 1.27 1.27)) hide)
+    )
     (pin "1" (uuid c6965503-5bc1-47ca-a6f2-f816436e8d2c))
     (pin "2" (uuid b76322e3-e44d-40f1-b87e-bd17b57374ed))
     (instances
+      (project "switch_matrix"
+        (path "/2e3181fe-ee3c-478d-8961-58256639dc5f"
+          (reference "SW22") (unit 1)
+        )
+      )
       (project "Koneko40Ortho"
         (path "/dea5f69c-d02e-47df-8e1a-a63949fabb21/0cbd56a0-84b2-4041-9681-83c3815281ca"
           (reference "SW22") (unit 1)
@@ -4595,7 +5715,7 @@
   )
 
   (symbol (lib_id "Device:D_Small") (at 137.16 107.95 90) (unit 1)
-    (in_bom yes) (on_board yes) (dnp no) (fields_autoplaced)
+    (exclude_from_sim no) (in_bom yes) (on_board yes) (dnp no) (fields_autoplaced)
     (uuid dbbce8af-3571-4a8f-b31b-7c44e1d9ee0d)
     (property "Reference" "D30" (at 139.7 107.315 90)
       (effects (font (size 1.27 1.27)) (justify right))
@@ -4609,6 +5729,9 @@
     (property "Datasheet" "~" (at 137.16 107.95 90)
       (effects (font (size 1.27 1.27)) hide)
     )
+    (property "Description" "" (at 137.16 107.95 0)
+      (effects (font (size 1.27 1.27)) hide)
+    )
     (property "Sim.Device" "D" (at 137.16 107.95 0)
       (effects (font (size 1.27 1.27)) hide)
     )
@@ -4618,9 +5741,17 @@
     (property "LCSC" "C81598" (at 137.16 107.95 0)
       (effects (font (size 1.27 1.27)) hide)
     )
+    (property "Field-1" "" (at 137.16 107.95 0)
+      (effects (font (size 1.27 1.27)) hide)
+    )
     (pin "1" (uuid a90f9e56-8bed-47db-8781-759020e91b11))
     (pin "2" (uuid dd146386-ebeb-4409-8c23-8d839020c4f3))
     (instances
+      (project "switch_matrix"
+        (path "/2e3181fe-ee3c-478d-8961-58256639dc5f"
+          (reference "D30") (unit 1)
+        )
+      )
       (project "Koneko40Ortho"
         (path "/dea5f69c-d02e-47df-8e1a-a63949fabb21/0cbd56a0-84b2-4041-9681-83c3815281ca"
           (reference "D30") (unit 1)
@@ -4630,7 +5761,7 @@
   )
 
   (symbol (lib_id "marbastlib-mx:MX_SW_HS") (at 219.71 31.75 0) (unit 1)
-    (in_bom yes) (on_board yes) (dnp no) (fields_autoplaced)
+    (exclude_from_sim no) (in_bom yes) (on_board yes) (dnp no) (fields_autoplaced)
     (uuid dbd95bed-be02-4436-9e82-61ac9c782e55)
     (property "Reference" "SW10" (at 219.71 25.4 0)
       (effects (font (size 1.27 1.27)))
@@ -4644,9 +5775,20 @@
     (property "Datasheet" "~" (at 219.71 31.75 0)
       (effects (font (size 1.27 1.27)) hide)
     )
+    (property "Description" "" (at 219.71 31.75 0)
+      (effects (font (size 1.27 1.27)) hide)
+    )
+    (property "Field-1" "" (at 219.71 31.75 0)
+      (effects (font (size 1.27 1.27)) hide)
+    )
     (pin "1" (uuid 92cc6885-6b78-4f8c-a3d7-e63cdf5e9399))
     (pin "2" (uuid 7da7b259-095a-4cbf-929c-44c0c365236b))
     (instances
+      (project "switch_matrix"
+        (path "/2e3181fe-ee3c-478d-8961-58256639dc5f"
+          (reference "SW10") (unit 1)
+        )
+      )
       (project "Koneko40Ortho"
         (path "/dea5f69c-d02e-47df-8e1a-a63949fabb21/0cbd56a0-84b2-4041-9681-83c3815281ca"
           (reference "SW10") (unit 1)
@@ -4656,7 +5798,7 @@
   )
 
   (symbol (lib_id "marbastlib-mx:MX_SW_HS") (at 92.71 102.87 0) (unit 1)
-    (in_bom yes) (on_board yes) (dnp no) (fields_autoplaced)
+    (exclude_from_sim no) (in_bom yes) (on_board yes) (dnp no) (fields_autoplaced)
     (uuid dbfd75d5-4b8e-4a3c-8001-d3a9450235b7)
     (property "Reference" "SW28" (at 92.71 96.52 0)
       (effects (font (size 1.27 1.27)))
@@ -4670,9 +5812,20 @@
     (property "Datasheet" "~" (at 92.71 102.87 0)
       (effects (font (size 1.27 1.27)) hide)
     )
+    (property "Description" "" (at 92.71 102.87 0)
+      (effects (font (size 1.27 1.27)) hide)
+    )
+    (property "Field-1" "" (at 92.71 102.87 0)
+      (effects (font (size 1.27 1.27)) hide)
+    )
     (pin "1" (uuid d4ee78a8-0f4d-4dc2-bbf9-081c33e182ef))
     (pin "2" (uuid 54284ab8-faca-4e02-9661-d9b89bfa468b))
     (instances
+      (project "switch_matrix"
+        (path "/2e3181fe-ee3c-478d-8961-58256639dc5f"
+          (reference "SW28") (unit 1)
+        )
+      )
       (project "Koneko40Ortho"
         (path "/dea5f69c-d02e-47df-8e1a-a63949fabb21/0cbd56a0-84b2-4041-9681-83c3815281ca"
           (reference "SW28") (unit 1)
@@ -4682,7 +5835,7 @@
   )
 
   (symbol (lib_id "Device:D_Small") (at 264.16 73.66 90) (unit 1)
-    (in_bom yes) (on_board yes) (dnp no) (fields_autoplaced)
+    (exclude_from_sim no) (in_bom yes) (on_board yes) (dnp no) (fields_autoplaced)
     (uuid dd83a7f7-1c70-47a0-8352-834d5b6e2d42)
     (property "Reference" "D24" (at 266.7 73.025 90)
       (effects (font (size 1.27 1.27)) (justify right))
@@ -4696,6 +5849,9 @@
     (property "Datasheet" "~" (at 264.16 73.66 90)
       (effects (font (size 1.27 1.27)) hide)
     )
+    (property "Description" "" (at 264.16 73.66 0)
+      (effects (font (size 1.27 1.27)) hide)
+    )
     (property "Sim.Device" "D" (at 264.16 73.66 0)
       (effects (font (size 1.27 1.27)) hide)
     )
@@ -4705,9 +5861,17 @@
     (property "LCSC" "C81598" (at 264.16 73.66 0)
       (effects (font (size 1.27 1.27)) hide)
     )
+    (property "Field-1" "" (at 264.16 73.66 0)
+      (effects (font (size 1.27 1.27)) hide)
+    )
     (pin "1" (uuid f0f41878-ad9a-4315-968e-68ec78c459d1))
     (pin "2" (uuid d84fdcdb-a9b8-43d4-99a1-8b6fac65dfef))
     (instances
+      (project "switch_matrix"
+        (path "/2e3181fe-ee3c-478d-8961-58256639dc5f"
+          (reference "D24") (unit 1)
+        )
+      )
       (project "Koneko40Ortho"
         (path "/dea5f69c-d02e-47df-8e1a-a63949fabb21/0cbd56a0-84b2-4041-9681-83c3815281ca"
           (reference "D24") (unit 1)
@@ -4717,7 +5881,7 @@
   )
 
   (symbol (lib_id "marbastlib-mx:MX_SW_HS") (at 176.53 153.67 0) (unit 1)
-    (in_bom yes) (on_board yes) (dnp no) (fields_autoplaced)
+    (exclude_from_sim no) (in_bom yes) (on_board yes) (dnp no) (fields_autoplaced)
     (uuid e40d413b-ac6b-4a79-a808-fece7d693381)
     (property "Reference" "SW44" (at 176.53 147.32 0)
       (effects (font (size 1.27 1.27)))
@@ -4731,9 +5895,20 @@
     (property "Datasheet" "~" (at 176.53 153.67 0)
       (effects (font (size 1.27 1.27)) hide)
     )
+    (property "Description" "" (at 176.53 153.67 0)
+      (effects (font (size 1.27 1.27)) hide)
+    )
+    (property "Field-1" "" (at 176.53 153.67 0)
+      (effects (font (size 1.27 1.27)) hide)
+    )
     (pin "1" (uuid 10cf7c38-08fe-4d01-8ce9-fd7dae4a0351))
     (pin "2" (uuid 66fd7ef2-fc76-40c4-8761-314ace799c82))
     (instances
+      (project "switch_matrix"
+        (path "/2e3181fe-ee3c-478d-8961-58256639dc5f"
+          (reference "SW44") (unit 1)
+        )
+      )
       (project "Koneko40Ortho"
         (path "/dea5f69c-d02e-47df-8e1a-a63949fabb21/0cbd56a0-84b2-4041-9681-83c3815281ca"
           (reference "SW44") (unit 1)
@@ -4743,7 +5918,7 @@
   )
 
   (symbol (lib_id "marbastlib-mx:MX_SW_HS") (at 113.03 102.87 0) (unit 1)
-    (in_bom yes) (on_board yes) (dnp no) (fields_autoplaced)
+    (exclude_from_sim no) (in_bom yes) (on_board yes) (dnp no) (fields_autoplaced)
     (uuid e6938a65-1161-4ad9-ba6b-114b7bc564fb)
     (property "Reference" "SW29" (at 113.03 96.52 0)
       (effects (font (size 1.27 1.27)))
@@ -4757,9 +5932,20 @@
     (property "Datasheet" "~" (at 113.03 102.87 0)
       (effects (font (size 1.27 1.27)) hide)
     )
+    (property "Description" "" (at 113.03 102.87 0)
+      (effects (font (size 1.27 1.27)) hide)
+    )
+    (property "Field-1" "" (at 113.03 102.87 0)
+      (effects (font (size 1.27 1.27)) hide)
+    )
     (pin "1" (uuid 8ac7e19f-eb0b-4930-8f6b-d9ce79c94444))
     (pin "2" (uuid d6ba2055-39b9-4373-aa78-ad1eedeaef71))
     (instances
+      (project "switch_matrix"
+        (path "/2e3181fe-ee3c-478d-8961-58256639dc5f"
+          (reference "SW29") (unit 1)
+        )
+      )
       (project "Koneko40Ortho"
         (path "/dea5f69c-d02e-47df-8e1a-a63949fabb21/0cbd56a0-84b2-4041-9681-83c3815281ca"
           (reference "SW29") (unit 1)
@@ -4769,7 +5955,7 @@
   )
 
   (symbol (lib_id "marbastlib-mx:MX_SW_HS") (at 113.03 31.75 0) (unit 1)
-    (in_bom yes) (on_board yes) (dnp no) (fields_autoplaced)
+    (exclude_from_sim no) (in_bom yes) (on_board yes) (dnp no) (fields_autoplaced)
     (uuid e95eeaf2-a861-4bfd-8912-8c152a406c54)
     (property "Reference" "SW5" (at 113.03 25.4 0)
       (effects (font (size 1.27 1.27)))
@@ -4783,9 +5969,20 @@
     (property "Datasheet" "~" (at 113.03 31.75 0)
       (effects (font (size 1.27 1.27)) hide)
     )
+    (property "Description" "" (at 113.03 31.75 0)
+      (effects (font (size 1.27 1.27)) hide)
+    )
+    (property "Field-1" "" (at 113.03 31.75 0)
+      (effects (font (size 1.27 1.27)) hide)
+    )
     (pin "1" (uuid b0e26d1c-9018-4580-b516-2363fa970c43))
     (pin "2" (uuid 85db1c9c-8eae-4a96-8a9f-8e371023b30d))
     (instances
+      (project "switch_matrix"
+        (path "/2e3181fe-ee3c-478d-8961-58256639dc5f"
+          (reference "SW5") (unit 1)
+        )
+      )
       (project "Koneko40Ortho"
         (path "/dea5f69c-d02e-47df-8e1a-a63949fabb21/0cbd56a0-84b2-4041-9681-83c3815281ca"
           (reference "SW5") (unit 1)
@@ -4795,7 +5992,7 @@
   )
 
   (symbol (lib_id "Device:D_Small") (at 264.16 107.95 90) (unit 1)
-    (in_bom yes) (on_board yes) (dnp no) (fields_autoplaced)
+    (exclude_from_sim no) (in_bom yes) (on_board yes) (dnp no) (fields_autoplaced)
     (uuid e9c67b35-74af-4d31-88da-f7b3a7745099)
     (property "Reference" "D36" (at 266.7 107.315 90)
       (effects (font (size 1.27 1.27)) (justify right))
@@ -4809,6 +6006,9 @@
     (property "Datasheet" "~" (at 264.16 107.95 90)
       (effects (font (size 1.27 1.27)) hide)
     )
+    (property "Description" "" (at 264.16 107.95 0)
+      (effects (font (size 1.27 1.27)) hide)
+    )
     (property "Sim.Device" "D" (at 264.16 107.95 0)
       (effects (font (size 1.27 1.27)) hide)
     )
@@ -4818,9 +6018,17 @@
     (property "LCSC" "C81598" (at 264.16 107.95 0)
       (effects (font (size 1.27 1.27)) hide)
     )
+    (property "Field-1" "" (at 264.16 107.95 0)
+      (effects (font (size 1.27 1.27)) hide)
+    )
     (pin "1" (uuid d17b2f69-7cc2-4106-9222-57d5ebc14875))
     (pin "2" (uuid 1a02bec9-4f2c-44b9-9061-d6a32f328dd7))
     (instances
+      (project "switch_matrix"
+        (path "/2e3181fe-ee3c-478d-8961-58256639dc5f"
+          (reference "D36") (unit 1)
+        )
+      )
       (project "Koneko40Ortho"
         (path "/dea5f69c-d02e-47df-8e1a-a63949fabb21/0cbd56a0-84b2-4041-9681-83c3815281ca"
           (reference "D36") (unit 1)
@@ -4830,7 +6038,7 @@
   )
 
   (symbol (lib_id "Device:D_Small") (at 31.75 158.75 90) (unit 1)
-    (in_bom yes) (on_board yes) (dnp no) (fields_autoplaced)
+    (exclude_from_sim no) (in_bom yes) (on_board yes) (dnp no) (fields_autoplaced)
     (uuid e9c8a889-5a9f-4a3f-91bb-f1b266a2144b)
     (property "Reference" "D37" (at 34.29 158.115 90)
       (effects (font (size 1.27 1.27)) (justify right))
@@ -4844,6 +6052,9 @@
     (property "Datasheet" "~" (at 31.75 158.75 90)
       (effects (font (size 1.27 1.27)) hide)
     )
+    (property "Description" "" (at 31.75 158.75 0)
+      (effects (font (size 1.27 1.27)) hide)
+    )
     (property "Sim.Device" "D" (at 31.75 158.75 0)
       (effects (font (size 1.27 1.27)) hide)
     )
@@ -4853,9 +6064,17 @@
     (property "LCSC" "C81598" (at 31.75 158.75 0)
       (effects (font (size 1.27 1.27)) hide)
     )
+    (property "Field-1" "" (at 31.75 158.75 0)
+      (effects (font (size 1.27 1.27)) hide)
+    )
     (pin "1" (uuid 7e9bc815-a1f8-4a92-a678-4b3347aec197))
     (pin "2" (uuid ea56881a-67f5-4cbb-93cf-04c58c1466ae))
     (instances
+      (project "switch_matrix"
+        (path "/2e3181fe-ee3c-478d-8961-58256639dc5f"
+          (reference "D37") (unit 1)
+        )
+      )
       (project "Koneko40Ortho"
         (path "/dea5f69c-d02e-47df-8e1a-a63949fabb21/0cbd56a0-84b2-4041-9681-83c3815281ca"
           (reference "D37") (unit 1)
@@ -4865,7 +6084,7 @@
   )
 
   (symbol (lib_id "marbastlib-mx:MX_SW_HS") (at 261.62 102.87 0) (unit 1)
-    (in_bom yes) (on_board yes) (dnp no) (fields_autoplaced)
+    (exclude_from_sim no) (in_bom yes) (on_board yes) (dnp no) (fields_autoplaced)
     (uuid ead83874-c647-487c-b78f-8b966a6657f3)
     (property "Reference" "SW36" (at 261.62 96.52 0)
       (effects (font (size 1.27 1.27)))
@@ -4879,9 +6098,20 @@
     (property "Datasheet" "~" (at 261.62 102.87 0)
       (effects (font (size 1.27 1.27)) hide)
     )
+    (property "Description" "" (at 261.62 102.87 0)
+      (effects (font (size 1.27 1.27)) hide)
+    )
+    (property "Field-1" "" (at 261.62 102.87 0)
+      (effects (font (size 1.27 1.27)) hide)
+    )
     (pin "1" (uuid 89d73c08-3a13-4f90-a759-1f9c1a70bcf2))
     (pin "2" (uuid 8cd7fdae-e149-470b-aef9-61d6c28ffe6d))
     (instances
+      (project "switch_matrix"
+        (path "/2e3181fe-ee3c-478d-8961-58256639dc5f"
+          (reference "SW36") (unit 1)
+        )
+      )
       (project "Koneko40Ortho"
         (path "/dea5f69c-d02e-47df-8e1a-a63949fabb21/0cbd56a0-84b2-4041-9681-83c3815281ca"
           (reference "SW36") (unit 1)
@@ -4891,7 +6121,7 @@
   )
 
   (symbol (lib_id "marbastlib-mx:MX_stab") (at 137.16 186.69 0) (unit 1)
-    (in_bom yes) (on_board yes) (dnp no) (fields_autoplaced)
+    (exclude_from_sim no) (in_bom yes) (on_board yes) (dnp no) (fields_autoplaced)
     (uuid eae13292-be0d-466b-8d3e-9a4677ddfbf0)
     (property "Reference" "S7" (at 143.51 185.928 0)
       (effects (font (size 1.27 1.27)) (justify left))
@@ -4905,7 +6135,18 @@
     (property "Datasheet" "" (at 137.16 186.69 0)
       (effects (font (size 1.27 1.27)) hide)
     )
+    (property "Description" "" (at 137.16 186.69 0)
+      (effects (font (size 1.27 1.27)) hide)
+    )
+    (property "Field-1" "" (at 137.16 186.69 0)
+      (effects (font (size 1.27 1.27)) hide)
+    )
     (instances
+      (project "switch_matrix"
+        (path "/2e3181fe-ee3c-478d-8961-58256639dc5f"
+          (reference "S7") (unit 1)
+        )
+      )
       (project "Koneko40Ortho"
         (path "/dea5f69c-d02e-47df-8e1a-a63949fabb21/0cbd56a0-84b2-4041-9681-83c3815281ca"
           (reference "S7") (unit 1)
@@ -4915,7 +6156,7 @@
   )
 
   (symbol (lib_id "PCM_marbastlib-various:ROT_SKYLOONG_HS-Switch") (at 16.51 -1.27 0) (unit 1)
-    (in_bom no) (on_board yes) (dnp no)
+    (exclude_from_sim no) (in_bom no) (on_board yes) (dnp no)
     (uuid ec7e14bb-44d6-47bd-ba8b-ba8a207698b3)
     (property "Reference" "SW52" (at 16.51 -10.16 0)
       (effects (font (size 1.27 1.27)))
@@ -4929,11 +6170,22 @@
     (property "Datasheet" "https://skyloong.vip/products/abs-hot-swappable-knobs-madule" (at 16.51 -1.27 0)
       (effects (font (size 1.27 1.27)) hide)
     )
+    (property "Description" "" (at 16.51 -1.27 0)
+      (effects (font (size 1.27 1.27)) hide)
+    )
+    (property "Field-1" "" (at 16.51 -1.27 0)
+      (effects (font (size 1.27 1.27)) hide)
+    )
     (pin "A" (uuid 0349d731-ef84-4b76-8625-36f2898baeb9))
     (pin "B" (uuid 769bcd25-fcfa-4571-a486-6f6da26ff2b1))
     (pin "C" (uuid d03a694b-4fcc-4f7a-91fb-1191036fa930))
     (pin "S" (uuid 3058a87c-fab5-434b-a03d-7fa1b586aa0b))
     (instances
+      (project "switch_matrix"
+        (path "/2e3181fe-ee3c-478d-8961-58256639dc5f"
+          (reference "SW52") (unit 1)
+        )
+      )
       (project "Koneko40Ortho"
         (path "/dea5f69c-d02e-47df-8e1a-a63949fabb21/0cbd56a0-84b2-4041-9681-83c3815281ca"
           (reference "SW52") (unit 1)
@@ -4943,7 +6195,7 @@
   )
 
   (symbol (lib_id "marbastlib-mx:MX_SW_HS") (at 29.21 68.58 0) (unit 1)
-    (in_bom yes) (on_board yes) (dnp no) (fields_autoplaced)
+    (exclude_from_sim no) (in_bom yes) (on_board yes) (dnp no) (fields_autoplaced)
     (uuid f680ff33-6b62-4599-9c19-cfa47eff5b4f)
     (property "Reference" "SW13" (at 29.21 62.23 0)
       (effects (font (size 1.27 1.27)))
@@ -4957,9 +6209,20 @@
     (property "Datasheet" "~" (at 29.21 68.58 0)
       (effects (font (size 1.27 1.27)) hide)
     )
+    (property "Description" "" (at 29.21 68.58 0)
+      (effects (font (size 1.27 1.27)) hide)
+    )
+    (property "Field-1" "" (at 29.21 68.58 0)
+      (effects (font (size 1.27 1.27)) hide)
+    )
     (pin "1" (uuid 211c3a0a-d42d-44d1-a2ac-2c7a5fc80763))
     (pin "2" (uuid c2c80482-ccb9-47c2-9a1b-7ffb6c4d6395))
     (instances
+      (project "switch_matrix"
+        (path "/2e3181fe-ee3c-478d-8961-58256639dc5f"
+          (reference "SW13") (unit 1)
+        )
+      )
       (project "Koneko40Ortho"
         (path "/dea5f69c-d02e-47df-8e1a-a63949fabb21/0cbd56a0-84b2-4041-9681-83c3815281ca"
           (reference "SW13") (unit 1)
@@ -4969,7 +6232,7 @@
   )
 
   (symbol (lib_id "Device:D_Small") (at 53.34 73.66 90) (unit 1)
-    (in_bom yes) (on_board yes) (dnp no) (fields_autoplaced)
+    (exclude_from_sim no) (in_bom yes) (on_board yes) (dnp no) (fields_autoplaced)
     (uuid fba6b46f-9124-4eb0-8476-c6b3cbbf4b69)
     (property "Reference" "D14" (at 55.88 73.025 90)
       (effects (font (size 1.27 1.27)) (justify right))
@@ -4983,6 +6246,9 @@
     (property "Datasheet" "~" (at 53.34 73.66 90)
       (effects (font (size 1.27 1.27)) hide)
     )
+    (property "Description" "" (at 53.34 73.66 0)
+      (effects (font (size 1.27 1.27)) hide)
+    )
     (property "Sim.Device" "D" (at 53.34 73.66 0)
       (effects (font (size 1.27 1.27)) hide)
     )
@@ -4992,9 +6258,17 @@
     (property "LCSC" "C81598" (at 53.34 73.66 0)
       (effects (font (size 1.27 1.27)) hide)
     )
+    (property "Field-1" "" (at 53.34 73.66 0)
+      (effects (font (size 1.27 1.27)) hide)
+    )
     (pin "1" (uuid c0a7a035-f8b5-4515-b2f6-596b377b38b2))
     (pin "2" (uuid ed029848-a694-4cdb-ae8a-7dab69974065))
     (instances
+      (project "switch_matrix"
+        (path "/2e3181fe-ee3c-478d-8961-58256639dc5f"
+          (reference "D14") (unit 1)
+        )
+      )
       (project "Koneko40Ortho"
         (path "/dea5f69c-d02e-47df-8e1a-a63949fabb21/0cbd56a0-84b2-4041-9681-83c3815281ca"
           (reference "D14") (unit 1)
@@ -5004,7 +6278,7 @@
   )
 
   (symbol (lib_id "Device:D_Small") (at 115.57 158.75 90) (unit 1)
-    (in_bom yes) (on_board yes) (dnp no) (fields_autoplaced)
+    (exclude_from_sim no) (in_bom yes) (on_board yes) (dnp no) (fields_autoplaced)
     (uuid fdccdfd6-e7a5-44d4-a475-773245933354)
     (property "Reference" "D41" (at 118.11 158.115 90)
       (effects (font (size 1.27 1.27)) (justify right))
@@ -5018,6 +6292,9 @@
     (property "Datasheet" "~" (at 115.57 158.75 90)
       (effects (font (size 1.27 1.27)) hide)
     )
+    (property "Description" "" (at 115.57 158.75 0)
+      (effects (font (size 1.27 1.27)) hide)
+    )
     (property "Sim.Device" "D" (at 115.57 158.75 0)
       (effects (font (size 1.27 1.27)) hide)
     )
@@ -5027,14 +6304,26 @@
     (property "LCSC" "C81598" (at 115.57 158.75 0)
       (effects (font (size 1.27 1.27)) hide)
     )
+    (property "Field-1" "" (at 115.57 158.75 0)
+      (effects (font (size 1.27 1.27)) hide)
+    )
     (pin "1" (uuid 28678ca7-3fdc-4cee-b238-d1239ef801d8))
     (pin "2" (uuid 903f4d9f-753d-47ac-8098-d41c5bac2767))
     (instances
+      (project "switch_matrix"
+        (path "/2e3181fe-ee3c-478d-8961-58256639dc5f"
+          (reference "D41") (unit 1)
+        )
+      )
       (project "Koneko40Ortho"
         (path "/dea5f69c-d02e-47df-8e1a-a63949fabb21/0cbd56a0-84b2-4041-9681-83c3815281ca"
           (reference "D41") (unit 1)
         )
       )
     )
+  )
+
+  (sheet_instances
+    (path "/" (page "1"))
   )
 )
